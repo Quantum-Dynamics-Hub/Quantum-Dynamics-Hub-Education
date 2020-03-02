@@ -1,5 +1,5 @@
 ---
-title: "Introduction. VIDIA gateway. Setting up. Python"
+title: "Algorithms and methodology prototyping. Introducing Libra"
 teaching: 60
 exercises: 10
 questions:

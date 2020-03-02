@@ -21,7 +21,7 @@ life_cycle: "pre-alpha"
 #------------------------------------------------------------
 
 # What kind of thing is this ("workshop" or "lesson")?
-kind: "workshop"
+kind: "lesson"
 
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
@@ -29,7 +29,7 @@ kind: "workshop"
 repository: compchem-cybertraining/Cyber_Training_Workshop_2020
 
 # Email address, no mailto:
-email: "alexeyak@buffalo.edu"
+email: "" 
 
 # Sites.
 amy_site: "https://amy.software-carpentry.org/workshops"
@@ -37,17 +37,18 @@ carpentries_github: "https://github.com/carpentries"
 carpentries_pages: "https://carpentries.github.io"
 carpentries_site: "https://carpentries.org/"
 dc_site: "http://datacarpentry.org"
-example_repo: "https://github.com/carpentries/lesson-example"
-example_site: "https://carpentries.github.io/lesson-example"
 lc_site: "https://librarycarpentry.org/"
 swc_github: "https://github.com/swcarpentry"
 swc_pages: "https://swcarpentry.github.io"
 swc_site: "https://software-carpentry.org"
 template_repo: "https://github.com/carpentries/styles"
 training_site: "https://carpentries.github.io/instructor-training"
-workshop_repo: "https://github.com/carpentries/workshop-template"
-workshop_site: "https://carpentries.github.io/workshop-template"
 cc_by_human: "https://creativecommons.org/licenses/by/4.0/"
+example_repo: "https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2020"
+example_site: "https://compchem-cybertraining.github.io/Cyber_Training_Workshop_2020/"
+workshop_repo: "https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2020"
+workshop_site: "https://compchem-cybertraining.github.io/Cyber_Training_Workshop_2020/"
+
 
 # Surveys.
 swc_pre_survey: "https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id="
@@ -62,7 +63,7 @@ instructor_post_survey: "https://www.surveymonkey.com/r/instructor_training_post
 
 
 # Start time in minutes (0 to be clock-independent, 540 to show a start at 09:00 am).
-start_time: 0
+start_time: 540
 
 # Specify that things in the episodes collection should be output.
 collections:
