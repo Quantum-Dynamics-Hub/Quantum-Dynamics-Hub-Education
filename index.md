@@ -128,7 +128,7 @@ The details may vary and some topics may be changed, omitted, or their order may
 
   <tr>
     <td class="col-md-3">August 3, 2020 (Day 2), Monday</td>
-    <td class="col-md-7">Opening. <a href="01-introduction">Introduction, VIDIA gateway, Setting up.  
+    <td class="col-md-7">Opening. <a href="01-introduction">Introduction. VIDIA gateway. Setting up.  
     Revision of Python programming. Revision of the best practices</a></td>
     <td class="col-md-2">Schedule of Day 2</td>      
   </tr>
