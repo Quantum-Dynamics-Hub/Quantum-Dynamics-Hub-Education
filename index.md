@@ -278,40 +278,4 @@ Out of all applicants, the total of **30 students** will be selected on a compet
 
 
 
-
-## Code of Conduct
-
-> ## Prerequisites
->
-> * Students are expected to be familiar with working with command line/terminal 
-> * Students are expected to know the basics of Python programming language
-> * OS: Either Linux or WSL for Windows 10
-{:.prereq}
-
->## Exercise
->
-> The following list contains some floating point numbers and some numbers which  have been saved as strings.  Copy this list exactly into your code.
-> ~~~
-> data_list = ['-12.5', 14.4, 8.1, '42']
-> ~~~
-> {: .language-python}
-> Set up a `for` loop to go over each element of `data_list`.  If the element is a string (`str`), recast it as a float.  Save *all* of the numbers to a new list called `number_list`.  Pay close attention to your indentation!
->
->> ## Solution
->> ~~~
->> data_list = ['-12.5', 14.4, 8.1, '42']
->> number_list = []
->> for item in data_list:
->>     if type(item) is str:
->>         item = float(item)
->>     number_list.append(item)
->>
->> print(number_list)
->> ~~~
->> {: .output}
-> {: .solution}
-{: .challenge}
-
-
-
 {% include links.md %}
