@@ -30,14 +30,14 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 
 ## About the Summer School
 
-The summer school aims at the graduate students, postdocs, and researchers working in a broader field
+The summer school aims to educate graduate students, postdocs, and researchers working in a broader field
 of nonadiabatic and excited state dynamics as well as in  computational material sciences.
-The summer school will provide a conceptual and practical hand-on training in a range of methods and cyberinfrastructure tools
+The summer school will provide conceptual and practical hands-on training in a range of methods and cyberinfrastructure tools
 for modeling excited states dynamics in abstract models and in atomistic materials.
 
 Students will not only learn about using the tools and the underlying theory, but also how these tools can facilitate their ongoing research
 The programming-driven nature of the school will contribute to training the new generation workforce with skills that go beyond
-the standard computational chemistry curriculum, and are highly desired by both industry and academia.
+the standard computational chemistry curriculum and are highly desired by both industry and academia.
 
 
 Keywords and topics:
@@ -54,7 +54,7 @@ Keywords and topics:
 - best practices, git, github
 
  
-The school aims to provide training in a range of adnvanced tools. This year, the focus will be on the following packages:
+The school aims to provide training in a range of advanced tools. This year, the focus will be on the following packages:
 - Libra (Akimov)
 - NEXMD (Tretiak)
 - SHARC (Gonzalez, Mai)
@@ -117,18 +117,18 @@ Display the contact email address set in the configuration file.
 
 {% include base_path.html %}
 
-The details may vary and some topics may be changes, omitted, or their order may be changed. Please check out the updates. 
+The details may vary and some topics may be changed, omitted, or their order may be changed. Please check for updates. 
 
   <table class="table table-striped">
   <tr>
     <td class="col-md-3">August 2, 2020 (Day 1), <strong>Sunday</strong></td>
-    <td class="col-md-7">Arrival, check-in, welcome dinner</td>
+    <td class="col-md-7">Arrival. check-in. welcome dinner</td>
     <td class="col-md-2">Schedule of Day 1</td>
   </tr>
 
   <tr>
     <td class="col-md-3">August 3, 2020 (Day 2), Monday</td>
-    <td class="col-md-7">Opening. <a href="01-introduction">Introduction. VIDIA gateway. Setting up.  
+    <td class="col-md-7">Opening. <a href="01-introduction">Introduction, VIDIA gateway, Setting up.  
     Revision of Python programming. Revision of the best practices</a></td>
     <td class="col-md-2">Schedule of Day 2</td>      
   </tr>
@@ -192,7 +192,7 @@ The details may vary and some topics may be changes, omitted, or their order may
 
   <tr>
     <td class="col-md-3">August 13, 2020 (Day 12), Thursday</td>
-    <td class="col-md-7">Wavepacked dynamics tutorial. NA-MD of small molecules: Hand on with SHARC and OpenMolcas</td>
+    <td class="col-md-7">Wavepacket dynamics tutorial. NA-MD of small molecules: Hands on with SHARC and OpenMolcas</td>
     <td class="col-md-2">Schedule of Day 12</td>
   </tr>
 
@@ -235,7 +235,7 @@ The details may vary and some topics may be changes, omitted, or their order may
      Please make sure to mention briefly your potential project and how you could leverage any of the
      packages this workshop will teach you.
          
-   2.3. request your adviser to submit a letter of recommendation for you to "alexeyak AT buffalo DOF edu", please replace "AT" and "DOT"
+   2.3. request your adviser to submit a letter of recommendation for you to "alexeyak AT buffalo DOT edu", please replace "AT" and "DOT"
    with the corresponding characters
 
 3. Complete the <a href="https://forms.gle/bppFcFe1JkCWCu987" target="_blank" rel="nofollow">**Registration form**</a>
@@ -254,16 +254,16 @@ applications/problems. The school aims to help researchers/students working eith
 methodology development for nonadiabatic or quantum-classical dynamics and in 
 applied studies of various types of solar energy materials (photovoltaics, photocatalytics, etc.). 
 
-Postdocs and researchers wishing to aquire the practical experience with new simulation
-tools and expand their knowlege in the areas of excited states and nonadiabatic dynamics
-are also welcome to participate.
+Postdocs and researchers wishing to acquire the practical experience with new simulation
+tools and expand their knowledge in the areas of excited states and nonadiabatic dynamics
+are also welcomed to participate.
 
 
 
 
 ### Selection and support
 
-The applicants will be screened based on a number of factors, to ensure the adequate level of prior preparation.
+The applicants will be screened based on several factors, to ensure the adequate level of prior preparation.
 
 Thanks to generous support of the NSF-OAC Cybertraining program, we will cover the travel/lodging expenses of the selected students
 up to a reasonable amount.
