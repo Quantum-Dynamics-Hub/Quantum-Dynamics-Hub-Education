@@ -5037,7 +5037,7 @@ a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #eeee88;
-  background-image: url("/assets/img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat;
