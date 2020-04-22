@@ -1,5 +1,5 @@
 ---
-title: "Algorithms and methodology prototyping. Introducing Libra"
+title: "Revision of Python"
 teaching: 60
 exercises: 10
 questions:
@@ -10,6 +10,7 @@ keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
 
+
 > ## Warning
 >
 > This webpage is still under development. Please check for updates.
@@ -18,4 +19,5 @@ keypoints:
 
 
 {% include links.md %}
+
 

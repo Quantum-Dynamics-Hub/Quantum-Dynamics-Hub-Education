@@ -26,6 +26,10 @@ root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 {% endcomment %}
 
+
+> # UPDATE: Due to COVID-19 situation, the Summer School is cancelled for the summer 2020. We plan to run it in summer 2021. Please stay tuned for further updates.
+> {: .testimonial}
+
 # Excited States and Nonadiabatic Dynamics Summer School 
 
 ## About the Summer School
