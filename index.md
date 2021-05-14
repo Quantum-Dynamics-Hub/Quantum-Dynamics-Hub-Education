@@ -27,10 +27,6 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 {% endcomment %}
 
 
-> # UPDATE: The CyberTraining 2021 summer school and workshop registration is now open.
-> Note, the workshop is offered in an online format.
-> {: .testimonial}
-
 # CyberTraining 2021: Excited States and Nonadiabatic Dynamics Summer School 
 
 ## About the Summer School and Workshop
@@ -135,9 +131,7 @@ The details may vary and the order of topics may be changed, the topics may be o
   <table class="table table-striped">
   <tr>
     <td class="col-md-3">June 14, 2021 (Day 1), <strong>Monday</strong></td>
-    <td class="col-md-7">
-    * Introduction. Overview of CyberInfrastructure. 
-    * Revision of Python and C++ programming. Coding Molecular Dynamics and Monte Carlo.
+    <td class="col-md-7">Introduction. Overview of CyberInfrastructure. Revision of Python and C++ programming. Coding Molecular Dynamics and Monte Carlo.
     </td>
     <td class="col-md-2">Schedule of Day 1</td>
   </tr>
