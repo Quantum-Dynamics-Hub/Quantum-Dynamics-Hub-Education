@@ -172,56 +172,87 @@ The details may vary and the order of topics may be changed, the topics may be o
 
   <tr>
     <td class="col-md-3">June 17, 2021 (Day 4), Thursday</td>
-    <td class="col-md-7">Wavepacket dynamics on a grid. Hierarchy of equations of motion (HEOM).</td>
-    <td class="col-md-2">Schedule of Day 4</td>
+    <td class="col-md-7">
+      <ul>
+        <li><a href="09-fox-cat-qmflows">Building quantum dot structures with FOX and CAT</a></li>
+        <li><a href="10-nbra-workflows-libra">Atomistic simulations of NA-MD in materials, using Libra/DFTB+, Libra/cp2k, Libra/ErgoSCF, Libra/QE interfaces</a></li>
+      </ul>
+    </td>
+    <td class="col-md-2">Ivan Infante, Felipe Zapata, Alexey Akimov</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 18, 2021 (Day 5), Friday</td>
-    <td class="col-md-7">Trajectory surface hopping and Ehrenfest methods for model Hamiltonians.</td>
-    <td class="col-md-2">Schedule of Day 5</td>
+    <td class="col-md-7">
+      <ul>
+        <li><a href="11-nexmd">Excited state dynamics of extended organic systems using NEXMD</a></li>
+      </ul>
+    </td>
+    <td class="col-md-2">Sergei Tretiak, Walter Malone</td>
   </tr>
   
   <tr>
     <td class="col-md-3">June 19, 2021 (Day 6), Saturday</td>
     <td class="col-md-7">On your own. Projects time</td>
-    <td class="col-md-2">Schedule of Day 7</td>
+    <td class="col-md-2"></td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 20, 2021 (Day 7), Sunday</td>
     <td class="col-md-7">On your own. Projects time</td>
-    <td class="col-md-2">Schedule of Day 8</td>
+    <td class="col-md-2"></td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 21, 2021 (Day 8), <strong>Monday</strong></td>
-    <td class="col-md-7">NA-MD of nanoclusters: Hands on with QMflows-NAMD and CP2K</td>
-    <td class="col-md-2">Schedule of Day 9</td>
+    <td class="col-md-7">
+      <ul>
+        <li><a href="12-qxmd">Excited state dynamics of extended inorganic systems using QXMD</a></li>
+      </ul>
+    </td>
+    <td class="col-md-2">Aiichiro Nakano, Alexey Akimov</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 22, 2021 (Day 9), Tuesday</td>
-    <td class="col-md-7">NA-MD of nanoclusters and condensed matter: Hands on with Libra workflows, DFTB+ and Quantum Espresso</td>
-    <td class="col-md-2">Schedule of Day 10</td>
+    <td class="col-md-7">
+      <ul>
+        <li><a href="13-columbus">Accurate excited state calculations using COLUMBUS package</a></li>
+      </ul>
+    </td>
+    <td class="col-md-2">Hans Lischka, Mario Barbatti</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 23, 2021 (Day 10), Wednesday</td>
-    <td class="col-md-7">NA-MD of large organic molecules: Hands on with NEXMD</td>
-    <td class="col-md-2">Schedule of Day 11</td>
+    <td class="col-md-7">
+      <ul>
+        <li><a href="14-newtonx">Nonadiabatic dynamics using Newton-X/DFTB+ package</a></li>
+        <li><a href="13-columbus">Accurate excited state calculations using COLUMBUS package</a></li>
+      </ul>
+    </td>
+    <td class="col-md-2">Mario Barbatti, Hans Lischka</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 24, 2021 (Day 11), Thursday</td>
-    <td class="col-md-7">Wavepacket dynamics tutorial. NA-MD of small molecules: Hands on with SHARC and OpenMolcas</td>
-    <td class="col-md-2">Schedule of Day 12</td>
+    <td class="col-md-7">
+      <ul>
+        <li><a href="14-newtonx">Nonadiabatic dynamics using Newton-X/COLUMBUS package</a></li>        
+      </ul>
+    </td>
+    <td class="col-md-2">Mario Barbatti, Hans Lischka</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 26, 2021 (Day 12), Friday</td>
-    <td class="col-md-7"> ... Continued </td>
-    <td class="col-md-2">Schedule of Day 13</td>
+    <td class="col-md-7">
+      <ul>
+        <li>Students projects presentations</li>
+        <li>Awards and Closing</li>
+      </ul>
+    </td>
+    <td class="col-md-2"></td>
   </tr>
   
   </table>
