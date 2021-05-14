@@ -135,22 +135,8 @@ The details may vary and the order of topics may be changed, the topics may be o
   <table class="table table-striped">
   <tr>
     <td class="col-md-3">August 2, 2020 (Day 1), <strong>Sunday</strong></td>
-    <td class="col-md-7">
-     **First half of the day: (11:00 am - 1:00 pm)**
-     Instructors: Jeanette Sperhac, Sudhakar Pamidighantam
-     Co-Instructors: Alexey Akimov, Mahsa Jabbar
-
-     * Introductions
-     * Overview of UB CCR, OnDemand, and SEAGrid 
-     * Submitting jobs on UB CCR HPC and via SEAGrid
-
-     *Break (1:00 pm - 2:00 pm )*
-
-     **Second half of the day: (2:00 pm - 5:00 pm)**
-     * Revision of Python and C++ programming and best practices 
-     * Coding Molecular dynamics and Monte carlo
-     * Introduction to Libra “methodology prototyping” package. Classical molecular dynamics and convenience functions.
-    </td>
+    <td class="col-md-7">Introduction. Overview of CyberInfrastructure. Revision 
+    of Python and C++ programming. Coding Molecular Dynamics and Monte Carlo.</td>
     <td class="col-md-2">Schedule of Day 1</td>
   </tr>
 
