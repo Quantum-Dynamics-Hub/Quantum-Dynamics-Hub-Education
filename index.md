@@ -152,7 +152,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 15, 2021 (Day 2), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="05-nano-qmflows">nano-qmflows workflows</a> <li>
+        <li><a href="05-nano-qmflows">nano-qmflows workflows</a> </li>
         <li><a href="06-nano-qmflows">TSH with model Hamiltonians using Libra</a></li>
       </ul>
     </td>
