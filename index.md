@@ -138,27 +138,37 @@ The details may vary and the order of topics may be changed, the topics may be o
   
   <tr>
     <td class="col-md-3">June 14, 2021 (Day 1), <strong>Monday</strong></td>
-    <td class="col-md-7"><a href="01-introduction">Introduction. Overview of CyberInfrastructure. </a>
-      <a href="02-python_and_cpp">Revision of Python and C++ programming.</a> 
-      <a href="03-molecular_dynamics">Coding Molecular Dynamics and Monte Carlo. Intro to Libra.</a>
+    <td class="col-md-7">
+      <ul>
+        <li><a href="01-introduction">Introduction. Overview of CyberInfrastructure. </a></li>
+        <li><a href="02-python_and_cpp">Revision of Python and C++ programming.</a> </li>
+        <li><a href="03-molecular_dynamics">Coding Molecular Dynamics and Monte Carlo. Intro to Libra.</a></li>
+      </ul>
     </td> 
     <td class="col-md-2">Alexey Akimov, Jeanette Sperhac, Sudhakar Pamidighantam</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 15, 2021 (Day 2), Tuesday</td>
-    <td class="col-md-7"><a href="05-nano-qmflows">Nano-qmflows</a> <a href="06-nano-qmflows">TSH with model Hamiltonians using Libra</a>
+    <td class="col-md-7">
+      <ul>
+        <li><a href="05-nano-qmflows">nano-qmflows workflows</a> <li>
+        <li><a href="06-nano-qmflows">TSH with model Hamiltonians using Libra</a></li>
+      </ul>
     </td>
     <td class="col-md-2">Ivan Infante, Felipe Zapata, Alexey Akimov</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 16, 2021 (Day 3), Wednesday</td>
-    <td class="col-md-7"><a href="02-methodology-libra">Methodology prototyping in Python. 
-    Introduction of the Libra package. Classical molecular dynamics and convenience functions.</a></td>
-    <td class="col-md-2">Schedule of Day 3</td>
+    <td class="col-md-7">
+      <ul>
+        <li><a href="07-heom-libra">Hierarchy of equations of motion (HEOM) calculations with Libra. </a></li>
+        <li><a href="08-dvr-libra">Wavepacket/DVR calculations with  Libra. </a></li>
+      </ul>
+    </td>
+    <td class="col-md-2">Amber Jain, Alexey Akimov</td>
   </tr>
-
 
   <tr>
     <td class="col-md-3">June 17, 2021 (Day 4), Thursday</td>
