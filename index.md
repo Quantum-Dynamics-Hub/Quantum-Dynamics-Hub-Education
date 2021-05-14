@@ -134,9 +134,11 @@ The details may vary and the order of topics may be changed, the topics may be o
 
   <table class="table table-striped">
   <tr>
-    <td class="col-md-3">August 2, 2020 (Day 1), <strong>Sunday</strong></td>
-    <td class="col-md-7">Introduction. Overview of CyberInfrastructure. Revision 
-    of Python and C++ programming. Coding Molecular Dynamics and Monte Carlo.</td>
+    <td class="col-md-3">June 14, 2021 (Day 1), <strong>Monday</strong></td>
+    <td class="col-md-7">
+    * Introduction. Overview of CyberInfrastructure. 
+    * Revision of Python and C++ programming. Coding Molecular Dynamics and Monte Carlo.
+    </td>
     <td class="col-md-2">Schedule of Day 1</td>
   </tr>
 
