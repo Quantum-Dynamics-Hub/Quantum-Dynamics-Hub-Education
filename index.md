@@ -27,7 +27,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 {% endcomment %}
 
 
-# CyberTraining 2021: Excited States and Nonadiabatic Dynamics Summer School 
+# Excited States and Nonadiabatic Dynamics CyberTraining Workshop 2021
 
 ## About the Summer School and Workshop
 
@@ -129,22 +129,31 @@ Display the contact email address set in the configuration file.
 The details may vary and the order of topics may be changed, the topics may be omitted or added. Please check for the updates. 
 
   <table class="table table-striped">
+  
+  <tr>
+    <td class="col-md-3"><strong>Date</strong></td>
+    <td class="col-md-7"><strong>Topics</strong></td> 
+    <td class="col-md-2"><strong>Instructors</strong></td>
+  </tr>
+  
   <tr>
     <td class="col-md-3">June 14, 2021 (Day 1), <strong>Monday</strong></td>
-    <td class="col-md-7">Introduction. Overview of CyberInfrastructure. Revision of Python and C++ programming. Coding Molecular Dynamics and Monte Carlo.
+    <td class="col-md-7"><a href="01-introduction">Introduction. Overview of CyberInfrastructure. </a>
+      <a href="02-python_and_cpp">Revision of Python and C++ programming.</a> 
+      <a href="03-molecular_dynamics">Coding Molecular Dynamics and Monte Carlo. Intro to Libra.</a>
+    </td> 
+    <td class="col-md-2">Alexey Akimov, Jeanette Sperhac, Sudhakar Pamidighantam</td>
+  </tr>
+
+  <tr>
+    <td class="col-md-3">June 15, 2021 (Day 2), Tuesday</td>
+    <td class="col-md-7"><a href="05-nano-qmflows">Nano-qmflows</a> <a href="06-nano-qmflows">TSH with model Hamiltonians using Libra</a>
     </td>
-    <td class="col-md-2">Schedule of Day 1</td>
+    <td class="col-md-2">Ivan Infante, Felipe Zapata, Alexey Akimov</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">August 3, 2020 (Day 2), Monday</td>
-    <td class="col-md-7">Opening. <a href="01-introduction">Introduction. VIDIA gateway. Setting up.  
-    Revision of Python programming. Revision of the best practices</a></td>
-    <td class="col-md-2">Schedule of Day 2</td>      
-  </tr>
-
-  <tr>
-    <td class="col-md-3">August 4, 2020 (Day 3), Tuesday</td>
+    <td class="col-md-3">June 16, 2021 (Day 3), Wednesday</td>
     <td class="col-md-7"><a href="02-methodology-libra">Methodology prototyping in Python. 
     Introduction of the Libra package. Classical molecular dynamics and convenience functions.</a></td>
     <td class="col-md-2">Schedule of Day 3</td>
@@ -152,77 +161,59 @@ The details may vary and the order of topics may be changed, the topics may be o
 
 
   <tr>
-    <td class="col-md-3">August 5, 2020 (Day 4), Wednesday</td>
+    <td class="col-md-3">June 17, 2021 (Day 4), Thursday</td>
     <td class="col-md-7">Wavepacket dynamics on a grid. Hierarchy of equations of motion (HEOM).</td>
     <td class="col-md-2">Schedule of Day 4</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">August 6, 2020 (Day 5), Thursday</td>
+    <td class="col-md-3">June 18, 2021 (Day 5), Friday</td>
     <td class="col-md-7">Trajectory surface hopping and Ehrenfest methods for model Hamiltonians.</td>
     <td class="col-md-2">Schedule of Day 5</td>
   </tr>
-
+  
   <tr>
-    <td class="col-md-3">August 7, 2020 (Day 6), Friday</td>
-    <td class="col-md-7">Nonadiabatic dynamics of atomistics systems: Libra/ErgoSCF, Libra/DFTB+, and Libra/QuantumEspresso.</td>
-    <td class="col-md-2">Schedule of Day 6</td>
-  </tr>
-
-  <tr>
-    <td class="col-md-3">August 8, 2020 (Day 7), Saturday</td>
+    <td class="col-md-3">June 19, 2021 (Day 6), Saturday</td>
     <td class="col-md-7">On your own. Projects time</td>
     <td class="col-md-2">Schedule of Day 7</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">August 9, 2020 (Day 8), <strong>Sunday</strong></td>
+    <td class="col-md-3">June 20, 2021 (Day 7), Sunday</td>
     <td class="col-md-7">On your own. Projects time</td>
     <td class="col-md-2">Schedule of Day 8</td>
   </tr>
 
-
   <tr>
-    <td class="col-md-3">August 10, 2020 (Day 9), Monday</td>
+    <td class="col-md-3">June 21, 2021 (Day 8), <strong>Monday</strong></td>
     <td class="col-md-7">NA-MD of nanoclusters: Hands on with QMflows-NAMD and CP2K</td>
     <td class="col-md-2">Schedule of Day 9</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">August 11, 2020 (Day 10), Tuesday</td>
+    <td class="col-md-3">June 22, 2021 (Day 9), Tuesday</td>
     <td class="col-md-7">NA-MD of nanoclusters and condensed matter: Hands on with Libra workflows, DFTB+ and Quantum Espresso</td>
     <td class="col-md-2">Schedule of Day 10</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">August 12, 2020 (Day 11), Wednesday</td>
+    <td class="col-md-3">June 23, 2021 (Day 10), Wednesday</td>
     <td class="col-md-7">NA-MD of large organic molecules: Hands on with NEXMD</td>
     <td class="col-md-2">Schedule of Day 11</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">August 13, 2020 (Day 12), Thursday</td>
+    <td class="col-md-3">June 24, 2021 (Day 11), Thursday</td>
     <td class="col-md-7">Wavepacket dynamics tutorial. NA-MD of small molecules: Hands on with SHARC and OpenMolcas</td>
     <td class="col-md-2">Schedule of Day 12</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">August 14, 2020 (Day 13), Friday</td>
+    <td class="col-md-3">June 26, 2021 (Day 12), Friday</td>
     <td class="col-md-7"> ... Continued </td>
     <td class="col-md-2">Schedule of Day 13</td>
   </tr>
-
-  <tr>
-    <td class="col-md-3">August 15, 2020 (Day 14), Saturday</td>
-    <td class="col-md-7">Project presentations</td>
-    <td class="col-md-2">Schedule of Day 14</td>
-  </tr>
-
-  <tr>
-    <td class="col-md-3">August 16, 2020 (Day 15), <strong>Sunday</strong></td>
-    <td class="col-md-7">Depart</td>
-    <td class="col-md-2"></td>
-  </tr>
+  
   </table>
 
 
