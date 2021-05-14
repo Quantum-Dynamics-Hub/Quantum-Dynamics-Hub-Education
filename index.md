@@ -6,17 +6,17 @@ country: "United States"      # lowercase two-letter ISO country code such as "f
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latitude: "43.002890"     # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-78.788780"    # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Aug 2-16, 2020"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2020-08-02      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2020-08-16        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Alexey Akimov", "Jeanette Sperhac", "Ivan Infante", 
-             "Sergei Tretiak", "Leticia Gonzalez", "Markus Oppel",
-             "Sebastian Mai"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Brendan Smith"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+humandate: "Jun 14-26, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "11:00 am - 5:00 pm EDT"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2021-06-14      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2021-06-26        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Alexey Akimov", "Jeanette Sperhac", "Ivan Infante",
+             "Felipe Zapata", "Sergei Tretiak", "Walter Malone", 
+             "Mario Barbatti", "Hans Lischka", "Amber Jain"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Mohammad Shakiba"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-googleform: https://forms.gle/bppFcFe1JkCWCu987
+googleform: https://forms.gle/kup1bkWibLsHH8Bn7
 carpentry: "sc"
 ---
 
@@ -27,24 +27,30 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 {% endcomment %}
 
 
-> # UPDATE: Due to COVID-19 situation, the Summer School is cancelled for the summer 2020. We plan to run it in summer 2021. Please stay tuned for further updates.
+> # UPDATE: The CyberTraining 2021 summer school and workshop registration is now open.
+> Note, the workshop is offered in an online format.
 > {: .testimonial}
 
-# Excited States and Nonadiabatic Dynamics Summer School 
+# CyberTraining 2021: Excited States and Nonadiabatic Dynamics Summer School 
 
-## About the Summer School
+## About the Summer School and Workshop
 
-The summer school aims to educate graduate students, postdocs, and researchers working in a broader field
-of nonadiabatic and excited state dynamics as well as in  computational material sciences.
-The summer school will provide conceptual and practical hands-on training in a range of methods and cyberinfrastructure tools
-for modeling excited states dynamics in abstract models and in atomistic materials.
+The CyberTraining workshop aims to educate graduate students, postdocs, researchers, and educators working in a 
+broader field of nonadiabatic and excited-state dynamics as well as in computational material sciences in a variety
+of tools and methods for such types of calculations. The workshop will provide conceptual and practical hands-on 
+training in a range of methods and cyberinfrastructure (software and platforms) for modeling excited state and 
+nonadiabatic dynamics in abstract models and atomistic materials. We will also cover tools and workflows for 
+building atomistic models, computing excited states of molecular and periodic systems, as well as pre- and post-processing 
+operations, and data analysis. 
 
-Students will not only learn about using the tools and the underlying theory, but also how these tools can facilitate their ongoing research
-The programming-driven nature of the school will contribute to training the new generation workforce with skills that go beyond
-the standard computational chemistry curriculum and are highly desired by both industry and academia.
-
+Participants will not only learn about using the tools but will be exposed to the underlying machinery 
+of such methods and will be familiarized with their development. The programming-driven nature of the school will
+help the participants to go beyond the standard computational chemistry curriculum. The workshop will culminate with 
+a capstone project presentation, through which the participants will demonstrate their ability to leverage the new tools 
+in their active research. 
 
 Keywords and topics:
+
 - nonadiabatic dynamics
 - excited states
 - quantum dynamics
@@ -58,18 +64,21 @@ Keywords and topics:
 - best practices, git, github
 
  
-The school aims to provide training in a range of advanced tools. This year, the focus will be on the following packages:
+The school aims to provide training in a range of advanced tools. 
+This year, the focus will be on the following packages:
+
 - Libra (Akimov)
 - NEXMD (Tretiak)
-- SHARC (Gonzalez, Mai)
-- QMflows and QMflows-NAMD (Infante)
+- Newton-X (Barbatti)
+- nano-qmflows (Infante, Zapata)
+- CAT, auto-FOX (Infante, Zapata)
+- COLUMBUS (Lischka)
 - DFTB+
 - CP2K
 - Quantum Espresso
 - ErgoSCF
-- OpenMolcas
 
-The school will leverage the VIDIA gateway at University at Buffalo
+The school will leverage the OnDemand gateway at the University at Buffalo
 
 
 ## Logistics
@@ -121,12 +130,27 @@ Display the contact email address set in the configuration file.
 
 {% include base_path.html %}
 
-The details may vary and some topics may be changed, omitted, or their order may be changed. Please check for updates. 
+The details may vary and the order of topics may be changed, the topics may be omitted or added. Please check for the updates. 
 
   <table class="table table-striped">
   <tr>
     <td class="col-md-3">August 2, 2020 (Day 1), <strong>Sunday</strong></td>
-    <td class="col-md-7">Arrival. check-in. welcome dinner</td>
+    <td class="col-md-7">
+     **First half of the day: (11:00 am - 1:00 pm)**
+     Instructors: Jeanette Sperhac, Sudhakar Pamidighantam
+     Co-Instructors: Alexey Akimov, Mahsa Jabbar
+
+     * Introductions
+     * Overview of UB CCR, OnDemand, and SEAGrid 
+     * Submitting jobs on UB CCR HPC and via SEAGrid
+
+     *Break (1:00 pm - 2:00 pm )*
+
+     **Second half of the day: (2:00 pm - 5:00 pm)**
+     * Revision of Python and C++ programming and best practices 
+     * Coding Molecular dynamics and Monte carlo
+     * Introduction to Libra “methodology prototyping” package. Classical molecular dynamics and convenience functions.
+    </td>
     <td class="col-md-2">Schedule of Day 1</td>
   </tr>
 
@@ -225,29 +249,29 @@ The details may vary and some topics may be changed, omitted, or their order may
 ### How to apply to the school
 
 1. Read this page carefully
-2. Prepare your application package (you will need it in the next step)
+2. Prepare your application package (you will need it in the next steps)
 
    2.1. your CV (including graduate GPA)
 
    2.2. a statement of purpose PDF should describe in no more than 2 pages:
 
-   * why you wish to attend the school
-   * your current research project(s)
-   * how you think this school will help with your career
-   * The summer school will culminate in an elaboration of the participant-designed projects that
-     leverage some of the cyberinfrastructure that will be covered in the workshop.
-     Please make sure to mention briefly your potential project and how you could leverage any of the
-     packages this workshop will teach you.
+   * your current/ongoing research projects and interests; 
+   * how you plan to use the CyberTraining skill gained in this workshop in your research, for instance if you expect using any of the
+     packages that will be covered at this workshop (see the agenda);
+   * propose at least one potential project to be completed during the summer school; the project will be presented at the end of the 
+     event and should involving one or more tools/software covered during the workshop (see the agenda). The quality and feasibility 
+     of the proposed workshop projects will be considered during the selection of the participants. 
          
-   2.3. request your adviser to submit a letter of recommendation for you to "alexeyak AT buffalo DOT edu", please replace "AT" and "DOT"
-   with the corresponding characters
+   2.3. request your advisor to submit a letter of recommendation for you to the following email: "alexeyak AT buffalo DOT edu", 
+   please replace "AT" and "DOT" with the corresponding characters
 
-3. Complete the <a href="https://forms.gle/bppFcFe1JkCWCu987" target="_blank" rel="nofollow">**Registration form**</a>
+3. Complete the <a href="https://forms.gle/kup1bkWibLsHH8Bn7" target="_blank" rel="nofollow">**Registration form**</a>
 
 
 ### Important dates
-   * School application materials are due by June 1 , 2020
-   * Students and Postdocs will be notified of their admission by June 30, 2020
+   * School application materials are due 5 pm EDT, June 7, 2020
+   * Students and Postdocs will be notified of their admission by June 10, 2020
+   * School starts: 11 am EDT, June 14, 2020
 
 
 ### Who can apply
@@ -265,20 +289,36 @@ are also welcomed to participate.
 
 
 
-### Selection and support
+### Selection and restrictions
 
-The applicants will be screened based on several factors, to ensure the adequate level of prior preparation.
+* **Competitive selection** The applicants will be selected based on the strength of their statement of purpose, as well as the adequate 
+  support of their supervisors and their level of fundamental preparation. The lack of training in specialized methods and software is not a problem. 
+  What is more important is how ready the applicants are to absorb the new knowlege, how efficiently they can operate during the workshop, 
+  and how critical the use of the methods/tools covered in the workshop may be for your future research or career (e.g. educating others). 
 
-Thanks to generous support of the NSF-OAC Cybertraining program, we will cover the travel/lodging expenses of the selected students
-up to a reasonable amount.
+* **The VPN cap/instructing efficiency limit.** The hands-on session will be facilitated by the CyberInfrastructure built
+  at the UB CCR cluster. As such, users have to use VPN to remotely access the cluster. The UBIT department has provided 
+  a block of 30 external VPNs for non-UB participants (including about 10 instructors). This number sets the limit of about 
+  20 people for non-instructor participants we can accept to the fully-fledged (talks/demos + hands-on) event. However, more 
+  participants may be admitted to the theory talks/demo sessions. 
 
-We can support only a limited number of participants. However, if you are not selected for the support, you can 
-still be invited to attend the event with the understanding that you would cover all of your (travel and lodging) expenses.
-Please indicate in the registration form if you would like to be considered for self-supported participation.
+* **Export control limit.** Certain countries (e.g. China, Iran, Russia, etc.) can not be issued the UB VPN, so the participants 
+  from these countries can not use the UB CCR cyberinftrastructure during the hands-on activities. Such participants may still be 
+  admitted to the theory talks/demo sessions. 
 
-Out of all applicants, the total of **30 students** will be selected on a competitive basis.  
+* **Group champions.** We anticipate the workshop may be of interest to more than 1 person from any given research group. To broaden 
+  and diversify the participation, we will admit only 1 person from any research group (2, if we have room) to a fully-fledged workshop
+  (talks/demos + hands-on). This is the group champion. Although this person will not be allowed to share their login credentials with other
+  group members, they are free to communicate with other group members (that may be accepted to the workshop as non-champions) during hands-on
+  exercises and share their screens with the group mates.
 
 
+
+
+
+### Acknowledgement
+
+This workshop is made possible by the NSF-OAC CyberTraining program. Thank you!
 
 
 
