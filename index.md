@@ -301,7 +301,7 @@ The details may vary and the order of topics may be changed, the topics may be o
 1. Read this page carefully
 2. Prepare your application package (you will need it in the next steps)
 
-   2.1. your CV (including graduate GPA)
+   2.1. your CV (including graduate or undergraduate GPA)
 
    2.2. a statement of purpose PDF should describe in no more than 2 pages:
 
@@ -354,13 +354,17 @@ are also welcomed to participate.
 
 * **Export control limit.** Certain countries (e.g. China, Iran, Russia, etc.) can not be issued the UB VPN, so the participants 
   from these countries can not use the UB CCR cyberinftrastructure during the hands-on activities. Such participants may still be 
-  admitted to the theory talks/demo sessions. 
+  admitted to the theory talks/demo sessions. In your application, please indicate if you would like to participate without access 
+  of UB CCR facilities. In this case, you may need to rely on your own installations or may simply  be here for the theory talks and 
+  demos.
 
 * **Group champions.** We anticipate the workshop may be of interest to more than 1 person from any given research group. To broaden 
   and diversify the participation, we will admit only 1 person from any research group (2, if we have room) to a fully-fledged workshop
   (talks/demos + hands-on). This is the group champion. Although this person will not be allowed to share their login credentials with other
   group members, they are free to communicate with other group members (that may be accepted to the workshop as non-champions) during hands-on
-  exercises and share their screens with the group mates.
+  exercises and share their screens with the group mates. In your application, please indicate whether you are selected by the group as the
+  group champion. If you are not assigned to be the group champion, but still want to participate in the event (either relying on your own installations,
+  or working with your group champion, or just staying for the theory talks/demos), please indicate this in your application. 
 
 
 
