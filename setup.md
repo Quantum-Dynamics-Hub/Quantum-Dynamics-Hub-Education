@@ -16,6 +16,27 @@ title: Setup
 4. Libra installation
 5. Text Editors
 
+
+## 1. Setting up your UB CCR account and getting access to the UB CCR supercomputer and infrastructure
+Below are the steps you’ll need to take in order to connect to our resources:
+
+### Step 1.
+
+In order to connect to our machines, you have to be on the UB network.
+
+You'll need to download and install UB's Cisco VPN client. You can download the client software from here:
+[For Windows](http://www.buffalo.edu/ubit/service-guides/software/downloading/windows-software/managing-your-software/anyconnect.html), 
+[For MacOS](http://www.buffalo.edu/ubit/service-guides/software/downloading/macintosh-software/managing-mac-software/anyconnect.html) 
+
+You **MUST** use the Cisco AnyConnect client with this account, please ignore any information about the FortiClient VPN software.
+
+*The login information to download and connect to the UB VPN client will be given to you over emain, when your are accepted*
+
+NOTE: When you start the Cisco software the first time you will need to enter the following in the "Connect to:" box: vpn.buffalo.edu
+and then select UBVPN from the group drop down menu.
+
+
+
 ## 3. Terminal
 
 The terminal is an interface in which you can type and execute text based commands. It is important to use the terminal to 
