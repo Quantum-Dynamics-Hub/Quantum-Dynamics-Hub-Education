@@ -1,6 +1,6 @@
 ---
 layout: workshop
-venue: "University at Buffalo, SUNY"   # brief name of host site without address (e.g., "Euphoric State University")
+venue: "University at Buffalo, SUNY (virtual)"   # brief name of host site without address (e.g., "Euphoric State University")
 address: "University at Buffalo, SUNY, North Campus"     # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "United States"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
@@ -12,8 +12,8 @@ startdate: 2021-06-14      # machine-readable start date for the workshop in YYY
 enddate: 2021-06-26        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alexey Akimov", "Jeanette Sperhac", "Ivan Infante",
              "Felipe Zapata", "Sergei Tretiak", "Walter Malone", 
-             "Mario Barbatti", "Hans Lischka", "Amber Jain"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Mohammad Shakiba"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+             "Mario Barbatti", "Hans Lischka", "Amber Jain", "Aiichiro Nakano"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Mohammad Shakiba", "Bas van Beek", "Juliette Zito"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 googleform: https://forms.gle/kup1bkWibLsHH8Bn7
