@@ -16,6 +16,9 @@ title: "Excited States and Nonadiabatic Dynamics"
 # possible values: "pre-alpha", "alpha", "beta", "stable"
 life_cycle: "pre-alpha"
 
+# Force UTF-8 encoding
+encoding: UTF-8
+
 #------------------------------------------------------------
 # Generic settings (should not need to change).
 #------------------------------------------------------------
