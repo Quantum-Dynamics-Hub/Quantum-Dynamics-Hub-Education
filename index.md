@@ -60,7 +60,8 @@ Keywords and topics:
 - best practices, git, github
 
  
-The school aims to provide training in a range of advanced tools. 
+The school aims to provide training in a range of advanced tools for excited state and 
+nonadiabatic molecular dynamics calculations. 
 This year, the focus will be on the following packages:
 
 - Libra (Akimov)
@@ -256,6 +257,41 @@ The details may vary and the order of topics may be changed, the topics may be o
   </tr>
   
   </table>
+
+
+## Our team
+### Our instructors
+
+| Name            | Affiliation         |    Role/Software covered   |
+| --------------- | ------------------- | -------------------------- |
+| Dr. Alexey Akimov         |   University at Buffalo, USA      | Workshop coordinator, Instructor for: Libra, DFTB+, ErgoSCF, CP2k, QXMD, etc. |
+| Dr. Jeanette Sperhac      |   University at Buffalo Center for Computational Research, USA  | Workshop coordinator, Instructor for: Jupyter, Open OnDemand, UB CCR HPC |
+| Dr. Sudhakar Pamidighantam  | Indiana University, USA  | Instructor for: SEAGrid platform |
+| Dr. Sergei Tretiak | Los Alamos National Laboratory, USA | Instructor for: NEXMD |
+| Dr. Walter Malone | Los Alamos National Laboratory, USA | Instructor for: NEXMD |
+| Dr. Ivan Infante | Istituto Italiano di Tecnologia, Italy | Instructor for: CAT, FOX, nano-qmflows, CP2k |
+| Dr. Felipe Zapata | Netherlands eScience Center, Netherlands | Instructor for: CAT, FOX, nano-qmflows, CP2k |
+| Dr. Hans Lischka | Texas Tech University | Instructor for: COLUMBUS, Newton-X |
+| Dr. Mario Barbatti | Aix-Marseille University, France | Instructor for: Newton-X, DFTB+ |
+| Dr. Amber Jain | Indian Institute of Technology, India  | Instructor: HEOM (in Libra) |
+| Dr. Aiichiro Nakano | University of Southern California, USA  |  Instructor for: QXMD |
+
+### Our co-instructors/helpers
+
+| Name            | Affiliation         |    Role/Software covered   |
+| --------------- | ------------------- | -------------------------- |
+| Mr. Mohammad Shakiba   |  Shahid Bahonar University of Kerman, Iran   | Co-instructor for: CP2k, Libra/CP2k |
+| Mr. Bas van Been  |  Vrije Universiteit Amsterdam, The Netherlands  | Co-instructor for: CAT, FOX, nano-qmflows |
+| Ms. Juliette Zito  |  Istituto Italiano di Tecnologia, Italy  | Co-instructor for: CAT, FOX, nano-qmflows |
+
+
+### The UB Center for Computational Research team
+
+| Name            |   Role/Software covered    |
+| --------------- | -------------------------- |
+| Dr. Dori Sajdak | UB CCR system administrator, VPN, accounts, etc. |
+| Dr. Cynthia Cornelius | UB CCR system administrator, program installation, environment configurations, etc. |
+ 
 
 
 
