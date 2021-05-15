@@ -19,24 +19,30 @@ title: Setup
 
 ## 1. Setting up your UB CCR account and getting access to the UB CCR supercomputer and infrastructure
 Below are the steps you’ll need to take in order to connect to our resources:
- 
+
 ### Step 1.
 
 In order to connect to our machines, you have to be on the UB network.
-You'll need to download and install UB's Cisco VPN client. You can download the client software from here:
-[For Windows](http://www.buffalo.edu/ubit/service-guides/software/downloading/windows-software/managing-your-software/anyconnect.html)
-[For MacOS](http://www.buffalo.edu/ubit/service-guides/software/downloading/macintosh-software/managing-mac-software/anyconnect.html) 
-You **MUST** use the Cisco AnyConnect client with this account, please ignore any information about the FortiClient VPN software.
-*The login information to download and connect to the UB VPN client will be given to you over emain, when your are accepted*
-NOTE: When you start the Cisco software the first time you will need to enter the following in the "Connect to:" box: vpn.buffalo.edu
-and then select UBVPN from the group drop down menu
 
-### Step 2 (One time only).
+You'll need to download and install UB's Cisco VPN client. You can download the client software from here:
+[For Windows](http://www.buffalo.edu/ubit/service-guides/software/downloading/windows-software/managing-your-software/anyconnect.html), 
+[For MacOS](http://www.buffalo.edu/ubit/service-guides/software/downloading/macintosh-software/managing-mac-software/anyconnect.html) 
+
+You **MUST** use the Cisco AnyConnect client with this account, please ignore any information about the FortiClient VPN software.
+
+*The login information to download and connect to the UB VPN client will be given to you over emain, when your are accepted*
+
+NOTE: When you start the Cisco software the first time you will need to enter the following in the "Connect to:" box: vpn.buffalo.edu
+and then select UBVPN from the group drop down menu.
+
+### Step 2 (one time only).
 
 You will receive a separate email containing a link to our user portal to setup your account and change your password. 
+
 You will need to already be connected to the UB VPN to get this site and to access the one-time link. 
-The link contained in this email only lasts for 24 hours so if you’re not able to get this done before it expires, you can go to:
-  https://idm.ccr.buffalo.edu and click the “forgot your password?” link to generate a new one. 
+
+The link contained in this email only lasts for 24 hours so if you're not able to get this done before it expires, you can go to:
+  https://idm.ccr.buffalo.edu and click the "forgot your password?" link to generate a new one. 
   Your CCR username is the same as the one you’re using for the VPN (given to you in the email), but these accounts are not connected in any other way.
  
  
@@ -128,15 +134,17 @@ scared by its old-style "Norton/Midnight Commander" look. You'll love it. If you
 
 ### Atom
 [Atom](https://atom.io/) is a modern text editor that is very intuitive to use. You probably don't even need 
-to read the tutorial below to figure out how to create and save files. Standard downloads are available for Linux, Mac, and Windows.  
+to read the tutorial below to figure out how to create and save files. Standard downloads are available for Linux, Mac, and Windows.
 - [Getting started with atom](https://flight-manual.atom.io/getting-started/sections/atom-basics/)
 
 ### Emacs
-Similar to vi/vim, emacs is a command line text editor that is already part of almost all Linux distributions.  Emacs can also be used as an RSS reader or file manager.
+Similar to vi/vim, emacs is a command line text editor that is already part of almost all Linux distributions.
+Emacs can also be used as an RSS reader or file manager.
 - [Emacs tutorial](https://www.gnu.org/software/emacs/tour/) The section called Beginner tips near the bottom of the page is particularly helpful.
 
 ### Sublime
-[Sublime](https://www.sublimetext.com/) is an intuitive text editor that makes looking at files with multiple sections easy.  It allows split screen editing and is very customizable.
+[Sublime](https://www.sublimetext.com/) is an intuitive text editor that makes looking at files with multiple sections easy. 
+t allows split screen editing and is very customizable.
 
 
 
