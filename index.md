@@ -264,17 +264,17 @@ The details may vary and the order of topics may be changed, the topics may be o
 
 | Name            | Affiliation         |    Role/Software covered   |
 | --------------- | ------------------- | -------------------------- |
-| Dr. Alexey Akimov         |   University at Buffalo, USA      | Workshop coordinator, Instructor for: Libra, DFTB+, ErgoSCF, CP2k, QXMD, etc. |
-| Dr. Jeanette Sperhac      |   University at Buffalo Center for Computational Research, USA  | Workshop coordinator, Instructor for: Jupyter, Open OnDemand, UB CCR HPC |
-| Dr. Sudhakar Pamidighantam  | Indiana University, USA  | Instructor for: SEAGrid platform |
-| Dr. Sergei Tretiak | Los Alamos National Laboratory, USA | Instructor for: NEXMD |
-| Dr. Walter Malone | Los Alamos National Laboratory, USA | Instructor for: NEXMD |
-| Dr. Ivan Infante | Istituto Italiano di Tecnologia, Italy | Instructor for: CAT, FOX, nano-qmflows, CP2k |
-| Dr. Felipe Zapata | Netherlands eScience Center, Netherlands | Instructor for: CAT, FOX, nano-qmflows, CP2k |
-| Dr. Hans Lischka | Texas Tech University | Instructor for: COLUMBUS, Newton-X |
-| Dr. Mario Barbatti | Aix-Marseille University, France | Instructor for: Newton-X, DFTB+ |
-| Dr. Amber Jain | Indian Institute of Technology, India  | Instructor: HEOM (in Libra) |
-| Dr. Aiichiro Nakano | University of Southern California, USA  |  Instructor for: QXMD |
+| [Dr. Alexey Akimov](https://akimovlab.github.io/)         |   University at Buffalo, USA      | Workshop coordinator, Instructor for: Libra, DFTB+, ErgoSCF, CP2k, QXMD, etc. |
+| [Dr. Jeanette Sperhac](http://www.buffalo.edu/ccr/about-us/people/staff/sperhac.html)      |   University at Buffalo Center for Computational Research, USA  | Workshop coordinator, Instructor for: Jupyter, Open OnDemand, UB CCR HPC |
+| [Dr. Sudhakar Pamidighantam](https://www.chem.indiana.edu/faculty/sudhakar-pamidighantam/)  | Indiana University, USA  | Instructor for: SEAGrid platform |
+| [Dr. Sergei Tretiak](https://cnls.lanl.gov/~serg/homepage.html) | Los Alamos National Laboratory, USA | Instructor for: NEXMD |
+| [Dr. Walter Malone](https://cnls.lanl.gov/External/people/Walter_Malone.php) | Los Alamos National Laboratory, USA | Instructor for: NEXMD |
+| [Dr. Ivan Infante](https://iinfant76.wixsite.com/infantelab) | Istituto Italiano di Tecnologia, Italy | Instructor for: CAT, FOX, nano-qmflows, CP2k |
+| [Dr. Felipe Zapata](https://www.linkedin.com/in/felipe-zapata/?originalSubdomain=nl) | Netherlands eScience Center, Netherlands | Instructor for: CAT, FOX, nano-qmflows, CP2k |
+| [Dr. Hans Lischka](https://homepage.univie.ac.at/hans.lischka/) | Texas Tech University | Instructor for: COLUMBUS, Newton-X |
+| [Dr. Mario Barbatti](https://barbatti.org/) | Aix-Marseille University, France | Instructor for: Newton-X, DFTB+ |
+| [Dr. Amber Jain](https://amberj74.wixsite.com/quantumdynamics/amber-jain-1) | Indian Institute of Technology, India  | Instructor: HEOM (in Libra) |
+| [Dr. Aiichiro Nakano](https://viterbi.usc.edu/directory/faculty/Nakano/Aiichiro) | University of Southern California, USA  |  Instructor for: QXMD |
 
 ### Our co-instructors/helpers
 
