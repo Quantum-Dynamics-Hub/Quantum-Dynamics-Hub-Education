@@ -42,9 +42,18 @@ You will receive a separate email containing a link to our user portal to setup 
 You will need to already be connected to the UB VPN to get this site and to access the one-time link. 
 
 The link contained in this email only lasts for 24 hours so if you're not able to get this done before it expires, you can go to:
-  https://idm.ccr.buffalo.edu and click the "forgot your password?" link to generate a new one. 
+  [https://idm.ccr.buffalo.edu](https://idm.ccr.buffalo.edu) and click the "forgot your password?" link to generate a new one. 
   Your CCR username is the same as the one you’re using for the VPN (given to you in the email), but these accounts are not connected in any other way.
  
+### Step 3.
+Once connected to the UB network, you may login to our front end login machines using a SSH client (server name: vortex.ccr.buffalo.edu)
+or using the [OnDemand web portal](https://ondemand.ccr.buffalo.edu)
+ 
+General instructions for how to use our systems can be found in our [searchable knowledgebase](https://ubccr.freshdesk.com)
+However, you will be provided with more information on this topic during the workshop.
+ 
+If you have any problems with these accounta, please submit a ticket to [ccr-help@buffalo.edu](ccr-help@buffalo.edu )
+
 
 
 ## 3. Terminal
