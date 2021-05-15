@@ -10,24 +10,64 @@ title: Setup
 
 
 ## Tools you will need
-1. VIDIA
-2. Terminal
-3. Python & Jupyter
+1. Getting to the UB network (account set up)
+2. Open On Demand
+3. SEAGrid
+4. Libra installation
 4. Text Editors
 
 
-## 1. Setting up your VIDIA account
-[VIDIA](https://vidia.ccr.buffalo.edu/) is the gateway that we will be using during this workshop. It allows using
-various software packages (Python-based or computational chemistry) right from the web browser. You can also use it
-to submit calculations on our computational cluster and retrieve the results. With the help of the Jupyter tool and 
-various Python extensions, you can visualize and analyze your results right in the browser. 
+## 1. Setting up your UB CCR account and getting access to the UB CCR supercomputer and infrastructure
+Below are the steps you’ll need to take in order to connect to our resources:
+ 
+### Step 1.
 
-Please follow instructions to request an account in advance. 
+  In order to connect to our machines, you have to be on the UB network. 
 
-Once approved, you can use Jupyter and Workspace tools as explained [here](https://akimovlab.github.io/soft_and_tuts/4.3-VIDIA.html)
+  You'll need to download and install UB's Cisco VPN client. You can download the client software from here:
+ 
+  [For Windows:](http://www.buffalo.edu/ubit/service-guides/software/downloading/windows-software/managing-your-software/anyconnect.html)
+  [For MacOS:](http://www.buffalo.edu/ubit/service-guides/software/downloading/macintosh-software/managing-mac-software/anyconnect.html)
+ 
+  You **MUST** use the Cisco AnyConnect client with this account, please ignore any information about the FortiClient VPN software. 
+  
+  *The login information to download and connect to the UB VPN client will be given to you over emain, when your are accepted*
+  
+  NOTE:  When you start the Cisco software the first time you will need to enter the following in the "Connect to:" box: vpn.buffalo.edu 
+  and then select UBVPN from the group drop down menu
+ 
+### Step 2 (One time only). 
+  You will receive a separate email containing a link to our user portal to setup your account and change your password. 
+  You will need to already be connected to the UB VPN to get this site and to access the one-time link. 
+  The link contained in this email only lasts for 24 hours so if you’re not able to get this done before it expires, you can go to:
+  https://idm.ccr.buffalo.edu and click the “forgot your password?” link to generate a new one. 
+  Your CCR username is the same as the one you’re using for the VPN (given to you in the email), but these accounts are not connected in any other way.
+ 
+ 
+### Step 3.
+  Once connected to the UB network, you may login to our front end login machines using a SSH client (server name:  vortex.ccr.buffalo.edu)
+  or using the [OnDemand web portal](https://ondemand.ccr.buffalo.edu)
+ 
+  General instructions for how to use our systems can be found in our [searchable knowledgebase](https://ubccr.freshdesk.com)
+  However, you will be provided with more information on this topic during the workshop.
+ 
+  If you have any problems with these accounta, please submit a ticket to [ccr-help@buffalo.edu](ccr-help@buffalo.edu )
 
 
-## 2. Terminal
+
+## 2. [Open OnDemand web portal](https://ondemand.ccr.buffalo.edu)
+
+  Although you can use terminal (via any of the clients such as Putty and XShell) for submitting jobs on the HPC, 
+  this workshop will utilize Jupyter notebooks with some of the packages we will be covering installed into Jupyter kernel.
+  This is meant to improve your experience with various codes and projects during the workshop. 
+
+  Although you can set up such kernels on your local machines, to use them on the UB CCR HPC system, you need to use OnDemand portal.
+  
+
+  
+
+
+## 3. Terminal
 
 The terminal is an interface in which you can type and execute text based commands. It is important to use the terminal to 
 run many computational chemistry software packages. There are several different types of terminal interfaces, called shells.
