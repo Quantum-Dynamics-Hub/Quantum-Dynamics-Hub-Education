@@ -35,6 +35,16 @@ You **MUST** use the Cisco AnyConnect client with this account, please ignore an
 NOTE: When you start the Cisco software the first time you will need to enter the following in the "Connect to:" box: vpn.buffalo.edu
 and then select UBVPN from the group drop down menu.
 
+### Step 2 (one time only).
+
+You will receive a separate email containing a link to our user portal to setup your account and change your password. 
+
+You will need to already be connected to the UB VPN to get this site and to access the one-time link. 
+
+The link contained in this email only lasts for 24 hours so if you're not able to get this done before it expires, you can go to:
+  https://idm.ccr.buffalo.edu and click the "forgot your password?" link to generate a new one. 
+  Your CCR username is the same as the one you’re using for the VPN (given to you in the email), but these accounts are not connected in any other way.
+ 
 
 
 ## 3. Terminal
