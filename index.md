@@ -1,17 +1,17 @@
 ---
 layout: workshop
 venue: "University at Buffalo, SUNY (virtual)"   # brief name of host site without address (e.g., "Euphoric State University")
-address: "University at Buffalo, SUNY, North Campus"     # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "University at Buffalo, SUNY, North Campus (virtual)"     # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "United States"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latitude: "43.002890"     # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-78.788780"    # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Jun 14-26, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "June 14-26, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "11:00 am - 5:00 pm EDT"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2021-06-14      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-06-26        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Alexey Akimov", "Jeanette Sperhac", "Ivan Infante",
-             "Felipe Zapata", "Sergei Tretiak", "Walter Malone", 
+instructor: ["Alexey Akimov", "Jeanette Sperhac", "Sudhakar Pamidighantam",
+             "Ivan Infante",  "Felipe Zapata", "Sergei Tretiak", "Walter Malone", 
              "Mario Barbatti", "Hans Lischka", "Amber Jain", "Aiichiro Nakano"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Mohammad Shakiba", "Bas van Beek", "Juliette Zito"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
@@ -319,9 +319,10 @@ The details may vary and the order of topics may be changed, the topics may be o
 
 
 ### Important dates
-   * School application materials are due 5 pm EDT, June 7, 2020
+   * Workshop application materials are due 5 pm EDT, June 7, 2020
    * Students and Postdocs will be notified of their admission by June 10, 2020
-   * School starts: 11 am EDT, June 14, 2020
+   * Workshop starts: 11 am EDT, June 14, 2021
+   * Workshop ends: 5 pm EDT, June 26, 2021
 
 
 ### Who can apply
