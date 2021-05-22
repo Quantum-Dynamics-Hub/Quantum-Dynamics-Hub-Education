@@ -1,25 +1,22 @@
 ---
 title: Setup
 ---
+<a name="toc"></a>
+# Tools you will need
 
-> ## Warning
->
-> This webpage is still under development. Please check for updates.
->
-{:.discussion}
+1. [Getting to the UB network (account set up)](#getting-started)
+2. [Open On Demand](#open-ondemand)
+3. [SEAGrid](#seagrid)
+4. [Python, Jupyter, Matplotlib](#python-jupyter)
+5. [Libra and other Python libraries](#libra)
+6. [Terminal](#terminal)
+7. [Text editors](#text-editors)
 
-
-## Tools you will need
-1. Getting to the UB network (account set up)
-2. Open On Demand
-3. SEAGrid
-4. Python, Jupyter, Matplotlib
-5. Libra and other Python libraries
-6. Terminal
-7. Text editors
 
 ## 1. Setting up your UB CCR account and getting access to the UB CCR supercomputer and infrastructure
-Below are the steps you’ll need to take in order to connect to our resources:
+<a name="getting-started"></a>[Back to TOC](#toc)
+
+Below are the steps you'll need to take in order to connect to our resources:
 
 ### Step 1.
 
@@ -31,10 +28,17 @@ You'll need to download and install UB's Cisco VPN client. You can download the 
 
 You **MUST** use the Cisco AnyConnect client with this account, please ignore any information about the FortiClient VPN software.
 
+![]( /fig/setup/vpn.png ){:width="720px"}
+
+Note that you may need to use a secondary device (e.g. your cell phone with the Duo Mobile) to authenticate
+
+![]( /fig/setup/vpn-2.png ){:width="720px"}
+
 *The login information to download and connect to the UB VPN client will be given to you over emain, when your are accepted*
 
 NOTE: When you start the Cisco software the first time you will need to enter the following in the "Connect to:" box: vpn.buffalo.edu
 and then select UBVPN from the group drop down menu.
+
 
 ### Step 2 (one time only).
 
@@ -48,7 +52,12 @@ The link contained in this email only lasts for 24 hours so if you're not able t
  
 ### Step 3.
 Once connected to the UB network, you may login to our front end login machines using a SSH client (server name: vortex.ccr.buffalo.edu)
+
+![](/fig/setup/putty_login.png){:width="720px"}
+
 or using the [OnDemand web portal](https://ondemand.ccr.buffalo.edu)
+
+![]( /fig/setup/ub-ondemand-login.png ){:width="720px"}
  
 General instructions for how to use our systems can be found in our [searchable knowledgebase](https://ubccr.freshdesk.com)
 However, you will be provided with more information on this topic during the workshop.
@@ -57,10 +66,12 @@ If you have any problems with these accounta, please submit a ticket to [ccr-hel
 
 
 ## 2. [Open OnDemand web portal](https://ondemand.ccr.buffalo.edu)
+<a name="open-ondemand"></a>[Back to TOC](#toc)
 
 Although you can use terminal (via any of the clients such as [Putty](https://www.putty.org/) or [XShell](https://xshell.en.softonic.com/) ) 
 for submitting jobs on the HPC, this workshop will utilize Jupyter notebooks with some of the packages we will be covering installed into Jupyter kernel.
 This is meant to improve your experience with various codes and projects during the workshop.
+
 
 Although you can set up such kernels on your local machines, to use them on the UB CCR HPC system, you need to use OnDemand portal.
 
@@ -71,8 +82,11 @@ packages (e.g. ErgoSCF) right from the Jupyter notebooks.
 The OnDemand gateway is equipped with a variety of tools for file transfer/editing, as well as the terminal, which you can use to submit 
 SLURM jobs to the cluster. 
 
+![]( /fig/setup/ub-ondemend-landing-page.png ){:width="720px"}
+
 
 ## 3. [SEAGrid](https://seagrid.org/)
+<a name="seagrid"></a>[Back to TOC](#toc)
 
 It is a research computing gateway developed and hosted at the Indiana University. It is equipped with a range of 
 computational packages (some are directly related to this workshop, others are deployed there for other reasons). 
@@ -80,20 +94,24 @@ You can use SEAGrid to submit computations to various resources (including UB CC
 to the UB CCR HPC system even without having UB credentials, but you need to added to the corresponding user group. Also, note
 that not all packages available on SEAGrid can be run on UB resources. All of this is done directly via the web broweser. 
 
+![]( /fig/setup/seagrid.png ){:width="720px"}
+
 To get started, just you go to "Log In" link on the portal. You may need to create an account. However, you may be able to login into
 the system using "CILogon" option. As long as you belong to one of the organizations recognized by the gateway (e.g. most of the universities
 in the US), you may be able to use your organization credentials to enter the system. 
 
+![]( /fig/setup/seagrid-login.png ){:width="720px"}
 
 ## 4. Python & Jupyter & Matplotlib
-
-[Jupyter](https://jupyter.org/) is an tool to enble interactive experience with Python and any other packages that can be called via Python
+<a name="python-jupyter"></a>[Back to TOC](#toc)
 
 [Python](https://python.org/) is a popular language for scientific computing, and great for general-purpose programming as well. 
 Installing all of its scientific packages individually can be a bit difficult, however, so we recommend the all-in-one installer Anaconda.
 Regardless of how you choose to install it, *please make sure you install Python version 3.x (e.g., 3.4 is fine, 2.7 is not)*.
 
 If you aren't very comfortable with Python yet, [this resource](https://www.tutorialspoint.com/python/index.htm) could be a good starting point.
+
+[Jupyter](https://jupyter.org/) is an tool to enble interactive experience with Python and any other packages that can be called via Python
 
 [Matplotlib](https://matplotlib.org/) is a plotting library than can be called by Python. When integrated into Jupyter notebooks, it allows you
 to plot your results on the go - as soon as you obtain it. Please check the official Matplotlib site for a 
@@ -106,6 +124,7 @@ Here is a link of more specific topics on Jupyter
 
 
 ## 5. Libra and other Python libraries
+<a name="libra"></a>[Back to TOC](#toc)
 
 This workshop will involve experience with Python-based software and packages. One that will be used extensively throughut 
 the event is the [Libra](https://github.com/Quantum-Dynamics-Hub/libra-code/tree/devel) package developed by the 
@@ -123,6 +142,7 @@ environment, install all needed dependencies and packages, and build and install
 
 
 ## 6. Terminal 
+<a name="terminal"></a>[Back to TOC](#toc)
 
 The terminal is an interface in which you can type and execute text based commands. It is important to use the terminal to 
 run many computational chemistry software packages. There are several different types of terminal interfaces, called shells.
@@ -149,6 +169,7 @@ Windows has a built in command line interface. To access it, click the Windows K
 
 
 ## 7. Text Editors
+<a name="text-editors"></a>[Back to TOC](#toc)
 
 You will often need to create or read text files.  Opening a text file in a word processing program,
 like Microsoft Word or Google Docs, introduces a lot of formatting that is not needed. 
@@ -185,14 +206,6 @@ t allows split screen editing and is very customizable.
 
 
 ---
-
-> ## Prerequisites
-> * the basic experience with Python language
-> * the basic knowledge of terminal
->
-{:.prereq}
-
-
 
 
 {% include links.md %}

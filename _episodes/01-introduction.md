@@ -74,7 +74,7 @@ As the result, you shall be able to see modules that are installed system-wide a
 workshop (defined in `/projects/academic/cyberwksp21/Modules` )
 
 
-![](../fig/1_episode/modules.png)
+![](../fig/1_episode/modules.png){:width="80%"}
 
 ### 3. Using Jupyter on the OnDemand gateway
 
