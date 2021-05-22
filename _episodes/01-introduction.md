@@ -74,7 +74,7 @@ modules.
 As the result, you shall be able to see modules that are installed system-wide as well as specific modules for the
 workshop (defined in `/projects/academic/cyberwksp21/Modules` )
 
-[](_episodes/1_episode/modules.PNG)
+![picture](_episodes/1_episode/modules.PNG)
 
  
 
