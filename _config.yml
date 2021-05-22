@@ -72,10 +72,10 @@ start_time: 540
 collections:
   episodes:
     output: true
-    permalink: /:path/index.html
+    permalink: /_:collection/:name  #/index.html
   extras:
     output: true
-    permalink: /:path/index.html
+#    permalink: /:path  #/index.html
 
 # Set the default layout for things in the episodes collection.
 defaults:
@@ -94,6 +94,8 @@ defaults:
     values:
       root: ..
       layout: page
+
+include: ["_episodes", "_episodes_rmd", "_extras" ]
 
 # Files and directories that are not to be copied.
 exclude:

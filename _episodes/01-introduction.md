@@ -1,13 +1,12 @@
 ---
 title: "Introduction to our CyberInfrastructure. Setups and key links."
 date: June 14, 2021, 11:00 am - 5:00 pm EDT
-
 ---
 
 ## Tools you will need
 1. Overview of the UB CyberInfrastructure
 2. [UB OnDemand](https://ubccr.freshdesk.com/support/solutions/articles/13000039875-ccr-ondemand-portal)
-
+3. Using Jupyter on the OnDemand gateway
 
 ### 1. Overview of the UB CyberInfrastructure
 
@@ -74,7 +73,24 @@ modules.
 As the result, you shall be able to see modules that are installed system-wide as well as specific modules for the
 workshop (defined in `/projects/academic/cyberwksp21/Modules` )
 
-![](_episodes/1_episode/modules.PNG)
+![](../fig/1_episode/modules.png)
+
+### 3. Using Jupyter on the OnDemand gateway
+
+1. Make sure you include the above `module use /projects/academic/cyberwksp21/Modules` line in
+   your `.bashrc` file
+
+2. When you start Jupyter notebook you will have access to only your home directory.
+   It is advisable to keep the working file in the /projects/academic/cyberwksp21/Students/\<yourid\>
+
+   To acceess such a directory, create a soft link in your home directory:
+
+    ln -s /projects/academic/cyberwksp21 ~/workshop
+
+3. When you create new or open an existing Jupyter notebook, make sure to select correct kernel:
+
+        Kernels -> Change kernel -> Python 3 (libra-latest)
+
 
  
 
