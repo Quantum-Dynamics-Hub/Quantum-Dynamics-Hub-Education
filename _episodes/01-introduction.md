@@ -73,6 +73,7 @@ modules.
 As the result, you shall be able to see modules that are installed system-wide as well as specific modules for the
 workshop (defined in `/projects/academic/cyberwksp21/Modules` )
 
+
 ![](../fig/1_episode/modules.png)
 
 ### 3. Using Jupyter on the OnDemand gateway
@@ -90,7 +91,6 @@ workshop (defined in `/projects/academic/cyberwksp21/Modules` )
 3. When you create new or open an existing Jupyter notebook, make sure to select correct kernel:
 
         Kernels -> Change kernel -> Python 3 (libra-latest)
-
 
  
 
