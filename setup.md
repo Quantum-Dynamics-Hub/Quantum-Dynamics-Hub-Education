@@ -28,7 +28,7 @@ You'll need to download and install UB's Cisco VPN client. You can download the 
 
 You **MUST** use the Cisco AnyConnect client with this account, please ignore any information about the FortiClient VPN software.
 
-![](/fig/setup/vpn.png ){:width="720px"}
+![]({{ relative_root_path }}/fig/setup/vpn.png ){:width="720px"}
 
 Note that you may need to use a secondary device (e.g. your cell phone with the Duo Mobile) to authenticate
 
