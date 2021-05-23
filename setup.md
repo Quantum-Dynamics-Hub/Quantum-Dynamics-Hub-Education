@@ -28,11 +28,11 @@ You'll need to download and install UB's Cisco VPN client. You can download the 
 
 You **MUST** use the Cisco AnyConnect client with this account, please ignore any information about the FortiClient VPN software.
 
-![]( /fig/setup/vpn.png ){:width="720px"}
+![](/fig/setup/vpn.png ){:width="720px"}
 
 Note that you may need to use a secondary device (e.g. your cell phone with the Duo Mobile) to authenticate
 
-![]( /fig/setup/vpn-2.png ){:width="720px"}
+![](/fig/setup/vpn-2.png ){:width="720px"}
 
 *The login information to download and connect to the UB VPN client will be given to you over emain, when your are accepted*
 
@@ -57,7 +57,7 @@ Once connected to the UB network, you may login to our front end login machines 
 
 or using the [OnDemand web portal](https://ondemand.ccr.buffalo.edu)
 
-![]( /fig/setup/ub-ondemand-login.png ){:width="720px"}
+![](/fig/setup/ub-ondemand-login.png ){:width="720px"}
  
 General instructions for how to use our systems can be found in our [searchable knowledgebase](https://ubccr.freshdesk.com)
 However, you will be provided with more information on this topic during the workshop.
@@ -82,7 +82,7 @@ packages (e.g. ErgoSCF) right from the Jupyter notebooks.
 The OnDemand gateway is equipped with a variety of tools for file transfer/editing, as well as the terminal, which you can use to submit 
 SLURM jobs to the cluster. 
 
-![]( /fig/setup/ub-ondemend-landing-page.png ){:width="720px"}
+![](/fig/setup/ub-ondemend-landing-page.png ){:width="720px"}
 
 
 ## 3. [SEAGrid](https://seagrid.org/)
@@ -94,13 +94,13 @@ You can use SEAGrid to submit computations to various resources (including UB CC
 to the UB CCR HPC system even without having UB credentials, but you need to added to the corresponding user group. Also, note
 that not all packages available on SEAGrid can be run on UB resources. All of this is done directly via the web broweser. 
 
-![]( /fig/setup/seagrid.png ){:width="720px"}
+![](/fig/setup/seagrid.png ){:width="720px"}
 
 To get started, just you go to "Log In" link on the portal. You may need to create an account. However, you may be able to login into
 the system using "CILogon" option. As long as you belong to one of the organizations recognized by the gateway (e.g. most of the universities
 in the US), you may be able to use your organization credentials to enter the system. 
 
-![]( /fig/setup/seagrid-login.png ){:width="720px"}
+![](/fig/setup/seagrid-login.png ){:width="720px"}
 
 ## 4. Python & Jupyter & Matplotlib
 <a name="python-jupyter"></a>[Back to TOC](#toc)
