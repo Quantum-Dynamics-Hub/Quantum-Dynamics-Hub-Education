@@ -189,6 +189,9 @@ However, it is not intuitive to use and can be difficult for beginners.
 convenient manipulation options such as cutting any blocks of text, syntax highlightling, remote drive access, etc. Don't get
 scared by its old-style "Norton/Midnight Commander" look. You'll love it. If you run Windows, this is definitely our recommendation. 
 
+![](/fig/setup/far.png){:width="80%"}
+
+
 ### Atom
 [Atom](https://atom.io/) is a modern text editor that is very intuitive to use. You probably don't even need 
 to read the tutorial below to figure out how to create and save files. Standard downloads are available for Linux, Mac, and Windows.
