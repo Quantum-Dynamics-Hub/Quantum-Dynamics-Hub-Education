@@ -8,14 +8,43 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 <a name="toc"></a>
 
 1. [Project space](#project_space)
-2. [On Demand](#ondemand)
+2. [OnDemand](#ondemand)
 3. [Modules setup](#modules_setup)
 4. [Conda](#conda)
 5. [Using Jupyter on the OnDemand gateway](#ondemand-jupyter)
 
+## 0.  Set up and verify UBVPN
+<a name="project_space"></a> [Back to TOC](#toc)
+
+In order to access the UB CCR computing resources and Open OnDemand, you must be running the UB
+Virtual Private Network (VPN) software. Otherwise you will be unable to connect.
+As a workshop participant you have been allocated a UB VPN account and a CCR username and account.
+It is critical that you install this software and verify your access before the workshop begins.
+
+VPN access also requires you perform two-factor authorization (2FA), which can be set up on a smartphone using Duo
+Mobile app, available for Android (via [Google Play](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile)) 
+or iOS ([Apple Store](https://apps.apple.com/us/app/duo-mobile/id422663827)).
+
+Before the workshop begins, please ensure you have:
+
+- installed the provided [UB VPN software](http://www.buffalo.edu/ubit/service-guides/connecting/vpn/computer.html) on your own computer
+- installed the [Duo Mobile](https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app) 2FA app onto your phone or other device
+- successfully signed into the UB VPN software and used 2FA
+- verified your access to
+  [OnDemand](https://ubccr.freshdesk.com/support/solutions/articles/13000039875-ccr-ondemand-portal) at UB CCR (see sections below)
+
+Once you have been through these steps, you are ready for the workshop!
+
+Need help? Get stuck? Please submit a ticket: 
+[ccr-help@buffalo.edu](http://www.buffalo.edu/ccr/support/ccr-help.html)
+
 
 ## 1.  Project space
 <a name="project_space"></a> [Back to TOC](#toc)
+
+As a workshop participant you have been allocated a UB CCR username and account. This provides a
+home directory on CCR's high-performance computing resources and access to software and compute
+nodes there.
 
 In addition to your home directory, you have access to the workshop directory:
 
@@ -46,13 +75,14 @@ This folder contains the following sub-directories:
     check our outher students' directories, but again - **Do not edit or view files in other students' directories at any time**
 
 
-## 2. Open On Demand
+## 2. Open OnDemand
 <a name="ondemand"></a> [Back to TOC](#toc)
 
-A very detailed introduction is given [in this video](https://ub.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5c088f6-ba8c-4210-8d87-ab9f0104f54e)
+Open OnDemand is an application that enables access to high-performance computing resources through
+a web portal (or "gateway"). A very detailed introduction is given [in this video](https://ub.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5c088f6-ba8c-4210-8d87-ab9f0104f54e)
 
 [This website](https://ubccr.freshdesk.com/support/solutions/articles/13000039875-ccr-ondemand-portal) also 
-provides the ddetailed step-by-step instructions for logging into the system, as well as a general overview of
+provides the detailed step-by-step instructions for logging into the system, as well as a general overview of
 the available tools.
 
           
@@ -237,7 +267,7 @@ the available tools.
    When you start Jupyter notebook you will have access to only your home directory.
    It is advisable to keep the working file in the /projects/academic/cyberwksp21/Students/\<yourid\>
 
-   To acceess such a directory, create a soft link in your home directory:
+   To access such a directory, create a soft link in your home directory:
 
     ln -s /projects/academic/cyberwksp21 ~/workshop
 
