@@ -7,6 +7,7 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 # Overview of the UB CyberInfrastructure
 <a name="toc"></a>
 
+0. [VPN](#ubvpn)
 1. [Project space](#project_space)
 2. [OnDemand](#ondemand)
 3. [Modules setup](#modules_setup)
@@ -14,7 +15,7 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 5. [Using Jupyter on the OnDemand gateway](#ondemand-jupyter)
 
 ## 0.  Set up and verify UBVPN
-<a name="project_space"></a> [Back to TOC](#toc)
+<a name="ubvpn"></a> [Back to TOC](#toc)
 
 In order to access the UB CCR computing resources and Open OnDemand, you must be running the UB
 Virtual Private Network (VPN) software. Otherwise you will be unable to connect.
