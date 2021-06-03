@@ -75,7 +75,7 @@ This year, the focus will be on the following packages:
 - Quantum Espresso
 - ErgoSCF
 
-The school will leverage the OnDemand gateway at the University at Buffalo
+The school will leverage the [OnDemand](https://ondemand.ccr.buffalo.edu) gateway at the University at Buffalo
 
 
 ## Logistics
@@ -289,8 +289,7 @@ The details may vary and the order of topics may be changed, the topics may be o
 
 | Name            |   Role/Software covered    |
 | --------------- | -------------------------- |
-| [Ms. Dori Sajdak](http://www.buffalo.edu/ccr/about-us/people/staff/sajdak.html) | UB CCR system
-administrator, UB VPN, Open OnDemand, HPC accounts, etc. |
+| [Ms. Dori Sajdak](http://www.buffalo.edu/ccr/about-us/people/staff/sajdak.html) | UB CCR system administrator, UB VPN, Open OnDemand, HPC accounts, etc. |
 | [Ms. Cynthia Cornelius](http://www.buffalo.edu/ccr/about-us/people/staff/cornelius.html) | UB CCR system administrator, program installation, environment configurations, etc. |
  
 
