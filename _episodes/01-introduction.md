@@ -121,7 +121,7 @@ the available tools.
 
     module avail 
 
-   In particulare, as the result of our setup steps above, you shall be able to see modules that 
+   In particular, as the result of our setup steps above, you shall be able to see modules that 
    are installed both as system-wide as as the ones for the current workshop 
    (defined in `/projects/academic/cyberwksp21/Modules` )
 
@@ -137,6 +137,10 @@ the available tools.
 
          module load <module-name>
 
+   * to list your loaded modules
+
+         module list
+
    * to unload a module
 
          module unload <module-name>
@@ -147,20 +151,32 @@ the available tools.
          module show <module-name>
 
 ### 3.5. **Modules (packages) available**
+<a name="modules-avail"></a> [Back to TOC](#toc)
 
-  Here is the table of modules we will be concerned about in this workshop
+  Modules are used to set the necessary paths so we can call and use different software packages on the
+  cluster. 
 
- |  Package/Module load command  |     Description                   |
- |-------------------------------|-----------------------------------|
- |  jupyter                      |  Contains Libra and other PYthon packages, such as psi4 (for Python), nano-qmflows, qmflows, py3Dmol, imageio, h5py, matplotlib, etc.  |
- |  nexmd/intel-mkl              |  NEXMD package for nonadiabatic dynamics |
- |  nx/2.2-B08                   |  Newton-X package for nonadiabatic dynamics  |
- |  qxmd                         |  QXMD package for nonadiabatic dynamics      | 
- |  ergoscf or ergoscf-mpi       |  ErgoSCF v3.8 electronic structure calculations package |
- |  qe                           |  Quantum Espresso electronic structure calculations package  |
- |  cp2k/8.1-sse                 |  CP2K electronic structure calculations package |
- |  dftbplus/20.2.1-arpack       |  DFTB+ v20.2 with ARPACK - needed for TD-DFTB calculations |
- |  columbus/7.0_2017-12-07-bin  |  COLUMBUS electronic structure calculations package |
+  Here is the table of modules we will be concerned about in this workshop:
+
+ |  Package/Module load command  |     Version      | Description                   |
+ |-------------------------------|------------------|-----------------|
+ |  columbus            |   7.0 2017-12-07-bin  | COLUMBUS electronic structure calculations package |
+ |  cp2k                |   8.1-sse             | CP2K electronic structure calculations package |
+ |  dftbplus            |   20.2.1-arpack       | DFTB+ for TD-DFTB calculations |
+ |  eqe                 |  0.2.0                | embedded Quantum Espresso, for large-scale
+ subsystem DFT simulations |
+ |  ergoscf and ergoscf-mpi         |  3.8, with/without MPI   | ErgoSCF: electronic structure calculations package |
+ |  jupyter             |                       | Contains Libra and other Python packages, such as psi4 (for Python), nano-qmflows, qmflows, py3Dmol, imageio, h5py, matplotlib, etc.  |
+ |  lammps              |                       | Large-scale Atomic/Molecular Massively Parallel
+ Simulator (LAMMPS), a classical MD code. |
+ |  nexmd               |  Intel-mkl            | NEXMD package for nonadiabatic dynamics |
+ |  nx                  |  2.2-B09              | Newton-X package for nonadiabatic dynamics  |
+ |  qe                  |   6.2.1               | Quantum Espresso electronic structure calculations package  |
+ |  qxmd                |                       | QXMD package for nonadiabatic dynamics      | 
+
+ Example usage:
+    
+    module load nx
  
 
 ## 4. Conda and environments
@@ -170,20 +186,22 @@ the available tools.
 
     module load jupyter
 
-  This will set up all the pathes needed to execute packages such as Libra.
+  This will set up all the paths needed to execute packages such as Libra.
 
 ### 4.2. Activate Conda itself
+<a name="activate-conda"></a> [Back to TOC](#toc)
 
-  Before you can use any of the Conda environments or run/submit scripts from the command line/terminal,
-  you need to activate Conda (don't worry about it, if you  are using Jupyter interface from OnDemand).
+  Before you can use any of the Conda environments or run/submit scripts *from the command
+  line/terminal*,
+  you need to activate Conda (don't worry about it, if you are running a Jupyter notebook from OnDemand).
 
   To do this, type in the terminal:
 
     eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
 
-  after which the Conda installation for this workshop shall become available
+  after which the Conda installation for this workshop shall become available.
 
-  You can check the available Conda environment by running
+  You can check the available Conda environment by running:
 
     conda env list
 
@@ -198,11 +216,43 @@ the available tools.
     conda list -n <environment-name>
 
 
-### 4.3. Activate the environment you want to use
+### 4.3. Activate the conda environment you want to use
+<a name="activate-env"></a> [Back to TOC](#toc)
 
   For our purposes, we want to use either `libra` or `libra-plus` environments
 
     conda activate libra
+
+### 4.4. Summary: setup from the command line
+<a name="command-line-summary"></a> [Back to TOC](#toc)
+
+  Sign on to `https://ondemand.ccr.buffalo.edu`
+
+  In the OnDemand interface, select *App: Faculty Cluster Shell Access* and set up as follows:
+    
+  Prepare modules and environment
+
+    module use /projects/academic/cyberwksp21/Modules
+    
+  Load jupyter
+
+    module load jupyter
+    
+  Enable conda
+
+    eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
+
+  Now: you should be able to conda activate any needed environment, such as:
+
+    conda activate qmflows
+
+  or:
+
+    conda activate libra-plus
+
+  If you need any additional modules (see [Modules](#modules-avail) (packages) available), load them, such as:
+
+    module load qxmd
 
 
 ## 5. Using Jupyter on the OnDemand gateway
