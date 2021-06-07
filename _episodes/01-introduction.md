@@ -20,19 +20,24 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 In order to access the UB CCR computing resources and Open OnDemand, you must be running the UB
 Virtual Private Network (VPN) software. Otherwise you will be unable to connect.
 As a workshop participant you have been allocated a UB VPN account and a CCR username and account.
-It is critical that you install this software and verify your access before the workshop begins.
+It is critical that you install the VPN software and verify your access before the workshop begins.
 
-VPN access also requires you perform two-factor authorization (2FA), which can be set up on a smartphone using Duo
-Mobile app, available for Android (via [Google Play](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile)) 
-or iOS ([Apple Store](https://apps.apple.com/us/app/duo-mobile/id422663827)).
+### Your username
 
-Before the workshop begins, please ensure you have:
+Full workshop participants are assigned a VPN username that will be something like: `ub2999`. To
+make it easier to remember, your CCR username has been created to match your VPN username. However, 
+you must use different passwords for each of these services. 
+
+Use the VPN password to log into UBVPN, and the CCR password to log into OnDemand!
+
+### Workshop setup checklist
+
+Before the workshop begins, please ensure that you have:
 
 - installed the provided [UB VPN software](http://www.buffalo.edu/ubit/service-guides/connecting/vpn/computer.html) on your own computer
-- installed the [Duo Mobile](https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app) 2FA app onto your phone or other device
-- successfully signed into the UB VPN software and used 2FA
-- verified your access to
-  [OnDemand](https://ubccr.freshdesk.com/support/solutions/articles/13000039875-ccr-ondemand-portal) at UB CCR (see sections below)
+- successfully signed into the UB VPN software 
+- logged on and changed your CCR password
+- verified your access to [OnDemand](https://ubccr.freshdesk.com/support/solutions/articles/13000039875-ccr-ondemand-portal) at UB CCR (see [OnDemand](#ondemand) section below)
 
 Once you have been through these steps, you are ready for the workshop!
 
@@ -68,7 +73,7 @@ This folder contains the following sub-directories:
     directories, but do not operate on files. If you are curious about some of them, make your own copy first. 
     
 * `Students`
-    First, please create your own directory in this folder.
+    First, please create your own directory in this folder. The name should match your CCR username!
 
     This will be your working directory (apart from your home directory). This is where you can keep your data 
     and run some (small) calculations. Data in this directory are shared among the participants (those who have
@@ -76,40 +81,70 @@ This folder contains the following sub-directories:
     check our outher students' directories, but again - **Do not edit or view files in other students' directories at any time**
 
 
-## 2. Open OnDemand
+## 1. Open OnDemand
 <a name="ondemand"></a> [Back to TOC](#toc)
 
-Open OnDemand is an application that enables access to high-performance computing resources through
-a web portal (or "gateway"). A very detailed introduction is given [in this video](https://ub.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5c088f6-ba8c-4210-8d87-ab9f0104f54e)
+Open OnDemand is an open-source application that enables access to high-performance computing resources through a web portal (or "gateway").  We will use it to run both Jupyter Notebooks and command line sessions during this workshop.
 
-[This website](https://ubccr.freshdesk.com/support/solutions/articles/13000039875-ccr-ondemand-portal) also 
-provides the detailed step-by-step instructions for logging into the system, as well as a general overview of
-the available tools.
+To acccess the portal, first ensure you are connected to the UB VPN, then, [log in to CCR OnDemand](https://ondemand.ccr.buffalo.edu)
+
+For detailed step-by-step instructions for logging into the OnDemand system, and information about the available tools:
+
+- [CCR OnDemand](https://ondemand.ccr.buffalo.edu): login 
+- [How to log in](https://ubccr.freshdesk.com/support/solutions/articles/13000039875-ccr-ondemand-portal) 
+- [Using the Files app](https://ubccr.freshdesk.com/support/solutions/articles/13000071814-how-to-use-file-app-in-ondemand): transfer, view, and edit files 
+- [Video overview](https://ub.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5c088f6-ba8c-4210-8d87-ab9f0104f54e):
+  a detailed introduction to the OnDemand platform.
+
+### First time OnDemand access 
+
+   ![](../fig/1_episode/ood-faculty-cluster-jms.png){:width="80%"}
+
+If you are logging on for the first time, click Clusters -> Faculty Cluster Shell Access, then run this command in the terminal:
+
+        /util/ccr/bin/ssh_no_password.sh
+
 
           
-## 3. Modules setup
+## 3. Modules at CCR
 <a name="modules_setup"></a> [Back to TOC](#toc)
+
+Modules (software modules) allow us to use specialized software packages on the CCR computing cluster. In this section we'll set up to use modules, describe how to use them and what they are for.
+
 
 ### 3.1. **Edit your .bashrc** 
 
+    A few small pieces of setup will be very helpful as you start the workshop.
+
    Before you can use our Python installations via Jupyter, you need to edit your `.bashrc` file in your home directory.
 
-   Once you have logged into OnDemand, go to Clusters -> Faculty Cluster Shell.
-
+   1. Once you have logged into OnDemand, go to Files -> Home Directory to open the Files app.
    ![](../fig/1_episode/ondemand-terminal.png){:width="80%"}
 
-   Go to home directory and edit the `.bashrc` file
+   1. Click the "Show Dotfiles" box.
 
-    cd 
-    vi .bashrc
+   1. Use the Filter textbox, or just scroll down, to find your .bashrc file.
 
-   Add the following line in the file
+   1. On the .bashrc file's line, click the selection box and select "Edit". A new browser window will appear with a simple editor inside. Help for using the OnDemand Files app is [available.](https://ubccr.freshdesk.com/support/solutions/articles/13000071814-how-to-use-file-app-in-ondemand)
+
+   ![](../fig/1_episode/files-app-edit-jms.png){:width="80%"}
+
+   1. Add the following two lines to your .bashrc file:
 
     module use /projects/academic/cyberwksp21/Modules
 
-   This will enable both Jupyter (called from the OnDemand) access the 
-   right installations as well as will enable you to acccess some specialized 
-   modules. 
+    export SLURM_CONF=/util/ccr/slurm/slurm-faculty.conf
+
+
+   1. Finally, click Save (upper left corner) when your edits are complete, and close the edit
+   window.
+
+   1. You can view your changes to verify they were saved. Back in the Files app, make note of the
+   timestamp on your .bashrc (Eastern Daylight time), and click the selection box and "View".
+
+   The first line will enable Jupyter (called from OnDemand) to access the right installations, and will enable you to acccess some specialized modules. 
+
+   The second line will set the default cluster value for running jobs at CCR.
 
 ### 3.2. **Restart terminal or source .bashrc**
 
@@ -117,7 +152,7 @@ the available tools.
 
 ### 3.3. **Check the new modules**
 
-   You can see all available modules via:
+   You can see all available software modules (called just "modules") by typing :
 
     module avail 
 
@@ -125,9 +160,11 @@ the available tools.
    are installed both as system-wide as as the ones for the current workshop 
    (defined in `/projects/academic/cyberwksp21/Modules` )
 
-   ![](../fig/1_episode/modules.png){:width="80%"}
+   This screenshot shows modules we will use for the workshop. The "L" next to a module indicates that it is currently loaded in the terminal session.
 
-### 3.4. **Cheat sheet**
+   ![](../fig/1_episode/module-avail-jms.png){:width="80%"}
+
+### 3.4. **Modules cheat sheet**
 
    * to check what modules are available 
 
@@ -145,8 +182,7 @@ the available tools.
 
          module unload <module-name>
 
-   * to find out what does the modules load do (what kind of operations) and 
-     where the module is located
+   * to find out what does the modules load do (what kind of operations) and where the module is located
 
          module show <module-name>
 
@@ -163,12 +199,11 @@ the available tools.
  |  columbus            |   7.0 2017-12-07-bin  | COLUMBUS electronic structure calculations package |
  |  cp2k                |   8.1-sse             | CP2K electronic structure calculations package |
  |  dftbplus            |   20.2.1-arpack       | DFTB+ for TD-DFTB calculations |
- |  eqe                 |  0.2.0                | embedded Quantum Espresso, for large-scale
- subsystem DFT simulations |
- |  ergoscf and ergoscf-mpi         |  3.8, with/without MPI   | ErgoSCF: electronic structure calculations package |
+ |  eqe                 |  0.2.0                | embedded Quantum Espresso, for large-scale subsystem DFT simulations |
+ |  ergoscf          |  3.8, without MPI   | ErgoSCF: electronic structure calculations package |
+ |  ergoscf-mpi         |  3.8, with MPI   | ErgoSCF: electronic structure calculations package |
  |  jupyter             |                       | Contains Libra and other Python packages, such as psi4 (for Python), nano-qmflows, qmflows, py3Dmol, imageio, h5py, matplotlib, etc.  |
- |  lammps              |                       | Large-scale Atomic/Molecular Massively Parallel
- Simulator (LAMMPS), a classical MD code. |
+ |  lammps              |                       | Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS), a classical MD code. |
  |  nexmd               |  Intel-mkl            | NEXMD package for nonadiabatic dynamics |
  |  nx                  |  2.2-B09              | Newton-X package for nonadiabatic dynamics  |
  |  qe                  |   6.2.1               | Quantum Espresso electronic structure calculations package  |
@@ -199,7 +234,7 @@ the available tools.
 
     eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
 
-  after which the Conda installation for this workshop shall become available.
+  now the Conda installation for this workshop will be available.
 
   You can check the available Conda environment by running:
 
