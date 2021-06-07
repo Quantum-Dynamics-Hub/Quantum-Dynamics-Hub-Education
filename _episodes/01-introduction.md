@@ -7,14 +7,14 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 # Overview of the UB CyberInfrastructure
 <a name="toc"></a>
 
-0. [VPN](#ubvpn)
+0. [Set up and verify UBVPN](#ubvpn)
 1. [Project space](#project_space)
-2. [OnDemand](#ondemand)
-3. [Modules setup](#modules_setup)
-4. [Conda](#conda)
+2. [Open OnDemand](#ondemand)
+3. [Modules at CCR](#modules_setup)
+4. [Conda and environments](#conda)
 5. [Using Jupyter on the OnDemand gateway](#ondemand-jupyter)
 
-## 0.  Set up and verify UBVPN
+## 0. Set up and verify UBVPN
 <a name="ubvpn"></a> [Back to TOC](#toc)
 
 In order to access the UB CCR computing resources and Open OnDemand, you must be running the UB
@@ -45,7 +45,7 @@ Need help? Get stuck? Please submit a ticket:
 [ccr-help@buffalo.edu](http://www.buffalo.edu/ccr/support/ccr-help.html)
 
 
-## 1.  Project space
+## 1. Project space
 <a name="project_space"></a> [Back to TOC](#toc)
 
 As a workshop participant you have been allocated a UB CCR username and account. This provides a
@@ -81,7 +81,7 @@ This folder contains the following sub-directories:
     check our outher students' directories, but again - **Do not edit or view files in other students' directories at any time**
 
 
-## 1. Open OnDemand
+## 2. Open OnDemand
 <a name="ondemand"></a> [Back to TOC](#toc)
 
 Open OnDemand is an open-source application that enables access to high-performance computing resources through a web portal (or "gateway").  We will use it to run both Jupyter Notebooks and command line sessions during this workshop.
@@ -114,32 +114,33 @@ Modules (software modules) allow us to use specialized software packages on the 
 
 ### 3.1. **Edit your .bashrc** 
 
-    A few small pieces of setup will be very helpful as you start the workshop.
+   A few small pieces of setup will be very helpful as you start the workshop.
 
    Before you can use our Python installations via Jupyter, you need to edit your `.bashrc` file in your home directory.
 
    1. Once you have logged into OnDemand, go to Files -> Home Directory to open the Files app.
    ![](../fig/1_episode/ondemand-terminal.png){:width="80%"}
 
-   1. Click the "Show Dotfiles" box.
+   2. Click the "Show Dotfiles" box.
 
-   1. Use the Filter textbox, or just scroll down, to find your .bashrc file.
+   3. Use the Filter textbox, or just scroll down, to find your .bashrc file.
 
-   1. On the .bashrc file's line, click the selection box and select "Edit". A new browser window will appear with a simple editor inside. Help for using the OnDemand Files app is [available.](https://ubccr.freshdesk.com/support/solutions/articles/13000071814-how-to-use-file-app-in-ondemand)
+   4. On the .bashrc file's line, click the selection box and select "Edit". A new browser window will appear with a simple editor inside. Help for using the OnDemand Files app is [available.](https://ubccr.freshdesk.com/support/solutions/articles/13000071814-how-to-use-file-app-in-ondemand)
 
    ![](../fig/1_episode/files-app-edit-jms.png){:width="80%"}
 
-   1. Add the following two lines to your .bashrc file:
+   5. Add the following two lines to your .bashrc file:
 
     module use /projects/academic/cyberwksp21/Modules
 
+   and
+   
     export SLURM_CONF=/util/ccr/slurm/slurm-faculty.conf
 
-
-   1. Finally, click Save (upper left corner) when your edits are complete, and close the edit
+   6. Finally, click Save (upper left corner) when your edits are complete, and close the edit
    window.
 
-   1. You can view your changes to verify they were saved. Back in the Files app, make note of the
+   7. You can view your changes to verify they were saved. Back in the Files app, make note of the
    timestamp on your .bashrc (Eastern Daylight time), and click the selection box and "View".
 
    The first line will enable Jupyter (called from OnDemand) to access the right installations, and will enable you to acccess some specialized modules. 
