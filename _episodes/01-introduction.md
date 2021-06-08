@@ -4,18 +4,19 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 ---
 
 
-# Overview of the UB CyberInfrastructure
 <a name="toc"></a>
+# Overview of the UB CyberInfrastructure
 
-0. [Set up and verify UBVPN](#ubvpn)
+0. **BEFORE THE WORKSHOP**: [Set up and verify UBVPN](#ubvpn)
 1. [User, Project, and Scratch space](#project_space)
 2. [Open OnDemand](#ondemand)
 3. [Modules at CCR](#modules_setup)
 4. [Running interactive jobs: Cluster Desktop](#cluster-desktop)
 5. [Using Jupyter on the OnDemand gateway](#ondemand-jupyter)
 
-## 0. Set up and verify UBVPN and CCR access
-<a name="ubvpn"></a> [Back to TOC](#toc)
+<a name="ubvpn"></a>
+## 0. **BEFORE THE WORKSHOP** Set up and verify UBVPN and CCR access
+[Back to TOC](#toc)
 
 As a workshop participant you have been allocated a UB VPN account and a CCR account.
 In order to access CCR computing resources and Open OnDemand, you must be running the UB
@@ -46,13 +47,15 @@ Need help? Get stuck? Please submit a ticket:
 [ccr-help@buffalo.edu](http://www.buffalo.edu/ccr/support/ccr-help.html)
 
 
+<a name="project_space"></a>
 ## 1. User, project, and scratch space
-<a name="project_space"></a> [Back to TOC](#toc)
+[Back to TOC](#toc)
 
 As a workshop participant you have been allocated a CCR username and account. This provides a 
 home directory on CCR's high-performance computing resources and access to software and compute 
 nodes there. Here we summarize the directories you will use.
 
+<a name="home-directory"></a>
 ### Home directory
 
 Your CCR username will be something like `ub2999`. For that username, your home directory at CCR
@@ -62,6 +65,7 @@ would be:
 
 In your home directory, you are allotted 10GB of space for the duration of the workshop.
 
+<a name="project-directory"></a>
 ### Project directory
 
 In addition to your home directory, you have access to the workshop directory:
@@ -95,7 +99,9 @@ This workshop directory contains the following sub-directories:
     access to the UB resources), so you can take the advantage of that: e.g. if something doesn't work, you may 
     check our outher students' directories, but again - **Do not edit or view files in other students' directories at any time**
 
+<a name="scratch"></a>
 ### Scratch space
+[Top of Section](#project_space)
 
 In addition to the directories above, you have access to the workshop scratch directory:
 
@@ -110,8 +116,9 @@ You can do this on the command line by typing:
 
     mkdir -p /panasas/scratch/grp-cyberwksp21/ub2999
 
+<a name="ondemand"></a>
 ## 2. Open OnDemand
-<a name="ondemand"></a> [Back to TOC](#toc)
+[Back to TOC](#toc)
 
 Open OnDemand is an open-source application that enables access to high-performance computing resources through a web portal (or "gateway").  We will use it to run both Jupyter Notebooks and command line sessions during this workshop.
 
@@ -122,8 +129,8 @@ For detailed step-by-step instructions for logging into the OnDemand system, and
 - [How to log in](https://ubccr.freshdesk.com/support/solutions/articles/13000039875-ccr-ondemand-portal) 
 - [Using the Files app](https://ubccr.freshdesk.com/support/solutions/articles/13000071814-how-to-use-file-app-in-ondemand): transfer, view, and edit files 
 - [Jupyter Notebook app](https://ubccr.freshdesk.com/support/solutions/articles/13000080146-jupyter-notebook-app-faculty-cluster): how to use Jupyter in OnDemand
-- [OnDemand Cluster app](https://ubccr.freshdesk.com/support/solutions/articles/13000080146-jupyter-notebook-app-faculty-cluster):
-- [Video overview](https://ub.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5c088f6-ba8c-4210-8d87-ab9f0104f54e):
+- [OnDemand Faculty Cluster app](https://ubccr.freshdesk.com/support/solutions/articles/13000080146-jupyter-notebook-app-faculty-cluster):
+- [Video overview](https://ub.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5c088f6-ba8c-4210-8d87-ab9f0104f54e)
 
 ### First time OnDemand access 
 
@@ -140,14 +147,16 @@ the following:
         
     ln -s /projects/academic/cyberwksp21 ~/workshop
           
+<a name="modules_setup"></a>
 ## 3. Modules at CCR
-<a name="modules_setup"></a> [Back to TOC](#toc)
+[Back to TOC](#toc)
 
 Software modules allow us to use specialized software packages on the CCR computing
 cluster. In this section we'll set up to use modules, and describe how to use them and what they are for.
 
-### 3.1. Edit your .bashrc
 <a name="bashrc-edit"></a>
+### 3.1. Edit your .bashrc
+[Back to TOC](#toc)
 
    Before you can use our Python installations via Jupyter, you need to edit the `.bashrc` file in your home directory.
    We will use the OnDemand Files app for this task.
@@ -194,6 +203,8 @@ cluster. In this section we'll set up to use modules, and describe how to use th
    Make sure you restart the terminal or `source .bashrc` for the above change to take effect.
 
 ### 3.3. Check the new modules
+[Top of Section](#modules_setup)
+[Back to TOC](#toc)
 
    You can see all available software modules (called just "modules") by typing:
 
@@ -207,7 +218,10 @@ cluster. In this section we'll set up to use modules, and describe how to use th
 
    ![](../fig/1_episode/module-avail-jms.png){:width="80%"}
 
+<a name="modules-cheat"></a>
 ### 3.4. Modules cheat sheet
+[Top of Section](#modules_setup)
+[Back to TOC](#toc)
 
 The following module commands will come in handy:
 
@@ -231,8 +245,10 @@ The following module commands will come in handy:
 
          module show <module-name>
 
+<a name="modules-avail"></a>
 ### 3.5. Modules for the workshop
-<a name="modules-avail"></a> [Back to TOC](#toc)
+[Top of Section](#modules_setup)
+[Back to TOC](#toc)
 
   Modules are used to set the necessary paths so we can call and use different software packages on the
   cluster. Here are the modules we will be concerned about in this workshop:
@@ -256,24 +272,31 @@ The following module commands will come in handy:
     
     module load nx
  
+<a name="cluster-desktop"></a>
 ## 4. Running interactive jobs on the OnDemand gateway 
-<a name="cluster-desktop"></a> [Back to TOC](#toc)
+[Back to TOC](#toc)
 
-To run interactive jobs from OnDemand we will run the Faculty Cluster Desktop app.
-While running this app you have access to an entire node on the valhalla partition at CCR.
+To run interactive jobs from OnDemand we will run the Faculty Cluster Desktop (Advanced) app.
+While running this app you have access to part of a node on the valhalla partition at CCR.
+
+Note that the Advanced option enables you to select a *subset of the cores* on the node. Each
+valhalla computing node has 12 or even 24 cores. Since all workshop attendees are sharing computing resources, 
+please select Advanced and share these nodes!
 
 Documentation for this app: [OnDemand Cluster Desktop](https://ubccr.freshdesk.com/support/solutions/articles/13000080146-jupyter-notebook-app-faculty-cluster)
 
-To start it, sign in to OnDemand, then select `Apps -> Faculty Cluster Desktop`.
+To start it, sign in to OnDemand, then select `Apps -> Faculty Cluster Desktop - Advanced Options`.
 
+TODO update:
    ![](../fig/1_episode/start-faculty-cluster-desktop-jms.png){:width="80%"}
 
+<a name="slurm-interactive"></a>
 ## 4.1 Requesting resources from SLURM
-<a name="slurm-interactive"></a> [Back to TOC](#toc)
+[Top of Section](#cluster-desktop)
+[Back to TOC](#toc)
 
-The Faculty Cluster Desktop app reserves an entire computing node for your interactive
-jobs. Therefore, we must
-specify the parameters that will govern your computing jobs. These parameters will be sent in a request to
+The Faculty Cluster Desktop Advanced app reserves part of a computing node for your interactive
+jobs. You specify the parameters that will govern your jobs. These parameters will be sent in a request to
 the cluster resource manager SLURM.
 
    **Please make sure to Delete the job, and freeing these resources, if you are finished using the app in OnDemand. Just closing the browser does not delete the job!**    
@@ -285,8 +308,9 @@ SLURM parameter | value |
 SLURM Account | cyberwksp21
 Partition | valhalla
 QOS | valhalla
-Number of hours | 1
+Number of hours | 1 or more
 Number of nodes | Always select 1
+Number of cores | 4 (or as suggested by instructor)
 
 Then, click Launch to submit your request.
 
@@ -311,15 +335,19 @@ you can run interactive jobs in this workshop.
    ![](../fig/1_episode/desktop-terminal-emulator-jms.png){:width="80%"}
 
 ### 4.1. Load the `jupyter` module.
+[Top of Section](#cluster-desktop)
+[Back to TOC](#toc)
 
-In the OnDemand Faculty Cluster Desktop, click the terminal icon to start a terminal emulator. Then, on the terminal command line, type:
+In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to start a terminal emulator. Then, on the terminal command line, type:
 
     module load jupyter
 
   This will set up all the paths needed to execute packages such as Libra.
 
+<a name="activate-conda"></a>
 ### 4.2. Activate Conda 
-<a name="activate-conda"></a> [Back to TOC](#toc)
+[Top of Section](#cluster-desktop)
+[Back to TOC](#toc)
 
   Before you can use any of the Conda environments or run/submit scripts *from the command
   line/terminal*,
@@ -349,8 +377,10 @@ In the OnDemand Faculty Cluster Desktop, click the terminal icon to start a term
     conda list -n <environment-name>
 
 
+<a name="activate-env"></a>
 ### 4.3. Activate a conda environment 
-<a name="activate-env"></a> [Back to TOC](#toc)
+[Top of Section](#cluster-desktop)
+[Back to TOC](#toc)
 
   For the workshop, we typically use either `qmflows` or `libra-plus` environments. To activate
   libra-plus, type:
@@ -358,22 +388,26 @@ In the OnDemand Faculty Cluster Desktop, click the terminal icon to start a term
     conda activate libra-plus
 
 ### 4.3. Load additional modules
+[Top of Section](#cluster-desktop)
+[Back to TOC](#toc)
 
   You can now load any other modules you need for your command line work. Refer to the
   [Modules](#modules-avail) section above for more information.
 
+<a name="command-line-summary"></a>
 ### 4.4. Summary: interactive jobs setup: Cluster Desktop app 
-<a name="command-line-summary"></a> [Back to TOC](#toc)
+[Top of Section](#cluster-desktop)
+[Back to TOC](#toc)
 
   Here we summarize the steps to prepare for interactive work on the OnDemand Cluster app.
 
   1. Ensure you are signed onto the UB VPN.  Sign on to `https://ondemand.ccr.buffalo.edu` using your CCR account and password.
 
-  2. In the OnDemand user interface, select *App: Faculty Cluster Shell Access* and specify the
+  2. In the OnDemand user interface, select *App: Faculty Cluster Desktop (Advanced)* and specify the
   [SLURM](#slurm-interactive)
   parameters for the job.
 
-  3. When the Desktop app is ready, click Launch Faculty Cluster Desktop and then start a Terminal
+  3. When the Desktop app is ready, click Launch Faculty Cluster Desktop (Advanced) and then start a Terminal
   Emulator.
 
   4. Next, from the terminal command line, prepare the modules, load jupyter, and enable conda:
@@ -394,8 +428,9 @@ In the OnDemand Faculty Cluster Desktop, click the terminal icon to start a term
 
   Now you are prepared to run interactive jobs in the OnDemand Faculty Cluster Desktop! 
 
+<a name="ondemand-jupyter"></a>
 ## 5. Using Jupyter Notebooks on the OnDemand gateway
-<a name="ondemand-jupyter"></a> [Back to TOC](#toc)
+[Back to TOC](#toc)
 
 Jupyter Notebooks are a great approach to interactive computing. In the OnDemand environment,
 your notebook runs right on a CCR compute node, with access to the workshop codes. We need to
@@ -430,6 +465,8 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
    your `.bashrc` file  (Refer to [.bashrc](#bashrc-edit) setup, above).
 
 ### 5.2. Start the Jupyter app from the OnDemand Portal
+[Top of Section](#ondemand-jupyter)
+[Back to TOC](#toc)
 
    Select `Interactive Apps -> Jupyter Notebook Quantum Chemistry`
 
@@ -475,6 +512,8 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
    ![](../fig/1_episode/jupyter-session.png){:width="80%"}
 
 ### 5.3. Creating a new Jupyter notebook
+[Top of Section](#ondemand-jupyter)
+[Back to TOC](#toc)
 
    Go to `New -> Python 3.6 (libra-latest)` to create a new Jupyter notebook. By selecting the
    "Python3.6 (libra-latest)" kernel, you will have access to the pre-installed environment with 
@@ -482,6 +521,8 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
 
 
 ### 5.4. Symbolic link to project space 
+[Top of Section](#ondemand-jupyter)
+[Back to TOC](#toc)
 
    When you start the Jupyter notebook app, you will only have access to your home directory.
    For this workshop, it will be useful to keep working files in /projects/academic/cyberwksp21/Students/\<yourid\>
@@ -494,6 +535,8 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
    bottom of the above picture).
 
 ### 5.5. Changing the kernel for an existing notebook
+[Top of Section](#ondemand-jupyter)
+[Back to TOC](#toc)
 
    Most workshop notebooks require either the `libra-latest` or `qmflows` Python 3 kernels.
 
@@ -510,6 +553,8 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
    in the top right corner, next to the name of the currently loaded kernel). 
 
    Click Save (the leftmost icon) to ensure your kernel choice is saved in the notebook.
+
+[Back to TOC](#toc)
 
 {% include links.md %}
 
