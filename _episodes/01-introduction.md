@@ -15,7 +15,7 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 5. [Using Jupyter on the OnDemand gateway](#ondemand-jupyter)
 
 <a name="ubvpn"></a>
-## 0. **BEFORE THE WORKSHOP** Set up and verify UBVPN and CCR access
+## 0. **BEFORE THE WORKSHOP**: Set up and verify UBVPN and CCR access
 [Back to TOC](#toc)
 
 As a workshop participant you have been allocated a UB VPN account and a CCR account.
@@ -203,7 +203,7 @@ cluster. In this section we'll set up to use modules, and describe how to use th
    Make sure you restart the terminal or `source .bashrc` for the above change to take effect.
 
 ### 3.3. Check the new modules
-[Top of Section](#modules_setup) | [Back to TOC](#toc)
+[Top of Section](#modules_setup) \| [Back to TOC](#toc)
 
    You can see all available software modules (called just "modules") by typing:
 
@@ -219,7 +219,7 @@ cluster. In this section we'll set up to use modules, and describe how to use th
 
 <a name="modules-cheat"></a>
 ### 3.4. Modules cheat sheet
-[Top of Section](#modules_setup) | [Back to TOC](#toc)
+[Top of Section](#modules_setup) \| [Back to TOC](#toc)
 
 The following module commands will come in handy:
 
@@ -245,7 +245,7 @@ The following module commands will come in handy:
 
 <a name="modules-avail"></a>
 ### 3.5. Modules for the workshop
-[Top of Section](#modules_setup) | [Back to TOC](#toc)
+[Top of Section](#modules_setup) \| [Back to TOC](#toc)
 
   Modules are used to set the necessary paths so we can call and use different software packages on the
   cluster. Here are the modules we will be concerned about in this workshop:
@@ -289,7 +289,7 @@ TODO update:
 
 <a name="slurm-interactive"></a>
 ## 4.1 Requesting resources from SLURM
-[Top of Section](#cluster-desktop) | [Back to TOC](#toc)
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
 
 The Faculty Cluster Desktop Advanced app reserves part of a computing node for your interactive
 jobs. You specify the parameters that will govern your jobs. These parameters will be sent in a request to
@@ -331,7 +331,7 @@ you can run interactive jobs in this workshop.
    ![](../fig/1_episode/desktop-terminal-emulator-jms.png){:width="80%"}
 
 ### 4.1. Load the `jupyter` module.
-[Top of Section](#cluster-desktop) | [Back to TOC](#toc)
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
 
 In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to start a terminal emulator. Then, on the terminal command line, type:
 
@@ -341,7 +341,7 @@ In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to s
 
 <a name="activate-conda"></a>
 ### 4.2. Activate Conda 
-[Top of Section](#cluster-desktop) | [Back to TOC](#toc)
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
 
   Before you can use any of the Conda environments or run/submit scripts *from the command
   line/terminal*,
@@ -373,7 +373,7 @@ In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to s
 
 <a name="activate-env"></a>
 ### 4.3. Activate a conda environment 
-[Top of Section](#cluster-desktop) | [Back to TOC](#toc)
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
 
   For the workshop, we typically use either `qmflows` or `libra-plus` environments. To activate
   libra-plus, type:
@@ -381,14 +381,14 @@ In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to s
     conda activate libra-plus
 
 ### 4.3. Load additional modules
-[Top of Section](#cluster-desktop) | [Back to TOC](#toc)
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
 
   You can now load any other modules you need for your command line work. Refer to the
   [Modules](#modules-avail) section above for more information.
 
 <a name="command-line-summary"></a>
 ### 4.4. Summary: interactive jobs setup: Cluster Desktop app 
-[Top of Section](#cluster-desktop) | [Back to TOC](#toc)
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
 
   Here we summarize the steps to prepare for interactive work on the OnDemand Cluster app.
 
@@ -456,7 +456,7 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
    your `.bashrc` file  (Refer to [.bashrc](#bashrc-edit) setup, above).
 
 ### 5.2. Start the Jupyter app from the OnDemand Portal
-[Top of Section](#ondemand-jupyter) | [Back to TOC](#toc)
+[Top of Section](#ondemand-jupyter) \| [Back to TOC](#toc)
 
    Select `Interactive Apps -> Jupyter Notebook Quantum Chemistry`
 
@@ -502,7 +502,7 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
    ![](../fig/1_episode/jupyter-session.png){:width="80%"}
 
 ### 5.3. Creating a new Jupyter notebook
-[Top of Section](#ondemand-jupyter) | [Back to TOC](#toc)
+[Top of Section](#ondemand-jupyter) \| [Back to TOC](#toc)
 
    Go to `New -> Python 3.6 (libra-latest)` to create a new Jupyter notebook. By selecting the
    "Python3.6 (libra-latest)" kernel, you will have access to the pre-installed environment with 
@@ -510,7 +510,7 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
 
 
 ### 5.4. Symbolic link to project space 
-[Top of Section](#ondemand-jupyter) | [Back to TOC](#toc)
+[Top of Section](#ondemand-jupyter) \| [Back to TOC](#toc)
 
    When you start the Jupyter notebook app, you will only have access to your home directory.
    For this workshop, it will be useful to keep working files in /projects/academic/cyberwksp21/Students/\<yourid\>
@@ -523,7 +523,7 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
    bottom of the above picture).
 
 ### 5.5. Changing the kernel for an existing notebook
-[Top of Section](#ondemand-jupyter) | [Back to TOC](#toc)
+[Top of Section](#ondemand-jupyter) \| [Back to TOC](#toc)
 
    Most workshop notebooks require either the `libra-latest` or `qmflows` Python 3 kernels.
 
