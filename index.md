@@ -75,7 +75,7 @@ This year, the focus will be on the following packages:
 - Quantum Espresso
 - ErgoSCF
 
-The school will leverage the OnDemand gateway at the University at Buffalo
+The school will leverage the [OnDemand](https://ondemand.ccr.buffalo.edu) gateway at the University at Buffalo
 
 
 ## Logistics
@@ -265,7 +265,7 @@ The details may vary and the order of topics may be changed, the topics may be o
 | Name            | Affiliation         |    Role/Software covered   |
 | --------------- | ------------------- | -------------------------- |
 | [Dr. Alexey Akimov](https://akimovlab.github.io/)         |   University at Buffalo, USA      | Workshop coordinator, Instructor for: Libra, DFTB+, ErgoSCF, CP2k, QXMD, etc. |
-| [Dr. Jeanette Sperhac](http://www.buffalo.edu/ccr/about-us/people/staff/sperhac.html)      |   University at Buffalo Center for Computational Research, USA  | Workshop coordinator, Instructor for: Jupyter, Open OnDemand, UB CCR HPC |
+| [Ms. Jeanette Sperhac](http://www.buffalo.edu/ccr/about-us/people/staff/sperhac.html)      |   University at Buffalo Center for Computational Research, USA  | Workshop coordinator, Instructor for: Jupyter, Open OnDemand, UB CCR HPC |
 | [Dr. Sudhakar Pamidighantam](https://www.chem.indiana.edu/faculty/sudhakar-pamidighantam/)  | Indiana University, USA  | Instructor for: SEAGrid platform |
 | [Dr. Sergei Tretiak](https://cnls.lanl.gov/~serg/homepage.html) | Los Alamos National Laboratory, USA | Instructor for: NEXMD |
 | [Dr. Walter Malone](https://cnls.lanl.gov/External/people/Walter_Malone.php) | Los Alamos National Laboratory, USA | Instructor for: NEXMD |
@@ -289,8 +289,8 @@ The details may vary and the order of topics may be changed, the topics may be o
 
 | Name            |   Role/Software covered    |
 | --------------- | -------------------------- |
-| Dr. Dori Sajdak | UB CCR system administrator, VPN, accounts, etc. |
-| Dr. Cynthia Cornelius | UB CCR system administrator, program installation, environment configurations, etc. |
+| [Ms. Dori Sajdak](http://www.buffalo.edu/ccr/about-us/people/staff/sajdak.html) | UB CCR system administrator, UB VPN, Open OnDemand, HPC accounts, etc. |
+| [Ms. Cynthia Cornelius](http://www.buffalo.edu/ccr/about-us/people/staff/cornelius.html) | UB CCR system administrator, program installation, environment configurations, etc. |
  
 
 
