@@ -13,8 +13,8 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 3. [Modules at CCR](#modules_setup)
 4. [Conda and environments](#conda)
 5. [Using Jupyter on the OnDemand gateway](#ondemand-jupyter)
-6. [Running interactive jobs: Cluster Desktop](#cluster-desktop)
-7. [Running interactive jobs: Shell](#shell)
+6. [Running interactive jobs: OnDemand Cluster Desktop](#cluster-desktop)
+7. [Running interactive jobs: OnDemand Shell](#cluster-shell)
 
 <a name="ubvpn"></a>
 ## 0. **BEFORE THE WORKSHOP**: Set up and verify UBVPN and CCR access
@@ -433,7 +433,7 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
 
     ln -s /projects/academic/cyberwksp21 ~/workshop
 
-   Now, you can easily access all of your files located in the workshop project space. (see the red circle at the
+   Now, you can use the `workshop` link to easily access all of your files located in the workshop project space. (see the red circle at the
    bottom of the above picture).
 
 ### 5.5. Changing the kernel for an existing notebook
@@ -501,22 +501,21 @@ Then, click Launch to submit your request.
    ![](../fig/1_episode/faculty-cluster-desktop-advanced-request.png){:width="80%"}
 
 OnDemand will send your request to SLURM, which will prepare the resources for your job. OnDemand
-will display the status of your request, as shown here:
-
-   ![](../fig/1_episode/fcd-advanced-queued.png){:width="80%"}
+will display the status of your request, as shown on the left.
 
 When the resources are ready, you will be prompted to launch the desktop by clicking "Launch Faculty
-Cluster Desktop - Advanced", as shown here:
-
-   ![](../fig/1_episode/faculty-cluster-desktop-advanced-running.png){:width="80%"}
-
-Once you are running the Desktop app, click the blank terminal icon, as shown, to start a terminal emulator. The terminal 
-will run directly on your requested compute node.
+Cluster Desktop - Advanced", as shown on the right. 
 
    |       |       |
    |-------|-------|
-   | ![](../fig/1_episode/desktop-terminal-emulator-jms.png){:width="100%"} |
-   | ![](../fig/1_episode/cluster-app-with-window.png){:width="100%"} |
+   | ![](../fig/1_episode/fcd-advanced-queued.png){:width="100%"} | ![](../fig/1_episode/faculty-cluster-desktop-advanced-running.png){:width="100%"} |
+
+Once you are running the Desktop app, click the blank terminal icon, as shown left, to start a terminal emulator. The terminal 
+will run directly on your requested compute node, as shown right.
+
+   |       |       |
+   |-------|-------|
+   | ![](../fig/1_episode/desktop-terminal-emulator-jms.png){:width="100%"} | ![](../fig/1_episode/cluster-app-with-window.png){:width="100%"} |
 
 You are now running the Desktop app. A bit more setup, described below, will prepare the app so
 you can run interactive jobs in this workshop.
@@ -609,7 +608,7 @@ In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to s
 
   5. Now you can activate a conda environment, such as:
 
-    conda activate qmflows
+    conda activate libra-plus
 
   6. Additional software modules (see [Modules](#modules-avail)), can be loaded, such as:
 
@@ -628,7 +627,7 @@ While running this app you have access to one of the login nodes at CCR.
 In order to run a job from the shell, you must submit a SLURM script that requests
 the workshop's *Partition*, *Account*, and *QOS*.
 
-Documentation for this app: [OnDemand Cluster App](https://ubccr.freshdesk.com/support/solutions/articles/13000072839-ondemand-cluster-app)
+Documentation for this app: [OnDemand Cluster Shell App](https://ubccr.freshdesk.com/support/solutions/articles/13000072839-ondemand-cluster-app)
 
 To start it, sign in to OnDemand, then select `Clusters -> Faculty Cluster Shell Access`.
 
@@ -658,7 +657,7 @@ you can submit SLURM jobs for this workshop.
 
   2. Now you can activate a conda environment, such as:
 
-    conda activate qmflows
+    conda activate libra-plus
 
   3. Additional software modules (see [Modules](#modules-avail)), can be loaded, such as:
 
