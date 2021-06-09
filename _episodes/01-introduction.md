@@ -615,6 +615,136 @@ In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to s
   Now you are prepared to run interactive jobs in the OnDemand Faculty Cluster Desktop (Advanced)
   app! 
 
+<a name="cluster-shell"></a>
+## 7. Running the shell on the OnDemand gateway 
+[Back to TOC](#toc)
+
+To run the command shell from OnDemand we will run the Faculty Shell app.
+While running this app you have access to one of the login nodes at CCR. 
+
+In order to run a job from the shell, you must submit a SLURM script that requests
+the workshop's *Partition*, *Account*, and *QOS*.
+
+Documentation for this app: [OnDemand Cluster App](https://ubccr.freshdesk.com/support/solutions/articles/13000072839-ondemand-cluster-app)
+
+To start it, sign in to OnDemand, then select `Clusters -> Faculty Cluster Shell Access`.
+
+   ![](../fig/1_episode/ood-faculty-cluster-jms.png){:width="80%"}
+
+You are now running the shell. A bit more setup, described below, will prepare the app so
+you can submit SLURM jobs for this workshop.
+
+   ![](../fig/1_episode/faculty-shell.png){:width="80%"}
+
+<a name="slurm-batch"></a>
+## 7.1 SLURM parameters
+[Top of Section](#cluster-shell) \| [Back to TOC](#toc)
+
+The Faculty Shell places you on a login node at CCR with access to the Faculty cluster.
+To run a job you must now request workshop resources from the computing resource manager, SLURM.
+
+You will specify the SLURM parameters in a SLURM script. At a minimum, you will request:
+
+SLURM parameter description | Parameter name | value |
+------------- | -------- | -------- | 
+SLURM Account | -a or --account | cyberwksp21
+Partition | -p or --partition | valhalla
+QOS | -qos | valhalla
+
+
+### 7.1. Load jupyter
+[Top of Section](#cluster-shell) \| [Back to TOC](#toc)
+
+Note: Here we assume that you have already included the workshop `module use` line in your .bashrc, as described in 
+[.bashrc setup](#bashrc-edit).
+
+In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to start a terminal emulator. Then, on the terminal command line, type:
+
+    module load jupyter
+
+  This will set up all the paths needed to execute packages such as Libra.
+
+  To verify the correct setup, entering `which jupyter` will return:
+
+    /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/libra/bin/jupyter
+
+<a name="activate-conda"></a>
+### 7.2. Activate conda 
+[Top of Section](#cluster-shell) \| [Back to TOC](#toc)
+
+  Before you can use any of the Conda environments or run/submit scripts *from the command
+  line/terminal*,
+  you need to activate Conda.  To do this, type in the terminal:
+
+    eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
+
+  Now, the Conda installation for this workshop will be available, with the base environment
+  activated.
+
+  You can check the available Conda environments by running:
+
+    conda env list
+
+  which should show you something like this:
+
+    base      *  /projects/academic/cyberwksp21/Software/Conda/Miniconda3
+    libra-plus   /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/libra-plus
+    qmflows      /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows
+
+  Notice that the currently active environment is indicated with an asterisk character (\*).
+  By default, your current environment will also be shown by name in parentheses at the 
+  beginning of your command prompt.
+ 
+  You can list the packages included in any of the available Conda environments this way:
+
+    conda list -n <environment-name>
+
+
+<a name="activate-env"></a>
+### 7.3. Activate a conda environment 
+[Top of Section](#cluster-shell) \| [Back to TOC](#toc)
+
+  For the workshop, we typically use either `qmflows` or `libra-plus` environments. To activate
+  libra-plus, type:
+
+    conda activate libra-plus
+
+### 7.3. Load additional modules
+[Top of Section](#cluster-shell) \| [Back to TOC](#toc)
+
+  You can now load any other modules you need for your command line work. Refer to the
+  [Modules](#modules-avail) section above for more information.
+
+<a name="command-line-summary"></a>
+### 7.4. Summary: setup: Faculty Shell 
+[Top of Section](#cluster-shell) \| [Back to TOC](#toc)
+
+  Here we summarize the steps to prepare for interactive work on the OnDemand Cluster app.
+
+  1. Ensure you are signed onto the UB VPN.  Sign on to `https://ondemand.ccr.buffalo.edu` using your CCR account and password.
+
+  Note: Here we assume that you have already included the workshop `module use` line in your .bashrc, as described in 
+  [.bashrc setup](#bashrc-edit).
+
+  2. In the OnDemand user interface, select *Cluster -> Faculty Cluster Shell Access*. OnDemand will
+  start your shell on the CCR login node.
+
+  3. From the shell command line, load jupyter and enable conda:
+    
+    module load jupyter
+    
+    eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
+
+  5. Now you can activate a conda environment, such as:
+
+    conda activate qmflows
+
+  6. Additional software modules (see [Modules](#modules-avail)), can be loaded, such as:
+
+    module load qxmd
+
+  Now you are prepared to submit batch jobs in the OnDemand Faculty Cluster Desktop (Advanced)
+  app! 
 
 [Back to TOC](#toc)
 
