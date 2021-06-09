@@ -15,6 +15,7 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 5. [Using Jupyter on the OnDemand gateway](#ondemand-jupyter)
 6. [Running interactive jobs: OnDemand Cluster Desktop](#cluster-desktop)
 7. [Running interactive jobs: OnDemand Shell](#cluster-shell)
+8. [Bonus Round: monitoring your jobs](#monitor)
 
 <a name="ubvpn"></a>
 ## 0. **BEFORE THE WORKSHOP**: Set up and verify UBVPN and CCR access
@@ -23,6 +24,7 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 As a workshop participant you have been allocated a UB VPN account and a CCR account.
 In order to access CCR computing resources and Open OnDemand, you must be running the UB
 Virtual Private Network (VPN) software. Otherwise you will be unable to connect.
+All information you need to set up your VPN and access your CCR account has been emailed to you.
 
 It is critical that you install the VPN software and verify your access before the workshop begins.
 
@@ -40,8 +42,8 @@ Before the workshop begins, please ensure that you have:
 
 - installed the provided [UB VPN software](http://www.buffalo.edu/ubit/service-guides/connecting/vpn/computer.html) on your own computer
 - signed into the UB VPN software 
-- logged on and changed your CCR password
-- verified your access to [OnDemand](https://ubccr.freshdesk.com/support/solutions/articles/13000039875-ccr-ondemand-portal) at CCR (see [OnDemand](#ondemand) section below)
+- logged on to CCR and changed your CCR password
+- verified your access to [OnDemand](https://ondemand.ccr.buffalo.edu) at CCR (see [OnDemand](#ondemand) section below)
 
 Once you have been through these steps, you are ready for the workshop!
 
@@ -87,7 +89,7 @@ This workshop directory contains the following sub-directories:
 * `Software`
     Contains the installations of some packages, such as Conda (with the corresponding environments), or Libra.
     **Do not edit or view files in this directory at any time**. You can `ls` and `cd` there, to explore the content of
-    directories, but do not operate on files. If you are curious about some of them, make your own copy first. 
+    directories, but do not operate on files. 
     
 * `Students`
     Please create your own directory in this folder. The name should match your CCR username.
@@ -174,7 +176,7 @@ cluster. In this section we'll set up to use modules, and describe how to use th
 
    ![](../fig/1_episode/files-app-edit-jms.png){:width="80%"}
 
-   5. A new browser window will appear with a simple editor inside. Help for using the OnDemand Files app is [available.](https://ubccr.freshdesk.com/support/solutions/articles/13000071814-how-to-use-file-app-in-ondemand)
+   5. A new browser window will appear with a simple editor inside. 
 
    Add the following two lines to your .bashrc file:
 
@@ -672,14 +674,15 @@ you can submit SLURM jobs for this workshop.
 
 The Faculty Shell places you on a login node at CCR with access to the Faculty cluster.
 To run a job you must now request workshop resources from the computing resource manager, SLURM.
+Since we are on the Faculty Shell the system automatically sets the SLURM parameter --clusters=faculty for us.
 
 You will specify the SLURM parameters in a SLURM script. At a minimum, you will request:
 
-SLURM parameter description | Parameter name | value |
+SLURM parameter description | Parameter name (srun) | value |
 ------------- | -------- | -------- | 
-SLURM Account | -a or --account | cyberwksp21
+SLURM Account | -A or --account | cyberwksp21
 Partition | -p or --partition | valhalla
-QOS | -qos | valhalla
+QOS | -q or --qos | valhalla
 
 
 [Back to TOC](#toc)
