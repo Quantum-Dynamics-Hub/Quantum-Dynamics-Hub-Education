@@ -62,19 +62,19 @@ We will walk through these steps together in the introductory workshop session.
 
    Then perform steps a. to d. outlined below.
 
-## a. First time OnDemand access
+#### a. First time OnDemand access
 
 Run this command in the terminal:
 
     /util/ccr/bin/ssh_no_password.sh
 
-### b. Link to project space
+#### b. Link to project space
 
 Create a link from your home directory to the project space by typing the following:
 
     ln -s /projects/academic/cyberwksp21 ~/workshop
 
-### c. Create your project and scratch subdirectories
+#### c. Create your project and scratch subdirectories
 
     We now create directories for your own use during the workshop. These directories will have your own CCR username.
 
@@ -87,7 +87,7 @@ Create a link from your home directory to the project space by typing the follow
         mkdir -p /panasas/scratch/grp-cyberwksp21/$USER
 
 <a name="bashrc-edit"></a>
-### d. `.bashrc` edits
+#### d. `.bashrc` edits
 
    Two simple additions to your .bashrc file are needed to simplify access to the cluster and to the
    workshop software modules.
@@ -275,8 +275,8 @@ Refer to the [Edit .bashrc](#bashrc-edit) section for instructions.
 
     module avail 
 
-   In particular, as the result of our setup steps above, you shall be able to see modules that 
-   are installed both as system-wide as as the ones for the current workshop 
+   In particular, as the result of our [.bashrc setup steps](#bashrc-edit) above, you shall be able to see modules that 
+   are installed both system-wide as well as the ones needed for the current workshop 
    (defined in `/projects/academic/cyberwksp21/Modules`)
 
    This screenshot shows modules we will use for the workshop. An "L" next to a module indicates that it is currently loaded in the terminal session.
