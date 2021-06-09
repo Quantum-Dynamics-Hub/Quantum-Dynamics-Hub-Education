@@ -333,166 +333,6 @@ Note: Here we assume that you have already included the workshop `module use` li
 
   Now you are ready to use Libra from the command line!
  
-<a name="cluster-desktop"></a>
-## 4. Running interactive jobs on the OnDemand gateway 
-[Back to TOC](#toc)
-
-To run interactive jobs from OnDemand we will run the Faculty Cluster Desktop Advanced app.
-While running this app you have access to part of a node on the valhalla partition at CCR.
-
-Each valhalla computing node has 12 or 24 cores. Note that the Faculty Cluster Desktop Advanced enables you to select
-a *subset of the cores* on the node, which will be sufficient for workshop tasks. Your
-instructor will tell you how many cores to request (most likely 4).
-
-Since all workshop attendees share computing resources, we will select Advanced and share these nodes!
-
-Documentation for this app: [OnDemand Cluster Desktop](https://ubccr.freshdesk.com/support/solutions/articles/13000080146-jupyter-notebook-app-faculty-cluster)
-
-To start it, sign in to OnDemand, then select `Apps -> Faculty Cluster Desktop - Advanced Options`.
-
-   ![](../fig/1_episode/ood-faculty-cluster-advanced.png){:width="80%"}
-
-<a name="slurm-interactive"></a>
-## 4.1 Requesting resources from SLURM
-[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
-
-The Faculty Cluster Desktop Advanced app reserves part of a computing node for your interactive
-jobs. You specify the parameters that will govern your jobs. These parameters will be sent in a request to
-the cluster resource manager SLURM.
-
-   **Please make sure to Delete the job, freeing these resources, if you are finished using the app in OnDemand. Just closing the browser does not delete the job!**    
-
-Specify the SLURM parameters in the user interface. You will request:
-
-SLURM parameter | value |
-------------- | -------- | 
-SLURM Account | cyberwksp21
-Partition | valhalla
-QOS | valhalla
-Number of hours | 1 or more
-Number of nodes | Always select 1
-Number of cores | 4 (or as suggested by instructor)
-Memory | (Optional--as suggested by instructor)
-
-Then, click Launch to submit your request.
-
-   ![](../fig/1_episode/faculty-cluster-desktop-advanced-request.png){:width="80%"}
-
-OnDemand will send your request to SLURM, which will prepare the resources for your job. OnDemand
-will display the status of your request, as shown here:
-
-   ![](../fig/1_episode/fcd-advanced-queued.png){:width="80%"}
-
-When the resources are ready, you will be prompted to launch the desktop by clicking "Launch Faculty
-Cluster Desktop - Advanced", as shown here:
-
-   ![](../fig/1_episode/faculty-cluster-desktop-advanced-running.png){:width="80%"}
-
-Once you are running the Desktop app, click the blank terminal icon, as shown, to start a terminal emulator. The terminal 
-will run directly on your requested compute node.
-
-You are now running the Desktop app. A bit more setup, described below, will prepare the app so
-you can run interactive jobs in this workshop.
-
-   ![](../fig/1_episode/desktop-terminal-emulator-jms.png){:width="80%"}
-
-### 4.1. Load the `jupyter` module.
-[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
-
-Note: Here we assume that you have already included the workshop `module use` line in your .bashrc, as described in 
-[.bashrc setup](#bashrc-edit).
-
-In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to start a terminal emulator. Then, on the terminal command line, type:
-
-    module load jupyter
-
-  This will set up all the paths needed to execute packages such as Libra.
-
-  To verify the correct setup, entering `which jupyter` will return:
-
-    /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/libra/bin/jupyter
-
-<a name="activate-conda"></a>
-### 4.2. Activate Conda 
-[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
-
-  Before you can use any of the Conda environments or run/submit scripts *from the command
-  line/terminal*,
-  you need to activate Conda.  To do this, type in the terminal:
-
-    eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
-
-  Now, the Conda installation for this workshop will be available, with the base environment
-  activated.
-
-  You can check the available Conda environments by running:
-
-    conda env list
-
-  which should show you something like this:
-
-    base      *  /projects/academic/cyberwksp21/Software/Conda/Miniconda3
-    libra-plus   /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/libra-plus
-    qmflows      /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows
-
-  Notice that the currently active environment is indicated with an asterisk character (\*).
-  By default, your current environment will also be shown by name in parentheses at the 
-  beginning of your command prompt.
- 
-  You can list the packages included in any of the available Conda environments this way:
-
-    conda list -n <environment-name>
-
-
-<a name="activate-env"></a>
-### 4.3. Activate a conda environment 
-[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
-
-  For the workshop, we typically use either `qmflows` or `libra-plus` environments. To activate
-  libra-plus, type:
-
-    conda activate libra-plus
-
-### 4.3. Load additional modules
-[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
-
-  You can now load any other modules you need for your command line work. Refer to the
-  [Modules](#modules-avail) section above for more information.
-
-<a name="command-line-summary"></a>
-### 4.4. Summary: interactive jobs setup: Cluster Desktop app 
-[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
-
-  Here we summarize the steps to prepare for interactive work on the OnDemand Cluster app.
-
-  1. Ensure you are signed onto the UB VPN.  Sign on to `https://ondemand.ccr.buffalo.edu` using your CCR account and password.
-
-  Note: Here we assume that you have already included the workshop `module use` line in your .bashrc, as described in 
-  [.bashrc setup](#bashrc-edit).
-
-  2. In the OnDemand user interface, select *App: Faculty Cluster Desktop (Advanced)* and specify the
-  [SLURM](#slurm-interactive) parameters for the job.
-
-  3. When the Desktop app is ready, click Launch Faculty Cluster Desktop (Advanced) and then start a Terminal
-  Emulator.
-
-  4. From the terminal command line, load jupyter and enable conda:
-    
-    module load jupyter
-    
-    eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
-
-  5. Now you can activate a conda environment, such as:
-
-    conda activate qmflows
-
-  6. Additional software modules (see [Modules](#modules-avail)), can be loaded, such as:
-
-    module load qxmd
-
-  Now you are prepared to run interactive jobs in the OnDemand Faculty Cluster Desktop (Advanced)
-  app! 
-
 <a name="ondemand-jupyter"></a>
 ## 5. Using Jupyter Notebooks on the OnDemand gateway
 [Back to TOC](#toc)
@@ -613,7 +453,168 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
    You can click `Kernel -> Restart` if it doesn't restart automatically (you may see a message
    in the top right corner, next to the name of the currently loaded kernel). 
 
-   Click Save (the leftmost icon) to ensure your kernel choice is saved in the notebook.
+   Click the Save icon (or File -> Save) to ensure your kernel choice is saved in the notebook.
+
+<a name="cluster-desktop"></a>
+## 6. Running interactive jobs on the OnDemand gateway 
+[Back to TOC](#toc)
+
+To run interactive jobs from OnDemand we will run the Faculty Cluster Desktop Advanced app.
+While running this app you have access to part of a node on the valhalla partition at CCR.
+
+Each valhalla computing node has 12 or 24 cores. Note that the Faculty Cluster Desktop Advanced enables you to select
+a *subset of the cores* on the node, which will be sufficient for workshop tasks. Your
+instructor will tell you how many cores to request (most likely 4).
+
+Since all workshop attendees share computing resources, we will select Advanced and share these nodes!
+
+Documentation for this app: [OnDemand Cluster Desktop](https://ubccr.freshdesk.com/support/solutions/articles/13000080146-jupyter-notebook-app-faculty-cluster)
+
+To start it, sign in to OnDemand, then select `Apps -> Faculty Cluster Desktop - Advanced Options`.
+
+   ![](../fig/1_episode/ood-faculty-cluster-advanced.png){:width="80%"}
+
+<a name="slurm-interactive"></a>
+## 6.1 Requesting resources from SLURM
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
+
+The Faculty Cluster Desktop Advanced app reserves part of a computing node for your interactive
+jobs. You specify the parameters that will govern your jobs. These parameters will be sent in a request to
+the cluster resource manager SLURM.
+
+   **Please make sure to Delete the job, freeing these resources, if you are finished using the app in OnDemand. Just closing the browser does not delete the job!**    
+
+Specify the SLURM parameters in the user interface. You will request:
+
+SLURM parameter | value |
+------------- | -------- | 
+SLURM Account | cyberwksp21
+Partition | valhalla
+QOS | valhalla
+Number of hours | 1 or more
+Number of nodes | Always select 1
+Number of cores | 4 (or as suggested by instructor)
+Memory | (Optional--as suggested by instructor)
+
+Then, click Launch to submit your request.
+
+   ![](../fig/1_episode/faculty-cluster-desktop-advanced-request.png){:width="80%"}
+
+OnDemand will send your request to SLURM, which will prepare the resources for your job. OnDemand
+will display the status of your request, as shown here:
+
+   ![](../fig/1_episode/fcd-advanced-queued.png){:width="80%"}
+
+When the resources are ready, you will be prompted to launch the desktop by clicking "Launch Faculty
+Cluster Desktop - Advanced", as shown here:
+
+   ![](../fig/1_episode/faculty-cluster-desktop-advanced-running.png){:width="80%"}
+
+Once you are running the Desktop app, click the blank terminal icon, as shown, to start a terminal emulator. The terminal 
+will run directly on your requested compute node.
+
+You are now running the Desktop app. A bit more setup, described below, will prepare the app so
+you can run interactive jobs in this workshop.
+
+   ![](../fig/1_episode/desktop-terminal-emulator-jms.png){:width="80%"}
+
+### 6.1. Load jupyter
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
+
+Note: Here we assume that you have already included the workshop `module use` line in your .bashrc, as described in 
+[.bashrc setup](#bashrc-edit).
+
+In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to start a terminal emulator. Then, on the terminal command line, type:
+
+    module load jupyter
+
+  This will set up all the paths needed to execute packages such as Libra.
+
+  To verify the correct setup, entering `which jupyter` will return:
+
+    /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/libra/bin/jupyter
+
+<a name="activate-conda"></a>
+### 6.2. Activate conda 
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
+
+  Before you can use any of the Conda environments or run/submit scripts *from the command
+  line/terminal*,
+  you need to activate Conda.  To do this, type in the terminal:
+
+    eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
+
+  Now, the Conda installation for this workshop will be available, with the base environment
+  activated.
+
+  You can check the available Conda environments by running:
+
+    conda env list
+
+  which should show you something like this:
+
+    base      *  /projects/academic/cyberwksp21/Software/Conda/Miniconda3
+    libra-plus   /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/libra-plus
+    qmflows      /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows
+
+  Notice that the currently active environment is indicated with an asterisk character (\*).
+  By default, your current environment will also be shown by name in parentheses at the 
+  beginning of your command prompt.
+ 
+  You can list the packages included in any of the available Conda environments this way:
+
+    conda list -n <environment-name>
+
+
+<a name="activate-env"></a>
+### 6.3. Activate a conda environment 
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
+
+  For the workshop, we typically use either `qmflows` or `libra-plus` environments. To activate
+  libra-plus, type:
+
+    conda activate libra-plus
+
+### 6.3. Load additional modules
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
+
+  You can now load any other modules you need for your command line work. Refer to the
+  [Modules](#modules-avail) section above for more information.
+
+<a name="command-line-summary"></a>
+### 6.4. Summary: interactive jobs setup: Cluster Desktop app 
+[Top of Section](#cluster-desktop) \| [Back to TOC](#toc)
+
+  Here we summarize the steps to prepare for interactive work on the OnDemand Cluster app.
+
+  1. Ensure you are signed onto the UB VPN.  Sign on to `https://ondemand.ccr.buffalo.edu` using your CCR account and password.
+
+  Note: Here we assume that you have already included the workshop `module use` line in your .bashrc, as described in 
+  [.bashrc setup](#bashrc-edit).
+
+  2. In the OnDemand user interface, select *App: Faculty Cluster Desktop (Advanced)* and specify the
+  [SLURM](#slurm-interactive) parameters for the job.
+
+  3. When the Desktop app is ready, click Launch Faculty Cluster Desktop (Advanced) and then start a Terminal
+  Emulator.
+
+  4. From the terminal command line, load jupyter and enable conda:
+    
+    module load jupyter
+    
+    eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
+
+  5. Now you can activate a conda environment, such as:
+
+    conda activate qmflows
+
+  6. Additional software modules (see [Modules](#modules-avail)), can be loaded, such as:
+
+    module load qxmd
+
+  Now you are prepared to run interactive jobs in the OnDemand Faculty Cluster Desktop (Advanced)
+  app! 
+
 
 [Back to TOC](#toc)
 
