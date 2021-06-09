@@ -140,7 +140,7 @@ The details may vary and the order of topics may be changed, the topics may be o
   <tr>
     <td class="col-md-3">June 14, 2021 (Day 1), <strong>Monday</strong></td>
     <td class="col-md-7">
-      <ul>
+      <ul>        
         <li><a href="/_episodes/01-introduction.html">Introduction. Overview of CyberInfrastructure. </a></li>
         <li><a href="02-python_and_cpp">Revision of Python and C++ programming.</a> </li>
         <li><a href="03-molecular_dynamics">Coding Molecular Dynamics and Monte Carlo. Intro to Libra.</a></li>
