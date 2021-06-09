@@ -7,7 +7,7 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 <a name="toc"></a>
 # Overview of the UB CyberInfrastructure
 
-0. **BEFORE THE WORKSHOP**: [Set up and verify UBVPN](#ubvpn)
+0. [Set up and verify UBVPN](#ubvpn)
 1. [User, Project, and Scratch space](#project_space)
 2. [Open OnDemand](#ondemand)
 3. [Modules at CCR](#modules_setup)
@@ -15,10 +15,9 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 5. [Using Jupyter on the OnDemand gateway](#ondemand-jupyter)
 6. [Running interactive jobs: OnDemand Cluster Desktop](#cluster-desktop)
 7. [Running interactive jobs: OnDemand Shell](#cluster-shell)
-8. [Bonus Round: monitoring your jobs](#monitor)
 
 <a name="ubvpn"></a>
-## 0. **BEFORE THE WORKSHOP**: Set up and verify UBVPN and CCR access
+## 0.  Set up and verify UBVPN and CCR access
 [Back to TOC](#toc)
 
 As a workshop participant you have been allocated a UB VPN account and a CCR account.
@@ -36,7 +35,7 @@ you must use different passwords for each of these services.
 
 :warning: Use the VPN password to log into UBVPN, and the CCR password to log into OnDemand!
 
-### Workshop setup checklist
+### **BEFORE THE WORKSHOP**: Workshop setup checklist
 
 Before the workshop begins, please ensure that you have:
 
@@ -49,6 +48,65 @@ Once you have been through these steps, you are ready for the workshop!
 
 Need help? Get stuck? Please submit a ticket: 
 [ccr-help@buffalo.edu](http://www.buffalo.edu/ccr/support/ccr-help.html)
+
+### Quick Setup at CCR
+
+This quick setup will prepare your account, settings, and directories for the workshop.
+We will walk through these steps together in the introductory workshop session.
+
+1. Connect to UB VPN
+1. Sign in to OnDemand: [https://ondemand.ccr.buffalo.edu](https://ondemand.ccr.buffalo.edu)
+1. In the OnDemand window, click `Clusters -> Faculty Cluster Shell Access` to open a shell, as shown in the screenshot:
+
+   ![](../fig/1_episode/ood-faculty-cluster-shell.png){:width="80%"}
+
+   Then perform steps a. to d. outlined below.
+
+## a. First time OnDemand access
+
+Run this command in the terminal:
+
+    /util/ccr/bin/ssh_no_password.sh
+
+### b. Link to project space
+
+Create a link from your home directory to the project space by typing the following:
+
+    ln -s /projects/academic/cyberwksp21 ~/workshop
+
+### c. Create your project and scratch subdirectories
+
+    We now create directories for your own use during the workshop. These directories will have your own CCR username.
+
+    Create your Student directory from the command line by typing:
+
+        mkdir -p /projects/academic/cyberwksp21/Students/$USER
+
+    Create your scratch directory from the command line by typing:
+
+        mkdir -p /panasas/scratch/grp-cyberwksp21/$USER
+
+<a name="bashrc-edit"></a>
+### d. `.bashrc` edits
+
+   Two simple additions to your .bashrc file are needed to simplify access to the cluster and to the
+   workshop software modules.
+   You can use nano or vim editors for this task. We will demonstrate with nano, below.
+
+   From your home directory (Such as /user/ub2999, if you are user `ub2999`), type:
+
+        nano .bashrc
+
+   Use the arrow keys to move the cursor in nano.
+   Add the following two lines to your .bashrc file:
+
+    module use /projects/academic/cyberwksp21/Modules
+
+    export SLURM_CONF=/util/ccr/slurm/slurm-faculty.conf
+
+   Click ctrl-S to save, then ctrl-X to exit the nano editor. Then:
+
+    source .bashrc
 
 
 <a name="project_space"></a>
@@ -92,11 +150,10 @@ This workshop directory contains the following sub-directories:
     directories, but do not operate on files. 
     
 * `Students`
-    Please create your own directory in this folder. The name should match your CCR username.
+    We will create your own directory in this folder. The name should match your CCR username.
+    You can create your directory from the command line by typing:
 
-    If your CCR username is `ub2999`, create your directory from the command line by typing:
-
-        mkdir -p /projects/academic/cyberwksp21/Students/ub2999
+        mkdir -p /projects/academic/cyberwksp21/Students/$USER
 
     This will be your working directory (apart from your home directory). This is where you can keep your data 
     and run some (small) calculations. Data in this directory are shared among the participants (those who have
@@ -111,17 +168,17 @@ In addition to the directories above, you have access to the workshop scratch di
 
     /panasas/scratch/grp-cyberwksp21
 
-This directory is useful for writing temporary files or results. You may create a directory there
-for your own use. If your CCR username is `ub2999`, create a scratch directory named:
+This directory is useful for writing temporary files or results. We will create a directory there
+for your own use. If your CCR username is `ub2999`, you will create a scratch directory named:
 
     /panasas/scratch/grp-cyberwksp21/ub2999
 
-You can do this on the command line by typing:
+You can create your directory on the command line by typing:
 
-    mkdir -p /panasas/scratch/grp-cyberwksp21/ub2999
+    mkdir -p /panasas/scratch/grp-cyberwksp21/$USER
 
 <a name="ondemand"></a>
-## 2. Open OnDemand
+## 2. About Open OnDemand
 [Back to TOC](#toc)
 
 Open OnDemand is an open-source application that enables access to high-performance computing resources through a web portal (or "gateway").  We will use it to run both Jupyter Notebooks and command line sessions during this workshop.
@@ -136,7 +193,7 @@ For detailed step-by-step instructions for logging into the OnDemand system, and
 - [OnDemand Faculty Cluster app](https://ubccr.freshdesk.com/support/solutions/articles/13000080146-jupyter-notebook-app-faculty-cluster):
 - [Video overview](https://ub.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5c088f6-ba8c-4210-8d87-ab9f0104f54e)
 
-### First time OnDemand access 
+<!-- ### First time OnDemand access 
 
 If you are logging on for the first time, click `Clusters -> Faculty Cluster Shell Access`, as shown in the screenshot:
 
@@ -149,7 +206,7 @@ When the terminal prompt appears, run this command in the terminal:
 Finally, while you are on the terminal prompt, make a link to the project space for use with Jupyter Notebooks by typing
 the following:
         
-    ln -s /projects/academic/cyberwksp21 ~/workshop
+    ln -s /projects/academic/cyberwksp21 ~/workshop -->
           
 <a name="modules_setup"></a>
 ## 3. Modules at CCR
@@ -158,11 +215,15 @@ the following:
 Software modules allow us to use specialized software packages on the CCR computing
 cluster. In this section we'll set up to use modules, and describe how to use them and what they are for.
 
-<a name="bashrc-edit"></a>
-### 3.1. Edit your .bashrc
+<a name="your-bashrc"></a>
+### 3.1. Your .bashrc
 [Back to TOC](#toc)
 
-   Before you can use our Python installations via Jupyter, you need to edit the `.bashrc` file in your home directory.
+In order to use our Python installations via Jupyter, you need to edit the `.bashrc` file in your home directory.
+
+Refer to the [Edit .bashrc](#bashrc-edit) section for instructions. 
+
+<!-- Before you can use our Python installations via Jupyter, you need to edit the `.bashrc` file in your home directory.
    We will use the OnDemand Files app for this task.
 
    1. Once you have logged into OnDemand, go to Files -> Home Directory to open the Files app.
@@ -205,8 +266,9 @@ cluster. In this section we'll set up to use modules, and describe how to use th
 ### 3.2. Restart terminal or source .bashrc
 
    Make sure you restart the terminal or `source .bashrc` for the above change to take effect.
+       -->
 
-### 3.3. Check the new modules
+### 3.3. Review available modules
 [Top of Section](#modules_setup) \| [Back to TOC](#toc)
 
    You can see all available software modules (called just "modules") by typing:
