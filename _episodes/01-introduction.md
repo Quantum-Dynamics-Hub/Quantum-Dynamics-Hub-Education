@@ -136,7 +136,7 @@ For detailed step-by-step instructions for logging into the OnDemand system, and
 
 If you are logging on for the first time, click `Clusters -> Faculty Cluster Shell Access`, as shown in the screenshot:
 
-   ![](../fig/1_episode/ood-faculty-cluster-jms.png){:width="80%"}
+   ![](../fig/1_episode/ood-faculty-cluster-shell.png){:width="80%"}
 
 When the terminal prompt appears, run this command in the terminal:
 
@@ -284,8 +284,7 @@ Documentation for this app: [OnDemand Cluster Desktop](https://ubccr.freshdesk.c
 
 To start it, sign in to OnDemand, then select `Apps -> Faculty Cluster Desktop - Advanced Options`.
 
-TODO update:
-   ![](../fig/1_episode/start-faculty-cluster-desktop-jms.png){:width="80%"}
+   ![](../fig/1_episode/ood-faculty-cluster-advanced.png){:width="80%"}
 
 <a name="slurm-interactive"></a>
 ## 4.1 Requesting resources from SLURM
@@ -310,17 +309,17 @@ Number of cores | 4 (or as suggested by instructor)
 
 Then, click Launch to submit your request.
 
-   ![](../fig/1_episode/faculty-cluster-desktop-SLURM.png){:width="80%"}
+   ![](../fig/1_episode/faculty-cluster-desktop-advanced-request.png){:width="80%"}
 
 OnDemand will send your request to SLURM, which will prepare the resources for your job. OnDemand
 will display the status of your request, as shown here:
 
-   ![](../fig/1_episode/fcd-request.png){:width="80%"}
+   ![](../fig/1_episode/fcd-advanced-queued.png){:width="80%"}
 
 When the resources are ready, you will be prompted to launch the desktop by clicking "Launch Faculty
 Cluster Desktop", as shown here:
 
-   ![](../fig/1_episode/fcd-running.png){:width="80%"}
+   ![](../fig/1_episode/faculty-cluster-desktop-advanced-running.png){:width="80%"}
 
 Once you are running the Desktop app, click the blank terminal icon, as shown, to start a terminal emulator. The terminal 
 will run directly on your requested compute node.
@@ -395,15 +394,12 @@ In the OnDemand Faculty Cluster Desktop (Advanced), click the terminal icon to s
   1. Ensure you are signed onto the UB VPN.  Sign on to `https://ondemand.ccr.buffalo.edu` using your CCR account and password.
 
   2. In the OnDemand user interface, select *App: Faculty Cluster Desktop (Advanced)* and specify the
-  [SLURM](#slurm-interactive)
-  parameters for the job.
+  [SLURM](#slurm-interactive) parameters for the job.
 
   3. When the Desktop app is ready, click Launch Faculty Cluster Desktop (Advanced) and then start a Terminal
   Emulator.
 
-  4. Next, from the terminal command line, prepare the modules, load jupyter, and enable conda:
-    
-    module use /projects/academic/cyberwksp21/Modules
+  4. Next, from the terminal command line, load jupyter and enable conda:
     
     module load jupyter
     
