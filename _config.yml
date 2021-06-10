@@ -29,7 +29,7 @@ kind: "lesson"
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
 # Please don't change it: <USERNAME>/<PROJECT> is correct.
-repository: compchem-cybertraining/Cyber_Training_Workshop_2020
+repository: compchem-cybertraining/Cyber_Training_Workshop_2021
 
 # Email address, no mailto:
 email: "" 
@@ -47,10 +47,10 @@ swc_site: "https://software-carpentry.org"
 template_repo: "https://github.com/carpentries/styles"
 training_site: "https://carpentries.github.io/instructor-training"
 cc_by_human: "https://creativecommons.org/licenses/by/4.0/"
-example_repo: "https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2020"
-example_site: "https://compchem-cybertraining.github.io/Cyber_Training_Workshop_2020/"
-workshop_repo: "https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2020"
-workshop_site: "https://compchem-cybertraining.github.io/Cyber_Training_Workshop_2020/"
+example_repo: "https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021"
+example_site: "https://compchem-cybertraining.github.io/Cyber_Training_Workshop_2021/"
+workshop_repo: "https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021"
+workshop_site: "https://compchem-cybertraining.github.io/Cyber_Training_Workshop_2021/"
 
 
 # Surveys.
