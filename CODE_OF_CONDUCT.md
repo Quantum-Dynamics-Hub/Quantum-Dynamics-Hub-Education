@@ -23,6 +23,8 @@ title: "Schedule and Participants"
 * Doesn't have to be a full-scale research project, but can be a step towards this direction
 * Projects completed using local or home institution resources are eligible
 * Can be an application of coding project
+* The consistency in your course work during this school will contribute to your chances to win the awards
+* The awards decisions will be made based on the committee evaluation
 
 
 ## Participants 

@@ -142,8 +142,8 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-7">
       <ul>        
         <li><a href="/_episodes/01-introduction.html">Introduction. Overview of CyberInfrastructure. </a></li>
-        <li><a href="02-python_and_cpp">Revision of Python and C++ programming.</a> </li>
-        <li><a href="03-molecular_dynamics">Coding Molecular Dynamics and Monte Carlo. Intro to Libra.</a></li>
+        <li><a href="/_episodes/02-python-git.html">Revision of Python and Best Practices.</a> </li>
+        <li><a href="/_episodes/03-md-libra.html">Coding Molecular Dynamics and Monte Carlo. Intro to Libra.</a></li>
       </ul>
     </td> 
     <td class="col-md-2">Alexey Akimov, Jeanette Sperhac, Sudhakar Pamidighantam</td>

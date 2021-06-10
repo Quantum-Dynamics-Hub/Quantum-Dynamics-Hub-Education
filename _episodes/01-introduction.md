@@ -1,6 +1,6 @@
 ---
 title: "Introduction to our CyberInfrastructure. Setups and key links."
-date: June 14, 2021, 11:00 am - 5:00 pm EDT
+date: June 14, 2021, 11:00 am - 1:00 pm EDT
 ---
 
 
