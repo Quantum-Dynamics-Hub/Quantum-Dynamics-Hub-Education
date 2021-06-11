@@ -55,7 +55,7 @@ Need help? Get stuck? Please submit a ticket:
 This quick setup will prepare your account, settings, and directories for the workshop.
 We will walk through these steps together in the introductory workshop session.
 
-Workshop computing setup [slideset](setup-workshop.pdf)
+Workshop computing setup [slideset](../files/episode_1/setup-workshop.pdf)
 
 1. Connect to UB VPN
 1. Sign in to OnDemand: [https://ondemand.ccr.buffalo.edu](https://ondemand.ccr.buffalo.edu)
@@ -687,9 +687,9 @@ QOS | -q or --qos | valhalla
 <a name="references"></a>
 ## 8. Useful References and Slidesets
 
-- CCR overview [slideset](cybertraining-CCR_Overview_2021.pdf)
-- Intro to CCR and OnDemand [slideset](intro-workshop.pdf)
-- Workshop computing setup [slideset](setup-workshop.pdf)
+- CCR overview [slideset](../files/episode_1/cybertraining-CCR_Overview_2021.pdf)
+- Intro to CCR and OnDemand [slideset](../files/episode_1/intro-workshop.pdf)
+- Workshop computing setup [slideset](../files/episode_1/setup-workshop.pdf)
 - CCR/SLURM [Links and information](intro-references.html)
 
 [Back to TOC](#toc)
