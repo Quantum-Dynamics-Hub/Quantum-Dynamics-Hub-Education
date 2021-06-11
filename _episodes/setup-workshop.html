@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Jeanette Sperhac" />
+  <meta name="date" content="2021-06-14" />
+  <title>Workshop setup at CCR</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Workshop setup at CCR</h1>
+  <p class="author">
+Jeanette Sperhac
+  </p>
+  <p class="date">14 June 2021</p>
+</div>
+<div id="workshop-checklist" class="slide section level2">
+<h1>Workshop checklist</h1>
+<p>Before the workshop begins, please ensure that you have followed emailed instructions from CCR to do the following:</p>
+<ul>
+<li>installed the UB VPN software on your own computer</li>
+<li>signed into the UB VPN software</li>
+<li>logged on to CCR and changed your CCR password</li>
+<li>verified your access to OnDemand at CCR</li>
+</ul>
+</div>
+<div id="quick-setup-at-ccr" class="slide section level2">
+<h1>Quick Setup at CCR</h1>
+<p>This quick setup will prepare your account, settings, and directories for the workshop.</p>
+<p>We will walk through these steps together during the workshop introduction session. Please carry them out in your own account!</p>
+<p>Any problems, issues, or questions, please Slack or raise your hand.</p>
+</div>
+<div id="sign-on" class="slide section level2">
+<h1>Sign on</h1>
+<ol style="list-style-type: decimal">
+<li><p>Connect to UB VPN (use your VPN password)</p></li>
+<li><p>Sign in to OnDemand (use your CCR password): <a href="https://ondemand.ccr.buffalo.edu">https://ondemand.ccr.buffalo.edu</a>.</p></li>
+<li><p>In the OnDemand window, click <code>Clusters -&gt; Faculty Cluster Shell Access</code> to open a shell, as shown:</p>
+<p><img src="../fig/1_episode/ood-faculty-cluster-shell.png" style="width:80.0%" /></p></li>
+</ol>
+</div>
+<div id="first-time-ondemand-access" class="slide section level2">
+<h1>First time OnDemand access</h1>
+<p>You’ll see a terminal as shown below. Use it to run this command:</p>
+<pre><code>/util/ccr/bin/ssh_no_password.sh</code></pre>
+<p>This ensures you can ssh between any nodes in the cluster. Keep your terminal open!</p>
+<p><img src="../fig/1_episode/faculty-shell.png" style="width:70.0%" /></p>
+</div>
+<div id="link-to-project-space" class="slide section level2">
+<h1>Link to project space</h1>
+<p>Next, in your terminal, create a link from your home directory to the project space by typing the following:</p>
+<pre><code>ln -s /projects/academic/cyberwksp21 ~/workshop</code></pre>
+<p>Check this by typing:</p>
+<pre><code>ls -l workshop</code></pre>
+<p>You should see something like this–a successful link to our project space:</p>
+<p><img src="../fig/1_episode/workshop-ls.png" style="width:80.0%" /></p>
+</div>
+<div id="create-your-project-and-scratch-subdirectories" class="slide section level2">
+<h1>Create your project and scratch subdirectories</h1>
+<p>We now verify/create directories for your use during the workshop. These directories will have your own CCR username.</p>
+<p>Verify your Student directory by typing:</p>
+<pre><code>ls /projects/academic/cyberwksp21/Students/ | grep $USER</code></pre>
+<p>…you will see your own username returned from this command.</p>
+<p>Create your scratch directory by typing:</p>
+<pre><code>mkdir -p /panasas/scratch/grp-cyberwksp21/$USER</code></pre>
+</div>
+<div id="bashrc-edits" class="slide section level2">
+<h1><code>.bashrc</code> edits</h1>
+<p>We now make two simple additions to your .bashrc file. You can use nano or vim editors for this task. We will demonstrate with nano.</p>
+<p>From your home directory, type:</p>
+<pre><code> nano .bashrc</code></pre>
+<p>Use the arrow keys to move the cursor in nano. Add the following two lines to your .bashrc file:</p>
+<pre><code>module use /projects/academic/cyberwksp21/Modules
+export SLURM_CONF=/util/ccr/slurm/slurm-faculty.conf</code></pre>
+<p>Click ctrl-S to save, then ctrl-X to exit the nano editor. Then:</p>
+<pre><code>source .bashrc</code></pre>
+<h3 id="verify">Verify</h3>
+<pre><code>module avail</code></pre>
+<p>The first output returned should look like:</p>
+<p><img src="../fig/1_episode/module-avail-jms.png" style="width:80.0%" /></p>
+</div>
+<div id="congratulations" class="slide section level2">
+<h1>Congratulations</h1>
+<p>You’re ready for the workshop!</p>
+<p>(Now let’s do something cool)</p>
+</div>
+</body>
+</html>

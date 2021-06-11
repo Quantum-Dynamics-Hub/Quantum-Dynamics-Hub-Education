@@ -15,6 +15,7 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 5. [Using Jupyter on the OnDemand gateway](#ondemand-jupyter)
 6. [Running interactive jobs: OnDemand Cluster Desktop](#cluster-desktop)
 7. [Running interactive jobs: OnDemand Shell](#cluster-shell)
+Appendix: [Useful References](#references)
 
 <a name="ubvpn"></a>
 ## 0.  Set up and verify UBVPN and CCR access
@@ -54,6 +55,8 @@ Need help? Get stuck? Please submit a ticket:
 This quick setup will prepare your account, settings, and directories for the workshop.
 We will walk through these steps together in the introductory workshop session.
 
+CCR and Workshop setup [slideset](setup-workshop.html)
+
 1. Connect to UB VPN
 1. Sign in to OnDemand: [https://ondemand.ccr.buffalo.edu](https://ondemand.ccr.buffalo.edu)
 1. In the OnDemand window, click `Clusters -> Faculty Cluster Shell Access` to open a shell, as shown in the screenshot:
@@ -76,15 +79,15 @@ Create a link from your home directory to the project space by typing the follow
 
 #### c. Create your project and scratch subdirectories
 
-    We now create directories for your own use during the workshop. These directories will have your own CCR username.
+We now create directories for your own use during the workshop. These directories will have your own CCR username.
 
-    Create your Student directory from the command line by typing:
+Create your Student directory from the command line by typing:
 
-        mkdir -p /projects/academic/cyberwksp21/Students/$USER
+    mkdir -p /projects/academic/cyberwksp21/Students/$USER
 
-    Create your scratch directory from the command line by typing:
+Create your scratch directory from the command line by typing:
 
-        mkdir -p /panasas/scratch/grp-cyberwksp21/$USER
+    mkdir -p /panasas/scratch/grp-cyberwksp21/$USER
 
 <a name="bashrc-edit"></a>
 #### d. `.bashrc` edits
@@ -150,10 +153,10 @@ This workshop directory contains the following sub-directories:
     directories, but do not operate on files. 
     
 * `Students`
-    We will create your own directory in this folder. The name should match your CCR username.
-    You can create your directory from the command line by typing:
+    We will create your own directory in this folder. The name should match your CCR username.  If
+    your CCR username is `ub2999`, your directory should be:
 
-        mkdir -p /projects/academic/cyberwksp21/Students/$USER
+        /projects/academic/cyberwksp21/Students/ub2999
 
     This will be your working directory (apart from your home directory). This is where you can keep your data 
     and run some (small) calculations. Data in this directory are shared among the participants (those who have
@@ -169,13 +172,9 @@ In addition to the directories above, you have access to the workshop scratch di
     /panasas/scratch/grp-cyberwksp21
 
 This directory is useful for writing temporary files or results. We will create a directory there
-for your own use. If your CCR username is `ub2999`, you will create a scratch directory named:
+for your own use. If your CCR username is `ub2999`, your scratch directory should be:
 
     /panasas/scratch/grp-cyberwksp21/ub2999
-
-You can create your directory on the command line by typing:
-
-    mkdir -p /panasas/scratch/grp-cyberwksp21/$USER
 
 <a name="ondemand"></a>
 ## 2. About Open OnDemand
@@ -450,11 +449,13 @@ Make sure you include the `module use /projects/academic/cyberwksp21/Modules` li
    We will also request the job to last for 1 hour (or more). When the time runs out, you can just submit another job, so
    it is not critical. However, I recommend requesting as much time as you plan working on continuosly.
 
-   This example shows appropriate parameters for your job:
+   <!-- This example shows appropriate parameters for your job:
 
    |         |            |
    |---------|------------|
    | ![](../fig/1_episode/jupyter-job-1.png){:width="100%"}   | ![](../fig/1_episode/jupyter-job-2.png){:width="100%"} |
+   -->
+   ![](../fig/1_episode/configure-jupyter-session.png){:width="90%"}
 
    Once done, click "Launch". You shall be able to see the following results:
 
@@ -745,6 +746,15 @@ SLURM parameter description | Parameter name (srun) | value |
 SLURM Account | -A or --account | cyberwksp21
 Partition | -p or --partition | valhalla
 QOS | -q or --qos | valhalla
+
+Appendix: [Useful References](#references)
+
+<a name="references"></a>
+## Appendix: Useful References
+
+- [Links and information](intro-references.html) about CCR
+- Intro to CCR and OnDemand [slideset](intro-workshop.html)
+- CCR and Workshop setup [slideset](setup-workshop.html)
 
 
 [Back to TOC](#toc)
