@@ -28,6 +28,12 @@ Jeanette Sperhac
   </p>
   <p class="date">14 June 2021</p>
 </div>
+<div class="slide section level2">
+
+<!-- Generated using pandoc and slidy (default settings), e.g.
+    pandoc -t slidy -s slides-setup-workshop.md -o setup-workshop.html
+-->
+</div>
 <div id="workshop-checklist" class="slide section level2">
 <h1>Workshop checklist</h1>
 <p>Before the workshop begins, please ensure that you have followed emailed instructions from CCR to do the following:</p>
@@ -50,7 +56,7 @@ Jeanette Sperhac
 <li><p>Connect to UB VPN (use your VPN password)</p></li>
 <li><p>Sign in to OnDemand (use your CCR password): <a href="https://ondemand.ccr.buffalo.edu">https://ondemand.ccr.buffalo.edu</a>.</p></li>
 <li><p>In the OnDemand window, click <code>Clusters -&gt; Faculty Cluster Shell Access</code> to open a shell, as shown:</p>
-<p><img src="../fig/1_episode/ood-faculty-cluster-shell.png" style="width:80.0%" /></p></li>
+<p><img src="../fig/1_episode/ood-faculty-cluster-shell.png" style="width:100.0%" /></p></li>
 </ol>
 </div>
 <div id="first-time-ondemand-access" class="slide section level2">
@@ -58,7 +64,7 @@ Jeanette Sperhac
 <p>You’ll see a terminal as shown below. Use it to run this command:</p>
 <pre><code>/util/ccr/bin/ssh_no_password.sh</code></pre>
 <p>This ensures you can ssh between any nodes in the cluster. Keep your terminal open!</p>
-<p><img src="../fig/1_episode/faculty-shell.png" style="width:70.0%" /></p>
+<p><img src="../fig/1_episode/faculty-shell.png" style="width:100.0%" /></p>
 </div>
 <div id="link-to-project-space" class="slide section level2">
 <h1>Link to project space</h1>
@@ -88,7 +94,7 @@ Jeanette Sperhac
 export SLURM_CONF=/util/ccr/slurm/slurm-faculty.conf</code></pre>
 <p>Click ctrl-S to save, then ctrl-X to exit the nano editor. Then:</p>
 <pre><code>source .bashrc</code></pre>
-<h3 id="verify">Verify</h3>
+<h3 id="verify-.bashrc">Verify .bashrc</h3>
 <pre><code>module avail</code></pre>
 <p>The first output returned should look like:</p>
 <p><img src="../fig/1_episode/module-avail-jms.png" style="width:80.0%" /></p>
@@ -96,7 +102,6 @@ export SLURM_CONF=/util/ccr/slurm/slurm-faculty.conf</code></pre>
 <div id="congratulations" class="slide section level2">
 <h1>Congratulations</h1>
 <p>You’re ready for the workshop!</p>
-<p>(Now let’s do something cool)</p>
 </div>
 </body>
 </html>

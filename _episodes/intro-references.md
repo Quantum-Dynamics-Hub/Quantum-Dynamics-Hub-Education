@@ -1,6 +1,3 @@
-% CCR Computing References and info
-% Jeanette Sperhac
-% 14 June 2021
 --
 title: "CCR Computing References and info"
 date: June 14, 2021, 11:00 am - 5:00 pm EDT
@@ -74,3 +71,7 @@ Query available resources, check status of your own jobs:
 [CCR Freshdesk ticketing system](https://ubccr.freshdesk.com/support/home)
 
 Or email us at: ccr-help@buffalo.edu
+
+Join us on the workshop Slack channel:
+ 
+    quantumdynamicshub.slack.com
