@@ -288,6 +288,11 @@ These conda environment exports (.yml) fully describe the packages installed for
 - libra-plus
 - qmflows
 
+These yml files can be used to entirely recreate the specified conda environment, using the command:
+
+    conda env create -f <environment>.yml
+
+Refer to [Conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for further information about conda environments.
 
 ---
 
