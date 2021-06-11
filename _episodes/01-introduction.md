@@ -750,9 +750,10 @@ QOS | -q or --qos | valhalla
 <a name="references"></a>
 ## 8. Useful References
 
-- [Links and information](intro-references.html) about CCR
+- CCR overview [slideset](cybertraining-CCR_Overview_2021.pdf)
 - Intro to CCR and OnDemand [slideset](intro-workshop.html)
 - CCR and Workshop setup [slideset](setup-workshop.html)
+- [Links and information](intro-references.html) about CCR
 
 
 [Back to TOC](#toc)
