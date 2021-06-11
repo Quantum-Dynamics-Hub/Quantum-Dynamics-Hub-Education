@@ -15,7 +15,7 @@ date: June 14, 2021, 11:00 am - 5:00 pm EDT
 5. [Using Jupyter on the OnDemand gateway](#ondemand-jupyter)
 6. [Running interactive jobs: OnDemand Cluster Desktop](#cluster-desktop)
 7. [Running interactive jobs: OnDemand Shell](#cluster-shell)
-Appendix: [Useful References](#references)
+8. [Useful References](#references)
 
 <a name="ubvpn"></a>
 ## 0.  Set up and verify UBVPN and CCR access
@@ -747,10 +747,8 @@ SLURM Account | -A or --account | cyberwksp21
 Partition | -p or --partition | valhalla
 QOS | -q or --qos | valhalla
 
-Appendix: [Useful References](#references)
-
 <a name="references"></a>
-## Appendix: Useful References
+## 8. Useful References
 
 - [Links and information](intro-references.html) about CCR
 - Intro to CCR and OnDemand [slideset](intro-workshop.html)
