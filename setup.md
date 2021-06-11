@@ -11,6 +11,7 @@ title: Setup
 5. [Libra and other Python libraries](#libra)
 6. [Terminal](#terminal)
 7. [Text editors](#text-editors)
+8. [About our software installs](#software)
 
 
 ## 1. Setting up your UB CCR account and getting access to the UB CCR supercomputer and infrastructure
@@ -206,6 +207,86 @@ Emacs can also be used as an RSS reader or file manager.
 [Sublime](https://www.sublimetext.com/) is an intuitive text editor that makes looking at files with multiple sections easy. 
 t allows split screen editing and is very customizable.
 
+
+<a name="software"></a>
+## 8. About our software installs
+[Back to TOC](#toc)
+
+This section describes the setup performed for the Libra installation, conda
+environments, and the libra-plus and qmflows Jupyter Notebooks kernels at CCR.
+
+### Compiled codes
+
+The following codes have been installed on CCR computing resources in
+support of this project:
+
+ - columbus
+ - cp2k
+ - dftb+
+ - dynemol
+ - eQE
+ - ergoSCF (serial and MPI)
+ - LAMMPS
+ - MOPAC
+ - Newton-X
+ - Q-Chem
+ - Quantum Espresso 6.2.1
+ - QXMD
+
+### Compilers
+
+The following compilers were used for all codes listed above, as appropriate:
+
+ - MKL 2020.2
+ - INTEL 18.3
+ - openmpi 3.0.3/gcc 7.3.0
+
+### Computing resources
+
+Codes listed above were compiled specifically for CCR's faculty cluster `valhalla` partition.
+Node specs (two kinds) are as follows:
+
+CPU-E5-2620v3:
+
+- CPUs 12
+- INTEL
+- Memory 128000 (MB)
+
+CPU-E5-2650v4:
+
+- CPUs 24
+- INTEL
+- Memory 256000 (MB)
+
+### Scripts
+
+The scripts listed here are provided for consultation in `data/libra-setup/`
+
+#### libra\_env\_recipe.sh
+
+Installation procedure for libra prerequisites and conda environment.
+Refer to libra documentation for further information.
+
+
+#### qmflows\_env\_recipe.sh
+
+Installation procedure for the qmflows conda environment.
+
+#### prepend\_and\_launch.sh
+
+These scripts are called upon launch of the Jupyter libra-plus and qmflows kernels. They set LD\_LIBRARY\_PATH, PATH, and various environment variables to enable Libra to be used with various compiled codes on the compute cluster.
+
+The prepend\_and\_launch.sh scripts should be placed in the kernel directory for the respective kernel, and specified in the arguments of the appropriate kernel.json so it will be called.
+
+#### kernel.json
+
+Example kernel.json for Libra, showing specification of launch script.
+
+### Conda environment exports
+
+These conda environment exports (.yml) fully describe the packages installed for the following environments:
+- libra-plus
+- qmflows
 
 
 ---
