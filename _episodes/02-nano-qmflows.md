@@ -59,4 +59,30 @@ Once the calculation is completed, copy locally the result file `output_0_sing_o
 ## 3. The distribute_derivative_couplings workflow
 <a name="#derivative_couplings"></a> [Back to TOC](#toc)
 
-Follow the [Derivative_Couplings tutorial](https://qmflows-namd.readthedocs.io/en/latest/derivative_couplings.html) to calculate the derivative couplings of 
+The last twenty points of a ground state molecular dynamics trajectory for the Cd33Se33 system have been distributed into four chunks, for which the overlaps and couplings have been calculated according to the first two parts of the [Derivative Couplings tutorial](https://qmflows-namd.readthedocs.io/en/latest/derivative_couplings.html#) of nano-qmflows. Follow the tutorial to calculate the overlaps and couplings amongst the missing pairs of points. In your working directory:
+- copy the full trajectory `Cd33Se33_MD_last20.xyz`;
+- copy the files `chunk_0.hdf5`, `chunk_1.hdf5`, `chunk_2.hdf5`, `chunk_3.hdf5` and merge them into a `chunk_0123.hdf5` file;
+- copy locally the file `input.yaml` and customize it with your own path to the merged .hdf5, the full MD trajectory, and the scratch directory;
+- create the following `launch.sh` script:
+
+      #!/bin/sh
+      #SBATCH --partition=valhalla  --qos=valhalla
+      #SBATCH --clusters=faculty
+      #SBATCH --account=cyberwksp21
+      
+      #SBATCH --time=00:10:00
+      #SBATCH --nodes=1
+      #SBATCH --ntasks-per-node=12
+      #SBATCH --mem=32000
+       
+      eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
+      conda activate qmflows
+      module load cp2k/8.1-sse
+       
+      run_workflow.py -i input.yml
+       
+and submit your calculation with:
+ 
+    sbatch launch.sh
+
+Use the updated `chunk_0123.hdf5` to retrieve the LUMO-LUMO+1 couplings and plot their value in time.
