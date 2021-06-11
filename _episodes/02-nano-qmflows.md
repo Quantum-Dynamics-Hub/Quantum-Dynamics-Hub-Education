@@ -50,11 +50,11 @@ and submit your calculation with:
  
     sbatch launch.sh
 
-Once the calculation is completed, copy locally the result file `output_0_sing_orb.txt` from your scratch directory and interpret it according to corresponding [tutorial](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html).
+Once the calculation is completed, copy locally the result file `output_0_sing_orb.txt` from your scratch directory and interpret it according to the corresponding [tutorial](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html).
 
 1. How many singly excited configurations do you expect to find there?
 2. What is the energy of the first excited state within the single orbital approximation? Is this result in line with the previous excercice?
-3. Plot the absorption spectrum for the Cd33Se33.
+3. Plot the absorption spectrum for the Cd33Se33 system in the energy interval 0-2 eV using a sigma value of 0.1. (Suggestion: Adapt [these lines](https://github.com/SCM-NV/nano-qmflows/blob/master/scripts/qmflows/convolution.py#L45-L52) of the script `convolution.py`)
 
 ## 3. The distribute_derivative_couplings workflow
 <a name="#derivative_couplings"></a> [Back to TOC](#toc)
