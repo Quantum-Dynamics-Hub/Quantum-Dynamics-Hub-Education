@@ -3,29 +3,31 @@
 These scripts were used to set up the Libra installation, conda
 environments, and the libra-plus and qmflows Jupyter Notebooks kernels at CCR.
 
-`libra_env_recipe.sh`
+## Scripts
+
+### libra\_env\_recipe.sh
     
    Installation procedure for libra prerequisites and conda environment
    Refer to libra documentation for further information.
 
-`qmflows_env_recipe.sh`
+### qmflows\_env\_recipe.sh
    
    Installation procedure for the qmflows conda environment.
 
-`prepend_and_launch.sh`
+### prepend\_and\_launch.sh
     
    These scripts are called upon launch of the Jupyter libra-plus
-   and qmflows kernels. They set LD_LIBRARY_PATH, PATH, and various 
+   and qmflows kernels. They set LD\_LIBRARY\_PATH, PATH, and various 
    environment variables to enable Libra to be used with various compiled
    codes on the compute cluster.
    
-   The prepend_and_launch.sh scripts should be placed in the kernel
+   The prepend\_and\_launch.sh scripts should be placed in the kernel
    directory for the respective kernel, and specified in the arguments of
    the appropriate kernel.json so it will be called.
    
-`kernel.json`
+### kernel.json
 
-    Example kernel.json for Libra, showing specification of launch script.       
+   Example kernel.json for Libra, showing specification of launch script.       
 
 ## Compiled codes
 
@@ -69,6 +71,4 @@ CPU-E5-2650v4:
 - CPUs 24
 - INTEL
 - Memory 256000 (MB)
- 
-
 
