@@ -5,8 +5,7 @@ date: June 14, 2021, 2:00 pm - 3:30 pm EDT
 ---
 
 <a name="toc"></a>
-# Overview of the UB CyberInfrastructure
-
+# Table of Content
 1. [Brief Python overview](#python)
 2. [Best practices](#best_practices)
 

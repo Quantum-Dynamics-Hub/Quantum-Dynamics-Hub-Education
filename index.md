@@ -141,9 +141,9 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 14, 2021 (Day 1), <strong>Monday</strong></td>
     <td class="col-md-7">
       <ul>        
-        <li><a href="/_episodes/01-introduction.html">Introduction. Overview of CyberInfrastructure. </a></li>
-        <li><a href="/_episodes/02-python-git.html">Revision of Python and Best Practices.</a> </li>
-        <li><a href="/_episodes/03-md-libra.html">Coding Molecular Dynamics and Monte Carlo. Intro to Libra.</a></li>
+        <li><a href="/_episodes/introduction.html">Introduction. Overview of CyberInfrastructure. </a></li>
+        <li><a href="/_episodes/python-git.html">Revision of Python and Best Practices.</a> </li>
+        <li><a href="/_episodes/md-libra.html">Coding Molecular Dynamics and Monte Carlo. Intro to Libra.</a></li>
       </ul>
     </td> 
     <td class="col-md-2">Alexey Akimov, Jeanette Sperhac, Sudhakar Pamidighantam</td>
@@ -153,8 +153,8 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 15, 2021 (Day 2), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="05-nano-qmflows">nano-qmflows workflows</a> </li>
-        <li><a href="06-nano-qmflows">TSH with model Hamiltonians using Libra</a></li>
+        <li><a href="/_episodes/nano-qmflows">nano-qmflows workflows</a> </li>
+        <li><a href="/_episodes/nano-qmflows">TSH with model Hamiltonians using Libra</a></li>
       </ul>
     </td>
     <td class="col-md-2">Ivan Infante, Felipe Zapata, Alexey Akimov</td>
@@ -164,8 +164,8 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 16, 2021 (Day 3), Wednesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="07-heom-libra">Hierarchy of equations of motion (HEOM) calculations with Libra. </a></li>
-        <li><a href="08-dvr-libra">Wavepacket/DVR calculations with  Libra. </a></li>
+        <li><a href="/_episodes/heom-libra">Hierarchy of equations of motion (HEOM) calculations with Libra. </a></li>
+        <li><a href="/_episodes/dvr-libra">Wavepacket/DVR calculations with  Libra. </a></li>
       </ul>
     </td>
     <td class="col-md-2">Amber Jain, Alexey Akimov</td>
@@ -175,8 +175,8 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 17, 2021 (Day 4), Thursday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="09-fox-cat-qmflows">Building quantum dot structures with FOX and CAT</a></li>
-        <li><a href="10-nbra-workflows-libra">Atomistic simulations of NA-MD in materials, using Libra/DFTB+, Libra/cp2k, Libra/ErgoSCF, Libra/QE interfaces</a></li>
+        <li><a href="/_episodes/fox-cat-qmflows">Building quantum dot structures with FOX and CAT</a></li>
+        <li><a href="/_episodes/nbra-workflows-libra">Atomistic simulations of NA-MD in materials, using Libra/DFTB+, Libra/cp2k, Libra/ErgoSCF, Libra/QE interfaces</a></li>
       </ul>
     </td>
     <td class="col-md-2">Ivan Infante, Felipe Zapata, Alexey Akimov</td>
@@ -186,7 +186,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 18, 2021 (Day 5), Friday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="11-nexmd">Excited state dynamics of extended organic systems using NEXMD</a></li>
+        <li><a href="/_episodes/nexmd">Excited state dynamics of extended organic systems using NEXMD</a></li>
       </ul>
     </td>
     <td class="col-md-2">Sergei Tretiak, Walter Malone</td>
@@ -208,7 +208,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 21, 2021 (Day 8), <strong>Monday</strong></td>
     <td class="col-md-7">
       <ul>
-        <li><a href="12-qxmd">Excited state dynamics of extended inorganic systems using QXMD</a></li>
+        <li><a href="/_episodes/qxmd">Excited state dynamics of extended inorganic systems using QXMD</a></li>
       </ul>
     </td>
     <td class="col-md-2">Aiichiro Nakano, Alexey Akimov</td>
@@ -218,7 +218,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 22, 2021 (Day 9), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="13-columbus">Accurate excited state calculations using COLUMBUS package</a></li>
+        <li><a href="/_episodes/columbus">Accurate excited state calculations using COLUMBUS package</a></li>
       </ul>
     </td>
     <td class="col-md-2">Hans Lischka, Mario Barbatti</td>
@@ -228,8 +228,8 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 23, 2021 (Day 10), Wednesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="14-newtonx">Nonadiabatic dynamics using Newton-X/DFTB+ package</a></li>
-        <li><a href="13-columbus">Accurate excited state calculations using COLUMBUS package</a></li>
+        <li><a href="/_episodes/newtonx">Nonadiabatic dynamics using Newton-X/DFTB+ package</a></li>
+        <li><a href="/_episodes/columbus">Accurate excited state calculations using COLUMBUS package</a></li>
       </ul>
     </td>
     <td class="col-md-2">Mario Barbatti, Hans Lischka</td>
@@ -239,7 +239,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 24, 2021 (Day 11), Thursday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="14-newtonx">Nonadiabatic dynamics using Newton-X/COLUMBUS package</a></li>        
+        <li><a href="/_episodes/newtonx">Nonadiabatic dynamics using Newton-X/COLUMBUS package</a></li>        
       </ul>
     </td>
     <td class="col-md-2">Mario Barbatti, Hans Lischka</td>
@@ -264,25 +264,29 @@ The details may vary and the order of topics may be changed, the topics may be o
 
 | Name            | Affiliation         |    Role/Software covered   |
 | --------------- | ------------------- | -------------------------- |
-| [Dr. Alexey Akimov](https://akimovlab.github.io/)         |   University at Buffalo, USA      | Workshop coordinator, Instructor for: Libra, DFTB+, ErgoSCF, CP2k, QXMD, etc. |
-| [Ms. Jeanette Sperhac](http://www.buffalo.edu/ccr/about-us/people/staff/sperhac.html)      |   University at Buffalo Center for Computational Research, USA  | Workshop coordinator, Instructor for: Jupyter, Open OnDemand, UB CCR HPC |
-| [Dr. Sudhakar Pamidighantam](https://www.chem.indiana.edu/faculty/sudhakar-pamidighantam/)  | Indiana University, USA  | Instructor for: SEAGrid platform |
-| [Dr. Sergei Tretiak](https://cnls.lanl.gov/~serg/homepage.html) | Los Alamos National Laboratory, USA | Instructor for: NEXMD |
-| [Dr. Walter Malone](https://cnls.lanl.gov/External/people/Walter_Malone.php) | Los Alamos National Laboratory, USA | Instructor for: NEXMD |
-| [Dr. Ivan Infante](https://iinfant76.wixsite.com/infantelab) | Istituto Italiano di Tecnologia, Italy | Instructor for: CAT, FOX, nano-qmflows, CP2k |
-| [Dr. Felipe Zapata](https://www.linkedin.com/in/felipe-zapata/?originalSubdomain=nl) | Netherlands eScience Center, Netherlands | Instructor for: CAT, FOX, nano-qmflows, CP2k |
-| [Dr. Hans Lischka](https://homepage.univie.ac.at/hans.lischka/) | Texas Tech University | Instructor for: COLUMBUS, Newton-X |
-| [Dr. Mario Barbatti](https://barbatti.org/) | Aix-Marseille University, France | Instructor for: Newton-X, DFTB+ |
-| [Dr. Amber Jain](https://amberj74.wixsite.com/quantumdynamics/amber-jain-1) | Indian Institute of Technology, India  | Instructor: HEOM (in Libra) |
-| [Dr. Aiichiro Nakano](https://viterbi.usc.edu/directory/faculty/Nakano/Aiichiro) | University of Southern California, USA  |  Instructor for: QXMD |
+| [Dr. Alexey Akimov](https://akimovlab.github.io/)         |   University at Buffalo, USA      | Workshop coordinator, Instructor for: **Libra, DFTB+, ErgoSCF, CP2k, QXMD, etc.** |
+| [Ms. Jeanette Sperhac](http://www.buffalo.edu/ccr/about-us/people/staff/sperhac.html)      |   University at Buffalo Center for Computational Research, USA  | Workshop coordinator, Instructor for: **Jupyter, Open OnDemand, UB CCR HPC** |
+| [Dr. Sudhakar Pamidighantam](https://www.chem.indiana.edu/faculty/sudhakar-pamidighantam/)  | Indiana University, USA  | Instructor for: **SEAGrid platform** |
+| [Dr. Sergei Tretiak](https://cnls.lanl.gov/~serg/homepage.html) | Los Alamos National Laboratory, USA | Instructor for: **NEXMD** |
+| [Dr. Walter Malone](https://cnls.lanl.gov/External/people/Walter_Malone.php) | Los Alamos National Laboratory, USA | Instructor for: **NEXMD** |
+| [Dr. Ivan Infante](https://iinfant76.wixsite.com/infantelab) | Istituto Italiano di Tecnologia, Italy | Instructor for: **CAT, FOX, nano-qmflows, CP2k** |
+| [Dr. Felipe Zapata](https://www.linkedin.com/in/felipe-zapata/?originalSubdomain=nl) | Netherlands eScience Center, Netherlands | Instructor for: **CAT, FOX, nano-qmflows, CP2k** |
+| [Dr. Hans Lischka](https://homepage.univie.ac.at/hans.lischka/) | Texas Tech University | Instructor for: **COLUMBUS, Newton-X** |
+| [Dr. Mario Barbatti](https://barbatti.org/) | Aix-Marseille University, France | Instructor for: **Newton-X, DFTB+** |
+| [Dr. Amber Jain](https://amberj74.wixsite.com/quantumdynamics/amber-jain-1) | Indian Institute of Technology, India  | Instructor: **HEOM (in Libra)** |
+| [Dr. Aiichiro Nakano](https://viterbi.usc.edu/directory/faculty/Nakano/Aiichiro) | University of Southern California, USA  |  Instructor for: **QXMD** |
 
 ### Our co-instructors/helpers
 
 | Name            | Affiliation         |    Role/Software covered   |
 | --------------- | ------------------- | -------------------------- |
-| Mr. Mohammad Shakiba   |  Shahid Bahonar University of Kerman, Iran   | Co-instructor for: CP2k, Libra/CP2k |
-| Mr. Bas van Been  |  Vrije Universiteit Amsterdam, The Netherlands  | Co-instructor for: CAT, FOX, nano-qmflows |
-| Ms. Juliette Zito  |  Istituto Italiano di Tecnologia, Italy  | Co-instructor for: CAT, FOX, nano-qmflows |
+| Mr. Mohammad Shakiba   |  Shahid Bahonar University of Kerman, Iran   | Co-instructor for: **CP2k, Libra/CP2k** |
+| Mr. Bas van Been  |  Vrije Universiteit Amsterdam, The Netherlands  | Co-instructor for: **CAT, FOX, nano-qmflows** |
+| Ms. Juliette Zito  |  Istituto Italiano di Tecnologia, Italy  | Co-instructor for: **CAT, FOX, nano-qmflows** |
+| Ms. Roberta Pascazio | Istituto Italiano di Tecnologia, Italy | Co-instructor for **CAT, FOX** | 
+| Dr. Reed Nieman | Texas Tech University, USA | Co-instructor for **COLUMBUS** |
+| Dr. Bhumika Jayee | Texas Tech University, USA | Co-instructor for **COLUMBUS** |
+| Dr. Ljiljana Stojanovic | University College London, UK | Co-instructor for **Newton-X, DFTB+** |
 
 
 ### The UB Center for Computational Research team

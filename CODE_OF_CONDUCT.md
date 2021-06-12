@@ -53,8 +53,8 @@ title: "Schedule and Participants"
 | 20 | Ruth Helena Tichauer | PD |  University of Jyvaskyla | Finland | Gerrit Groenhof | 
 | 21 | **Sunita Sharma** | GRA-3 | IIT Bombay | India | Gopalan Rajaraman | 
 | 22 | **Bas van Beek** | GRA-3 | Vrije Universiteit Amsterdam | Netherlands | Ivan Infante | 
-| 23 | **Juliette Zito** | GRA-3 | Istituto Italiano di Tecnologia | Italy | Ivan Infante | 
-| 24 | Roberta Pascazio | GRA-3 | Istituto Italiano di Tecnologia | Italy | Ivan Infante | 
+| 23 | **Juliette Zito** | GRA-2 | Istituto Italiano di Tecnologia | Italy | Ivan Infante | 
+| 24 | Roberta Pascazio | GRA-1 | Istituto Italiano di Tecnologia | Italy | Ivan Infante | 
 | 25 | **Jakub Martinka** | GRA-1 | Charles University | Czech Republic | Jiri Pittner | 
 | 26 | Wenguang Hu | GRA-1 | Nanjing University of information science and technology | China | Lei Zhang |
 | 27 | Lei Zhang | FAC-PHD | Nanjing University of Information Science and Technology | China | Lei Zhang |
