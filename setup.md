@@ -12,6 +12,7 @@ title: Setup
 6. [Terminal](#terminal)
 7. [Text editors](#text-editors)
 8. [About our software installs](#software)
+9. [Molecular visualization and editing tools](#mol_vis)
 
 
 ## 1. Setting up your UB CCR account and getting access to the UB CCR supercomputer and infrastructure
@@ -19,7 +20,7 @@ title: Setup
 
 Below are the steps you'll need to take in order to connect to our resources:
 
-### Step 1.
+### 1.1. Step 1.
 
 In order to connect to our machines, you have to be on the UB network.
 
@@ -41,7 +42,7 @@ NOTE: When you start the Cisco software the first time you will need to enter th
 and then select UBVPN from the group drop down menu.
 
 
-### Step 2 (one time only).
+### 1.2. Step 2 (one time only).
 
 You will receive a separate email containing a link to our user portal to setup your account and change your password. 
 
@@ -51,7 +52,7 @@ The link contained in this email only lasts for 24 hours so if you're not able t
   [https://idm.ccr.buffalo.edu](https://idm.ccr.buffalo.edu) and click the "forgot your password?" link to generate a new one. 
   Your CCR username is the same as the one you’re using for the VPN (given to you in the email), but these accounts are not connected in any other way.
  
-### Step 3.
+### 1.3. Step 3.
 Once connected to the UB network, you may login to our front end login machines using a SSH client (server name: vortex.ccr.buffalo.edu)
 
 ![](/fig/setup/putty_login.png){:width="720px"}
@@ -150,20 +151,20 @@ run many computational chemistry software packages. There are several different 
 In this tutorial, we will focus on using one of the most common shells, the bash shell. 
 How you acquire a bash shell terminal depends on the type of computer you have.
 
-### Linux
+### 6.1. Linux
 If you are using a Linux computer, you probably already know how to open the terminal window. 
 If the Terminal is not shown in menu of programs, you can use the key combination CTRL + ATL + T to open the terminal window.
 
-### Mac OS X
+### 6.2. Mac OS X
 On Mac OS X, a Terimanl application is built into your system. Open the Terminal from Applications -> Utilities -> Terminal.
 
-### Windows 10
+### 6.3. Windows 10
 Windows has a built in command line interface. To access it, click the Windows Key + R, type cmd, press Enter.
 **However,** this interface is not a bash application. Therefore, the commands for navigating and creating files discussed below
  will not be the same. We recommend you installing the [Windows Subsystem for Linux](https://devblogs.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/) instead. Please follow [these instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install 
  it for your system. This will allow you having a fully-fledged Linux/Unix terminal experience while still working on Windows 10.
 
-### Resources
+### 6.4. Resources
 - [Using the command line](https://ryanstutorials.net/linuxtutorial/commandline.php)
 - [Navigation in bash](https://ryanstutorials.net/linuxtutorial/navigation.php)
 - [Making and removing directories, copying and deleting files](https://ryanstutorials.net/linuxtutorial/filemanipulation.php)
@@ -177,7 +178,7 @@ like Microsoft Word or Google Docs, introduces a lot of formatting that is not n
 You need to use a text editor to read and write these files. There are many choices. You don't need to learn to 
 use all of these at the beginning, just find one that works for you. 
 
-### Vi/vim
+### 7.1. Vi/vim
 Vi/vim is one of the most ubiquitous text editors. It is installed on virtually every Linux computer in the world, 
 so if you ever log on to a unfamiliar machine, it will be available to you. 
 Vi is accessed from the command line; it doesn't have or need a graphical interface so it can operate on the most bare bones computers.
@@ -185,7 +186,7 @@ However, it is not intuitive to use and can be difficult for beginners.
 - [Interactive vim tutorial](https://www.openvim.com/)
 - [Getting started with vi](https://ryanstutorials.net/linuxtutorial/vi.php)
 
-### Far 3
+### 7.2. Far 3
 [Far3](https://www.farmanager.com/) is a very handy file and archive manager. Features rather convenient graphical interface and some
 convenient manipulation options such as cutting any blocks of text, syntax highlightling, remote drive access, etc. Don't get
 scared by its old-style "Norton/Midnight Commander" look. You'll love it. If you run Windows, this is definitely our recommendation. 
@@ -193,17 +194,17 @@ scared by its old-style "Norton/Midnight Commander" look. You'll love it. If you
 ![](/fig/setup/far.png){:width="80%"}
 
 
-### Atom
+### 7.3. Atom
 [Atom](https://atom.io/) is a modern text editor that is very intuitive to use. You probably don't even need 
 to read the tutorial below to figure out how to create and save files. Standard downloads are available for Linux, Mac, and Windows.
 - [Getting started with atom](https://flight-manual.atom.io/getting-started/sections/atom-basics/)
 
-### Emacs
+### 7.4. Emacs
 Similar to vi/vim, emacs is a command line text editor that is already part of almost all Linux distributions.
 Emacs can also be used as an RSS reader or file manager.
 - [Emacs tutorial](https://www.gnu.org/software/emacs/tour/) The section called Beginner tips near the bottom of the page is particularly helpful.
 
-### Sublime
+### 7.5. Sublime
 [Sublime](https://www.sublimetext.com/) is an intuitive text editor that makes looking at files with multiple sections easy. 
 t allows split screen editing and is very customizable.
 
@@ -215,7 +216,7 @@ t allows split screen editing and is very customizable.
 This section describes the setup performed for the Libra installation, conda
 environments, and the libra-plus and qmflows Jupyter Notebooks kernels at CCR.
 
-### Compiled codes
+### 8.1. Compiled codes
 
 The following codes have been installed on CCR computing resources in
 support of this project:
@@ -233,7 +234,7 @@ support of this project:
  - Quantum Espresso 6.2.1
  - QXMD
 
-### Compilers
+### 8.2. Compilers
 
 The following compilers were used for all codes listed above, as appropriate:
 
@@ -241,7 +242,7 @@ The following compilers were used for all codes listed above, as appropriate:
  - INTEL 18.3
  - openmpi 3.0.3/gcc 7.3.0
 
-### Computing resources
+### 8.3. Computing resources
 
 Codes listed above were compiled specifically for CCR's faculty cluster `valhalla` partition.
 Node specs (two kinds) are as follows:
@@ -258,31 +259,35 @@ CPU-E5-2650v4:
 - INTEL
 - Memory 256000 (MB)
 
-### Scripts
+### 8.4. Scripts
 
-The scripts listed here are provided for consultation in `data/libra-setup/`
+The scripts listed here are provided for consultation in [`data/libra-setup/`](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021/tree/gh-pages/data)
 
-#### libra\_env\_recipe.sh
+You may need to remove details on specific versions, if things do not work. Conda should be 
+able to find the suitable versions, if you don't force it to pick very specific ones.
+
+
+#### 8.4.1. libra\_env\_recipe.sh
 
 Installation procedure for libra prerequisites and conda environment.
 Refer to libra documentation for further information.
 
 
-#### qmflows\_env\_recipe.sh
+#### 8.4.2. qmflows\_env\_recipe.sh
 
 Installation procedure for the qmflows conda environment.
 
-#### prepend\_and\_launch.sh
+#### 8.4.3. prepend\_and\_launch.sh
 
 These scripts are called upon launch of the Jupyter libra-plus and qmflows kernels. They set LD\_LIBRARY\_PATH, PATH, and various environment variables to enable Libra to be used with various compiled codes on the compute cluster.
 
 The prepend\_and\_launch.sh scripts should be placed in the kernel directory for the respective kernel, and specified in the arguments of the appropriate kernel.json so it will be called.
 
-#### kernel.json
+#### 8.4.4. kernel.json
 
 Example kernel.json for Libra, showing specification of launch script.
 
-### Conda environment exports
+### 8.5. Conda environment exports
 
 These conda environment exports (.yml) fully describe the packages installed for the following environments:
 - libra-plus
@@ -293,6 +298,19 @@ These yml files can be used to entirely recreate the specified conda environment
     conda env create -f <environment>.yml
 
 Refer to [Conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for further information about conda environments.
+
+
+<a name="mol_vis"></a>
+## 9. Molecular visualization and editing tools
+[Back to TOC](#toc)
+
+|   |   |
+|---|---|
+| [VESTA](https://jp-minerals.org/vesta/en/) | ![](/fig/setup/vesta.png){:width="80%"} | [Tutorials by Brendan Smith](https://github.com/compchem-cybertraining/Tutorials_Editing_Visualization) |
+| [VMD](https://www.ks.uiuc.edu/) | ![](/fig/setup/vmd.png){:width="80%"} |
+| [IQmol](http://iqmol.org/)  | ![](/fig/setup/IQmol.png){:width="80%"} | [Tutorial by Alexey Akimov](https://youtu.be/BXtPtkUJVqc) |
+| [Avogadro](https://avogadro.cc/) | ![](/fig/setup/avogadro.png){:width="80%"} |
+
 
 ---
 

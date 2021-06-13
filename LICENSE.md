@@ -18,7 +18,7 @@ root: .
 | CP2k | [Official website](https://www.cp2k.org/) | [Input manual](https://manual.cp2k.org/#gsc.tab=0) |[CompChem CyberTraining examples](https://github.com/compchem-cybertraining/Tutorials_CP2K) |
 | Quantum Espresso (QE) | [Official website](https://www.quantum-espresso.org/) | [Input parameters, PW.x](https://www.quantum-espresso.org/Doc/INPUT_PW.html) |  [Pseudopotentials](https://www.quantum-espresso.org/pseudopotentials) | [CompChem CyberTraining examples](https://github.com/compchem-cybertraining/Tutorials_QE_and_eQE) |
 | COLUMBUS | [Official website](https://www.univie.ac.at/columbus) | [Documentation and tutorials](https://www.univie.ac.at/columbus/docs_COL70/documentation_main.html) |
-| ErgoSCF | [Official website](http://www.ergoscf.org/) |
+| ErgoSCF | [Official website](http://www.ergoscf.org/) | [CompChem CyberTraining examples](https://github.com/compchem-cybertraining/Tutorials_ErgoSCF)
 
 
 ## Instructors, co-instructors, and credits
