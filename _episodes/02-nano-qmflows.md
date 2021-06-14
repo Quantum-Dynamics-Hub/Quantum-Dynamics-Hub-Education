@@ -6,6 +6,7 @@ date: June 15, 2021, 11:00 am - 1:00 pm EDT
 
 # Tutorial
 <a name="toc"></a>
+
 0. [Setup](#setup)
 1. [The single_points workflow](#single_points)
 2. [The absorption_spectrum workflow](#absorption_spectrum)
@@ -14,11 +15,11 @@ date: June 15, 2021, 11:00 am - 1:00 pm EDT
 ## 0. Setup
 <a name="setup"></a> [Back to TOC](#toc)
 
-In your working directory, copy the folder containing all the files required for the following assignments:
+In your working directory, copy the folder containing all the files you will need for this tutorial:
 
 `cp -r /projects/academic/cyberwksp21/Instructors_material/jzito/nano-qmflows/`
 
-Please refer to the [nano-qmflows’s documentation](https://qmflows-namd.readthedocs.io/en/latest/).
+Please refer to the [nano-qmflows’s documentation](https://qmflows-namd.readthedocs.io/en/latest/) to complete the following assignments.
 
 
 ## 1. The single_points workflow
@@ -35,13 +36,14 @@ Use the provided `Cd33Se33.hdf5` file to:
 
 Calculate the oscillator strength of the lowest lying excited states of our Cd33Se33 system within the single orbital transitions approximation.
 
-To do that, edit the input file `absorption_spectrum_Cd33Se33.yml` provided in the directory `2_absorption_spectrum` according to the previous requirements (consult the tutorial [Absorption Spectrum](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html)), then submit your calculation using the `launch.sh` submission script. 
+To do that, edit the input file `absorption_spectrum_Cd33Se33.yml` provided in the directory `2_absorption_spectrum` according to the previous requirements (consult the tutorial [Absorption Spectrum](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html)), then submit your calculation using the `launch.sh` submission script. Use the provided `Cd33Se33.hdf5` file.
 
 Once the calculation is completed, copy locally the result file `output_0_sing_orb.txt` from your scratch directory and interpret it using the last part of the [tutorial](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html).
 
 1. How many singly excited configurations do you expect to find there?
 2. What is the energy of the first excited state within the single orbital approximation? Is this result in line with the previous exercise?
 3. Plot the absorption spectrum for the Cd33Se33 system in the energy interval 0-2 eV using a sigma value of 0.1. (Suggestion: Import the `convolute` function with `from nanoqm.analysis import convolute` and have a look at the script [`convolution.py`](https://github.com/SCM-NV/nano-qmflows/blob/master/scripts/qmflows/convolution.py#L45-L52))
+
 
 ## 3. The distribute_derivative_couplings workflow
 <a name="#derivative_couplings"></a> [Back to TOC](#toc)
