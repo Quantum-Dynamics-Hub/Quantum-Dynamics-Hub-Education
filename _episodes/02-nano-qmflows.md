@@ -17,7 +17,7 @@ date: June 15, 2021, 11:00 am - 1:00 pm EDT
 
 In your working directory, copy the folder containing all the files you will need for this tutorial:
 
-`cp -r /projects/academic/cyberwksp21/Instructors_material/jzito/nano-qmflows/`
+`cp -r /projects/academic/cyberwksp21/Instructors_material/jzito/nano-qmflows/ .`
 
 Please refer to the [nano-qmflows’s documentation](https://qmflows-namd.readthedocs.io/en/latest/) to complete the following assignments.
 
