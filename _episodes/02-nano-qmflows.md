@@ -38,7 +38,7 @@ Calculate the oscillator strength of the lowest lying excited states of our Cd33
 
 To do that, edit the input file `absorption_spectrum_Cd33Se33.yml` provided in the directory `2_absorption_spectrum` according to the previous requirements (consult the tutorial [Absorption Spectrum](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html)), then submit your calculation using the `launch.sh` submission script. Use the provided `Cd33Se33.hdf5` file.
 
-Once the calculation is completed, copy locally the result file `output_0_sing_orb.txt` from your scratch directory and interpret it using the [last part](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html#results) of the [tutorial].
+Once the calculation is completed, copy locally the result file `output_0_sing_orb.txt` from your scratch directory and interpret it using the [last part](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html#results) of the tutorial.
 
 1. How many singly excited configurations do you expect to find there?
 2. What is the energy of the first excited state within the single orbital approximation? Is this result in line with the previous exercise?
@@ -52,4 +52,4 @@ In the directory `3_derivative_couplings`, you will find the input file `distrib
 
 1. How many couplings are missing and need to be calculated? How many couplings would you expect to find in the final updated `chunk_0123.hdf5`?
 2. Use the updated `chunk_0123.hdf5` to plot the dependence of the energy (in eV) of the LUMO and LUMO+1 over time.
-3. Use the updated `chunk_0123.hdf5` to the retrieve the LUMO-LUMO+1 couplings and plot their value in time.
+3. Use the updated `chunk_0123.hdf5` to the retrieve the LUMO-LUMO+1 overlaps and couplings and plot their value in time.
