@@ -85,6 +85,7 @@ title: "Schedule and Participants"
 | 52 | **Pramod Kumar Verma** | PD | Indian Institute of Science Education and Research, Bhopal | India | Varadharajan Srinivasan | 
 | 53 | Shubhojit Banerjee | GRA-1 | Indian Institute of Science Education and Research, Bhopal | India | Varadharajan Srinivasan | 
 | 54 | Wei Li | FAC-PHD | Hunan Agricultural University | China | Wei Li |
+| 55 | Mohammad Shakiba | GRA-1 | Shahid Bahonar University of Kerman | Iran | Ahmad Irannejad and Shahriar Sharafi |
 
 
 Notes:
