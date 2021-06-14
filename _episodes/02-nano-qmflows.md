@@ -38,7 +38,7 @@ Calculate the oscillator strength of the lowest lying excited states of our Cd33
 
 To do that, edit the input file `absorption_spectrum_Cd33Se33.yml` provided in the directory `2_absorption_spectrum` according to the previous requirements (consult the tutorial [Absorption Spectrum](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html)), then submit your calculation using the `launch.sh` submission script. Use the provided `Cd33Se33.hdf5` file.
 
-Once the calculation is completed, copy locally the result file `output_0_sing_orb.txt` from your scratch directory and interpret it using the last part of the [tutorial](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html).
+Once the calculation is completed, copy locally the result file `output_0_sing_orb.txt` from your scratch directory and interpret it using the [last part](https://qmflows-namd.readthedocs.io/en/latest/absorption_spectrum.html#results) of the [tutorial].
 
 1. How many singly excited configurations do you expect to find there?
 2. What is the energy of the first excited state within the single orbital approximation? Is this result in line with the previous exercise?
@@ -48,30 +48,8 @@ Once the calculation is completed, copy locally the result file `output_0_sing_o
 ## 3. The distribute_derivative_couplings workflow
 <a name="#derivative_couplings"></a> [Back to TOC](#toc)
 
-The last twenty points of a ground state molecular dynamics trajectory for the Cd33Se33 system have been distributed into four chunks, for which the overlaps and couplings have been calculated according to the first two parts of the [Derivative Couplings tutorial](https://qmflows-namd.readthedocs.io/en/latest/derivative_couplings.html#) of nano-qmflows. Follow the tutorial to calculate the overlaps and couplings amongst the missing pairs of points. In your working directory:
-- copy the full trajectory `Cd33Se33_MD_last20.xyz`;
-- copy the files `chunk_0.hdf5`, `chunk_1.hdf5`, `chunk_2.hdf5`, `chunk_3.hdf5` and merge them into a `chunk_0123.hdf5` file;
-- copy locally the file `input.yaml` and customize it with your own path to the merged .hdf5, the full MD trajectory, and the scratch directory;
-- create the following `launch.sh` script:
+In the directory `3_derivative_couplings`, you will find the input file `distribute_derivative_couplings_Cd33Se33.yml` that has been used to distribute the last twenty points of a ground state molecular dynamics trajectory for the Cd33Se33 system (`Cd33Se33_MD_last20.xyz`) into four chunks. For each chunk, the values of the overlaps and couplings have been calculated and stored, respectively, in the files `chunk_0.hdf5`, `chunk_1.hdf5`, `chunk_2.hdf5` and `chunk_3.hdf5`. Follow the [Derivative Couplings tutorial](https://qmflows-namd.readthedocs.io/en/latest/derivative_couplings.html#merging-the-chunks-and-recalculating-the-couplings) to merge these files into a unique `chunk_0123.hdf5` file and calculate the overlaps and couplings amongst the missing pairs of points.
 
-      #!/bin/sh
-      #SBATCH --partition=valhalla  --qos=valhalla
-      #SBATCH --clusters=faculty
-      #SBATCH --account=cyberwksp21
-      
-      #SBATCH --time=00:10:00
-      #SBATCH --nodes=1
-      #SBATCH --ntasks-per-node=12
-      #SBATCH --mem=32000
-       
-      eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
-      conda activate qmflows
-      module load cp2k/8.1-sse
-       
-      run_workflow.py -i input.yml
-       
-and submit your calculation with:
- 
-    sbatch launch.sh
-
-Use the updated `chunk_0123.hdf5` to retrieve the LUMO-LUMO+1 couplings and plot their value in time.
+1. How many couplings are missing and need to be calculated? How many couplings would you expect to find in the final updated `chunk_0123.hdf5`?
+2. Use the updated `chunk_0123.hdf5` to plot the dependence of the energy (in eV) of the LUMO and LUMO+1 over time.
+3. Use the updated `chunk_0123.hdf5` to the retrieve the LUMO-LUMO+1 couplings and plot their value in time.
