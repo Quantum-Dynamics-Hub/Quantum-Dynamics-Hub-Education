@@ -3,6 +3,9 @@ title: "Introduction to our CyberInfrastructure. Setups and key links."
 date: June 14, 2021, 11:00 am - 1:00 pm EDT
 ---
 
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=dd57af07-4998-4213-9760-ad47016b0412&
+autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 <a name="toc"></a>
 # Overview of the UB CyberInfrastructure

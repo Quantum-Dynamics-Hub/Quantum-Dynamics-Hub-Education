@@ -4,6 +4,11 @@ date: June 14, 2021, 3:40 pm - 5:00 pm EDT
 
 ---
 
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=3f9a7e29-cacc-4fe2-ba4a-ad47016afb73&
+autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800"
+ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 <a name="toc"></a>
 # Table of Content
 1. [Molecular dynamics](#md)
@@ -14,7 +19,7 @@ date: June 14, 2021, 3:40 pm - 5:00 pm EDT
 ## 1. Molecular Dynamics
 [Back to TOC](#toc)
 
-### 1.1. [Presentation](/files/episode_1/Akimov-MD.pdf)
+### 1.1. [Presentation](../files/episode_1/Akimov-MD.pdf)
 
 ### 1.2. Coding Exercises 
 
@@ -40,7 +45,7 @@ date: June 14, 2021, 3:40 pm - 5:00 pm EDT
 ## 2. Introduction to Libra
 [Back to TOC](#toc)
 
-### 2.1. [Presentation](/files/episode_1/Akimov-Libra-overview.pdf)
+### 2.1. [Presentation](../files/episode_1/Akimov-Libra-overview.pdf)
 
 ### 2.2. Get your copy of tutorials
 
