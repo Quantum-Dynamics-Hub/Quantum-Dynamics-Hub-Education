@@ -175,7 +175,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 17, 2021 (Day 4), Thursday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/fox-cat-qmflows">Building quantum dot structures with FOX and CAT</a></li>
+        <li><a href="/_episodes/cat-fox">Building quantum dot structures with FOX and CAT</a></li>
         <li><a href="/_episodes/nbra-workflows-libra">Atomistic simulations of NA-MD in materials, using Libra/DFTB+, Libra/cp2k, Libra/ErgoSCF, Libra/QE interfaces</a></li>
       </ul>
     </td>
