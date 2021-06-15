@@ -28,7 +28,7 @@ Please refer to the following documentations:
 We aim to create nanocrystals from a charge-balanced Cd68Se68 core. Use the corresponding `CdSe.xyz` file in your `1_qd_build` directory to:
 1. Replace a 30% fraction of the Se ions in the model with Cl dummies in a file called `CdSe_30Cl.xyz` with random distribution and use the file to replace the Cl on the surface with stearate anions.
 2. Replace a 20% fraction of the Cd ions in the model with Na dummies in a file called `CdSe_20Na.xyz` with clustered distribution and use the file to replace the Na on the surface with oleylammonium cations.
-(Suggestion: their SMILES strings are available on [PUBCHEM](https://pubchem.ncbi.nlm.nih.gov/).
+(Suggestion: their SMILES strings are available on [PUBCHEM](https://pubchem.ncbi.nlm.nih.gov/)).
 
 ## 2. The fitting workflow
 <a name="fitting"></a> [Back to TOC](#toc)
