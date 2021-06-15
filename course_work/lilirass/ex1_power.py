@@ -49,4 +49,7 @@ print (my_pow(5, params))
 params = {'A':4, 'n':2}
 print (my_pow(5, params))
 
+params = {'A':4, 'n':3}
+print (my_pow(2, params))
+
 
