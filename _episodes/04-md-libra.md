@@ -1,22 +1,22 @@
 ---
-title: "Coding Molecular Dynamics. Intro to Libra."
-date: June 14, 2021, 3:40 pm - 5:00 pm EDT
+title: "4. Molecular Dynamics. Intro to Libra. Model and Atomistic Hamiltonians"
+date: June 15, 2021, 2:00 pm - 5:00 pm EDT
 
 ---
 
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=62c0e035-fd0b-412a-8ae3-ad48016a5c23&
+autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" 
+height="900" width="800" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=3f9a7e29-cacc-4fe2-ba4a-ad47016afb73&
-autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800"
- style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 <a name="toc"></a>
 # Table of Content
-1. [Molecular dynamics](#md)
+1. [Constructing MD integrators](#md)
 2. [Introduction to Libra](#intro_libra)
 
 
-<a name="md"></a>
-## 1. Molecular Dynamics
+<a name="python"></a>
+## 1. Constructing MD integrators
 [Back to TOC](#toc)
 
 ### 1.1. [Presentation](../files/episode_1/Akimov-MD.pdf)
@@ -40,7 +40,6 @@ autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interacti
      `cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/demos_from_libra_code/tests/test_md`
 
 
-
 <a name="intro_libra"></a>
 ## 2. Introduction to Libra
 [Back to TOC](#toc)
@@ -55,41 +54,36 @@ autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interacti
 
     cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra
 
-
 ### 2.3. Examples 
 
-   * Discuss data types
+  * Discuss data types
 
-   * [Runge-Kutta for quantum dynamics](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/2_integrators/2_runge_kutta_4_for_Liouville)
+  * [Runge-Kutta for quantum dynamics](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/2_integrators/2_runge_kutta_4_for_Liouville)
 
-   * Molecular integrals
+  * Molecular integrals
  
          cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/demos_from_libra_code/tests/test_libint2
 
-   * Built-in Electronic structure calculations: 
+  * Built-in Electronic structure calculations: 
 
          cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/Tutorials_Libra/5_electronic_structure/1_eht/1_compact1
 
-   * Kinetic MC example to model diffusion
+  * Kinetic MC example to model diffusion
 
          cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/demos_from_libra_code/notebooks/Example5_diffusion
 
-   * random number sampling - section 7.4
+  * random number sampling - section 7.4
 
-   * crystal builder - section 12.1 (may be useful for the nano-qmflows/CAT tutorials)
+  * crystal builder - section 12.1 (may be useful for the nano-qmflows/CAT tutorials)
 
-   * Molecular rotation
+  * Molecular rotation
 
          cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/demos_from_libra_code/tests/example_8_rotation
 
      Exercise: can you combine examples showing py3Dmol, imageio, and the current rotation script to produce the animateg gifs of the
      rotation?
 
-
-
-
-
-
-
-
+  * define model Hamiltonians and plot properties, HDF5, exercises
+`
+  * Atomistic interfaces: Psi4 and DFTB+: LiH at CCSD/sto-3G
 
