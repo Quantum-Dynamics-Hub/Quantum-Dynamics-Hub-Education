@@ -1,13 +1,20 @@
 ---
-title: "Revision of Python and best practices."
-date: June 14, 2021, 2:00 pm - 3:30 pm EDT
+title: "2. Revision of Python and best practices. Coding Molecular Dynamics"
+date: June 14, 2021, 2:00 pm - 5:00 pm EDT
 
 ---
+
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=3f9a7e29-cacc-4fe2-ba4a-ad47016afb73&
+autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800"
+ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 
 <a name="toc"></a>
 # Table of Content
 1. [Brief Python overview](#python)
 2. [Best practices](#best_practices)
+3. [Constructing MD integrators](#md)
 
 <a name="python"></a>
 ## 1. Python introduction
@@ -232,4 +239,12 @@ A session with merging and upstream update
     git merge my_new_feature
     git push origin master
 
+
+
+
+<a name="md"></a>
+## 3. Molecular Dynamics
+[Back to TOC](#toc)
+
+### [Presentation](../files/episode_1/Akimov-MD.pdf)
 
