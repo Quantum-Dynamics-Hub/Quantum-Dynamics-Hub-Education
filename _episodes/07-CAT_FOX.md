@@ -1,5 +1,5 @@
 ---
-title: "CAT workflow"
+title: "CAT and FOX workflows"
 date: June 17, 2021, 11:00 am - 1:00 pm EDT
 ---
 
