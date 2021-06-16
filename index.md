@@ -141,9 +141,9 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 14, 2021 (Day 1), <strong>Monday</strong></td>
     <td class="col-md-7">
       <ul>        
-        <li><a href="/_episodes/introduction.html">Introduction. Overview of CyberInfrastructure. </a></li>
-        <li><a href="/_episodes/python-git.html">Revision of Python and Best Practices.</a> </li>
-        <li><a href="/_episodes/md-libra.html">Coding Molecular Dynamics and Monte Carlo. Intro to Libra.</a></li>
+        <li><a href="/_episodes/01-introduction.html">Introduction. Overview of CyberInfrastructure. </a></li>
+        <li><a href="/_episodes/02-python-git.html">Revision of Python and Best Practices.</a> </li>
+        <li><a href="/_episodes/02-python-git.html">Coding Molecular Dynamics. Intro to Libra.</a></li>
       </ul>
     </td> 
     <td class="col-md-2">Alexey Akimov, Jeanette Sperhac, Sudhakar Pamidighantam</td>
@@ -153,8 +153,8 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 15, 2021 (Day 2), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/nano-qmflows">nano-qmflows workflows</a> </li>
-        <li><a href="/_episodes/nano-qmflows">TSH with model Hamiltonians using Libra</a></li>
+        <li><a href="/_episodes/03-nano-qmflows">nano-qmflows workflows</a> </li>
+        <li><a href="/_episodes/04-md-libra">Overview of the Libra code. Model Hamiltonians in Libra</a></li>
       </ul>
     </td>
     <td class="col-md-2">Ivan Infante, Felipe Zapata, Alexey Akimov</td>
@@ -164,8 +164,8 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 16, 2021 (Day 3), Wednesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/heom-libra">Hierarchy of equations of motion (HEOM) calculations with Libra. </a></li>
-        <li><a href="/_episodes/dvr-libra">Wavepacket/DVR calculations with  Libra. </a></li>
+        <li><a href="/_episodes/05-heom-libra">Hierarchy of equations of motion (HEOM) calculations with Libra. </a></li>
+        <li><a href="/_episodes/06-tsh-dvr-libra">Wavepacket/DVR calculations with  Libra. </a></li>
       </ul>
     </td>
     <td class="col-md-2">Amber Jain, Alexey Akimov</td>
@@ -175,7 +175,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 17, 2021 (Day 4), Thursday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/fox-cat-qmflows">Building quantum dot structures with FOX and CAT</a></li>
+        <li><a href="/_episodes/cat-fox">Building quantum dot structures with FOX and CAT</a></li>
         <li><a href="/_episodes/nbra-workflows-libra">Atomistic simulations of NA-MD in materials, using Libra/DFTB+, Libra/cp2k, Libra/ErgoSCF, Libra/QE interfaces</a></li>
       </ul>
     </td>
