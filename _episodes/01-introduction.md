@@ -7,6 +7,8 @@ date: June 14, 2021, 11:00 am - 1:00 pm EDT
 autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
+# [SEAGrid presentation](../files/Pamidighantam-SEAGrid.pdf)
+
 <a name="toc"></a>
 # Overview of the UB CyberInfrastructure
 
