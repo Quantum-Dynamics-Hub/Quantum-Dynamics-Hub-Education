@@ -10,6 +10,5 @@ def pow_for(arg):
     result = j*arg['A']
     return result
 
-
 arg_dict = {'A':1, 'x':3, 'n':-1}
 pow_for(arg_dict)
