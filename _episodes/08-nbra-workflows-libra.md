@@ -25,6 +25,12 @@ date: June 17, 2021, 2:00 - 5:00 pm EDT
         6_dynamics/2_nbra_workflows/5_step4/1_initialize_data
 
 
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7b6b8cdc-7430-4a2b-9713-ad4a01634e2a&
+autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
+
 ## 3. Step 2: NAC workflows
 
 ### 3.1. ErgoSCF
@@ -59,5 +65,10 @@ date: June 17, 2021, 2:00 - 5:00 pm EDT
   * [Command-line examples](https://github.com/compchem-cybertraining/Tutorials_CP2K)
 
         https://github.com/compchem-cybertraining/Tutorials_CP2K
+
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7770057a-c9dd-44e9-8aec-ad4a0162e745&
+autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 

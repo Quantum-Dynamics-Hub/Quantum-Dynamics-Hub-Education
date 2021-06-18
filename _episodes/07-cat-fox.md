@@ -10,6 +10,7 @@ date: June 17, 2021, 11:00 am - 1:00 pm EDT
 0. [Setup](#setup)
 1. [The qd_build workflow](#qd_build)
 2. [The fitting workflow](#fitting)
+3. [Video recording](#video)
 
 ## 0. Setup
 <a name="setup"></a> [Back to TOC](#toc)
@@ -37,3 +38,12 @@ We aim to fit the classical forcefield parameters of a CsPbBr3 core from a previ
 1. Modify the yaml script to fit the `CsPbBr3_MD.xyz` trajectory (you can find them in your `2_fitting` directory).
 Use the oxidation states of the atoms (respectively 1.0, 2.0, -1.0 for Cs, Pb, Br) as starting parameters for their charges, and modify the `guess_rdf.py` script in the `scripts` subdirectory to obtain the starting values for the sigmas. (Beware of the units and of the constraints!). Run the parametrization for around 5/10 steps (Suggestion: use the  `logfile` to check the number of last iteration). Use the python scripts in the `scripts` subdirectory to plot the errors of the ARMC and the Radial Distribution Functions (RDFs) of the best step from the `armc.hdf5` file. What do the plots show? Why? (Suggestion: take a look at the errors in the `logfile`!)
 2. Adjust the parameters to obtain a "better" fitting and repeat the same procedure for 5/10 more steps (don't forget to rename your previous `MM_MD_workdir` beforehand). What do the plots look like now? How do you expect them to change over time?
+
+## 3. Video recording
+<a name="video"></a> [Back to TOC](#toc)
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=fb815f2c-aab6-4d16-a7f3-ad4a0163057b&
+autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
