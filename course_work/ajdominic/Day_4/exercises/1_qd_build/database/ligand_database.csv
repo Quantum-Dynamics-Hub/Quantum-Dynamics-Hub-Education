@@ -1,0 +1,4 @@
+index,,hdf5 index,formula,opt,settings
+sub index,,,,,1
+smiles,anchor,,,,
+-,-,-1,str,False,str
