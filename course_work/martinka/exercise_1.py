@@ -11,4 +11,4 @@ def pow_for(arg):
     return result
 
 arg_dict = {'A':1, 'x':3, 'n':-1}
-pow_1(arg_dict)
+pow_for(arg_dict)
