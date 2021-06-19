@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/bin/srun cp2k.popt -i md_settings.003.in -o md_settings.003.out

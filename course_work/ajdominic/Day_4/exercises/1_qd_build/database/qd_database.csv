@@ -1,4 +1,0 @@
-index,,,,hdf5 index,ligand count,opt,settings,settings
-sub index,,,,,,,1,2
-core,core anchor,ligand smiles,ligand anchor,,,,,
--,-,-,-,-1,-1,False,str,str
