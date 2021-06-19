@@ -186,7 +186,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 18, 2021 (Day 5), Friday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/nexmd">Excited state dynamics of extended organic systems using NEXMD</a></li>
+        <li><a href="/_episodes/09-nexmd">Excited state dynamics of extended organic systems using NEXMD</a></li>
       </ul>
     </td>
     <td class="col-md-2">Sergei Tretiak, Walter Malone</td>
