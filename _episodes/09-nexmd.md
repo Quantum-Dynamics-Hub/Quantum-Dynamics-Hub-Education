@@ -62,8 +62,10 @@ to quantum transitions is employed, with instantaneous decoherence and a Min-Cos
 of trivial unavoided crossings. Several TDSCF (time-dependent self-consistent field) QM/continuum models are 
 available for including the effects of a solvent.
 
+### 4.2. [Practice presentation](../files/Malone-nexmd.pdf)
 
-### 4.2. Lesson Plan
+
+### 4.3. Lesson Plan
 
 *  Introduction and Compilation
 *  Basic Functions
@@ -91,7 +93,7 @@ available for including the effects of a solvent.
 		*  PES Analysis
 *  Bonus Development Features
 
-### 4.3. Video recording
+### 4.4. Video recording
 
 <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=6701e922-1ea9-4c31-a63b-ad4c0008a62b&
 autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 

@@ -1,5 +1,5 @@
 ---
-title: "QXMD : ab initio Molecular Dynamics Simulation Package."
+title: "10. QXMD : ab initio Molecular Dynamics Simulation Package."
 date: June 21, 2021, 11:00 am - 1:00 pm EDT
 ---
 
@@ -46,7 +46,7 @@ called `control/`, which must contain the following:
 
 There are many example input files for various types of simulations in the `Examples/` directory, 
 including optimization of water, adiabatic QMD of water in the canonical ensemble, non-adiabatic QMD of monolayer MoSe2
- in the microcanonical ensemble, and a MSST simulation of Si.  
+ in the microcanonical ensemble, and a MSST simulation of Si.
 
 The NAQMD and MSST examples are explained in more detail in the [QXMD manual](https://usccacs.github.io/QXMD/index.html).
 
@@ -70,4 +70,10 @@ Physics, vol. 140, 18A529, May 14, 2014.](https://doi.org/10.1063/1.4869342)
 3) [F. Shimojo, S. Fukushima, H. Kumazoe, M. Misawa, S. Ohmura, P. Rajak, K. Shimamura, L. Bassman, S. Tiwari, 
 R. K. Kalia, A. Nakano, and P. Vashishta, "QXMD: an open-source program for nonadiabatic quantum 
 molecular dynamics," SoftwareX, vol. 10, 100307, July 26 2019.](https://doi.org/10.1016/j.softx.2019.100307)
+
+
+## 6. Homework/Exercises:
+
+* https://aiichironakano.github.io/cs699-assgn.html
+
 

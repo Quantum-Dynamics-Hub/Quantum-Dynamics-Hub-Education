@@ -208,17 +208,17 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 21, 2021 (Day 8), <strong>Monday</strong></td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/qxmd">Excited state dynamics of extended inorganic systems using QXMD</a></li>
+        <li><a href="/_episodes/10-qxmd">Excited state dynamics of extended inorganic systems using QXMD</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Aiichiro Nakano, Alexey Akimov</td>
+    <td class="col-md-2">Aiichiro Nakano, Tom Linker, Alexey Akimov</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 22, 2021 (Day 9), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/columbus">Accurate excited state calculations using COLUMBUS package</a></li>
+        <li><a href="/_episodes/11-columbus">Accurate excited state calculations using COLUMBUS package</a></li>
       </ul>
     </td>
     <td class="col-md-2">Hans Lischka, Mario Barbatti</td>
@@ -228,7 +228,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 23, 2021 (Day 10), Wednesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/newtonx">Nonadiabatic dynamics using Newton-X/DFTB+ package</a></li>
+        <li><a href="/_episodes/12-newtonx">Nonadiabatic dynamics using Newton-X/DFTB+ package</a></li>
         <li><a href="/_episodes/columbus">Accurate excited state calculations using COLUMBUS package</a></li>
       </ul>
     </td>
