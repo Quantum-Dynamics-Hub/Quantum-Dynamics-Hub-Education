@@ -1,0 +1,101 @@
+param:
+    charge:
+        param: charge
+        Cs: 0.4174
+        Pb: 0.8348
+        Br: -0.4174
+        constraints:
+            - '0 < Cs < 1.5'
+            - '0 < Pb < 2'
+            - '-1.5 < Br < 0'
+            - 'Pb == 2 * Cs == -2 * Br' # makes sure the core is neutral
+
+    lennard_jones:
+        - param: epsilon # energies
+          unit: kjmol
+          frozen:
+              guess: uff # universal force field
+        - param: sigma # if start from scratch, use python script called guess_rdf.py
+          unit: nm
+          Cs Cs:  0.453
+          Cs Pb:  0.367
+          Br Cs:  0.363
+          Pb Pb:  0.610
+          Br Pb:  0.298
+          Br Br:  0.369
+          constraints:
+              - 'Cs Cs   > 0.433'
+              - 'Cs Pb   > 0.347'
+              - 'Br Cs   > 0.343'
+              - 'Pb Pb   > 0.590'
+              - 'Br Pb   > 0.278'
+              - 'Br Br   > 0.349'
+
+pes:
+    rdf:
+        func: FOX.MultiMolecule.init_rdf
+        kwargs:
+            atom_subset: [Cs, Pb, Br]
+
+job:
+    molecule: CsPbBr3_MD.xyz
+
+    md_settings:
+        template: qmflows.templates.md.specific.cp2k_mm # MD sim is done in CP2K
+        settings:
+            input:
+                global:
+                    print_level: LOW
+                force_eval:
+                    mm:
+                      poisson:
+                         periodic: xyz
+                         ewald:
+                           ewald_type: spme
+                           gmax: '62 62 62'
+                           o_spline: 4
+                    subsys:
+                        cell:
+                            abc: '[angstrom] 100.0 100.0 100.0'
+                            periodic: xyz
+
+                motion:
+                    print:
+                        cell:
+                           each:
+                              md: 10
+                        restart:
+                           each:
+                              md: 10
+                        trajectory:
+                           each:
+                              md: 10
+                        velocities:
+                           each:
+                              md: 10
+                        forces:
+                           each:
+                              md: 10
+                    md:
+                        ensemble: NVT
+                        temperature: 300.0
+                        timestep: 2.5 # picoseconds
+                        steps: 10000
+                        thermostat:
+                            type: csvr
+                            csvr:
+                                timecon: 10000
+                        print:
+                             energy:
+                                 each:
+                                    md: 10
+                        barostat:
+                            pressure: 1.01
+                            timecon: 10000
+
+monte_carlo:
+    logfile: armc.log
+    hdf5_file: armc.hdf5
+    path: ./
+    folder: MM_MD_workdir
+    keep_files: True

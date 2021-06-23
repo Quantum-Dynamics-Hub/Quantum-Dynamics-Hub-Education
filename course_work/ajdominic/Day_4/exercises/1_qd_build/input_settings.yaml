@@ -1,0 +1,18 @@
+path: null
+input_cores:
+    - cspbbr3_4.2nm_80Cl.xyz:
+        guess_bonds: False
+input_ligands:
+    - CCCCCCCCC=CCCCCCCCC(=O)[O-]
+optional:
+    core:
+        dirname: core
+        anchor: Cl
+    ligand:
+        dirname: ligand
+        optimize: True
+        split: False
+    qd:
+        dirname: qd
+        construct_qd: True
+        optimize: False
