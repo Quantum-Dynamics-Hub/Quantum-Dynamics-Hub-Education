@@ -1,0 +1,48 @@
+&CONTROL
+  calculation   = 'scf',
+  pseudo_dir    = '/util/academic/espresso/6.2.1/pseudopotentials/upf_files/',
+  outdir        = './',
+  prefix        = 'x0',
+  disk_io       = 'low',
+/
+
+&SYSTEM
+  ibrav       = 0,
+  nat         = 6,
+  ntyp        = 2,
+  nspin       = 1,
+  nbnd        = 40,
+  ecutwfc     = 30,
+  ecutrho     = 300,
+  occupations = 'smearing',
+  smearing    = 'gaussian',
+  degauss     = 0.01,
+  nosym       = true,
+/
+
+&ELECTRONS
+  electron_maxstep = 300,
+  conv_thr         = 1.D-4,
+  mixing_beta      = 0.30,
+/
+
+ATOMIC_SPECIES
+Ti 47.867 Ti.pbe-mt_fhi.UPF
+O  15.999 O.pbe-n-rrkjus_psl.0.1.UPF
+
+K_POINTS gamma
+
+CELL_PARAMETERS  angstrom
+        4.6067771912         0.0000000000         0.0000000000
+        0.0000000000         4.6067771912         0.0000000000
+        0.0000000000         0.0000000000         2.9917566776
+
+ATOMIC_POSITIONS (angstrom)
+Ti      -0.005368433   0.000917973  -0.010938681
+Ti       2.301807446   2.328172197   1.487950583
+O        3.143913243   3.112504057  -0.019898939
+O        1.458060532   1.448197030   0.075446479
+O        0.852061229   3.748677869   1.455789283
+O        3.780311718   0.827279600   1.536865868
+
+

@@ -1,0 +1,12 @@
+&inputpp
+  prefix      = 'x0',
+  outdir      = './',
+  pseudo_dir  = '/util/academic/espresso/6.2.1/pseudopotentials/upf_files',
+  psfile(1) =  C.pbe-n-rrkjus_psl.0.1.UPF 
+  psfile(2) =  H.pbe-rrkjus_psl.0.1.UPF
+  psfile(3) =  Ir.pbe-n-rrkjus_psl.0.2.3.UPF
+  psfile(4) =  N.pbe-n-rrkjus_psl.0.1.UPF
+  single_file = .FALSE.,
+  ascii       = .TRUE.,
+  uspp_spsi   = .FALSE.,
+/

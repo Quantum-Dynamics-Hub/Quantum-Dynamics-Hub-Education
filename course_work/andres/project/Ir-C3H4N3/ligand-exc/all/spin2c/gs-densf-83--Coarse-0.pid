@@ -1,0 +1,32 @@
+# status: new
+# pid: 
+# hostname: localhost
+# username: 
+# jobscript: 
+# prolog: 
+# epilog: 
+# jobdir: $HOME/jobs
+# fakejob: 0
+# comparewithtarget: ok
+# error: -1
+# warning: 0
+# runcmd: sh "$job" "NSCM=$options ; export NSCM"
+# batch: no
+# options: 
+# killcmd: killall $pid
+# jobstatuscmd: ps -e | grep -w $pid | grep -v grep
+# sysstatuscmd: uptime
+# pidfile: no
+# label: Interactive
+# logfile: logfile
+# backup: 
+# whenready: {adfview /projectsn/mp1009_1/motas/1xcdft/iridium/Ir-C3H4N-3/xcdft/ligand-exc/all/spin2c/gs {-nostart App::FieldReady 83}}
+# scmjobid: 1593095021181-67164
+# paused: 0
+# remoteprefix: 
+# jobtype: 
+# mtime: 
+# cloudinit: 
+# cloudid: 
+# copyback: 
+# privatesshkeypath: 

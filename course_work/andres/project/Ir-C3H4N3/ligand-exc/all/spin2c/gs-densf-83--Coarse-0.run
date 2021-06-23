@@ -1,0 +1,22 @@
+# dependency: {} /projectsn/mp1009_1/motas/1xcdft/iridium/Ir-C3H4N-3/xcdft/ligand-exc/all/spin2c/gs.t21 t21
+SCM_DENSF_INFILE=t21
+export SCM_DENSF_INFILE
+"$ADFBIN"/densf << eor
+inputfile $SCM_DENSF_INFILE
+vtkfile densf-83--Coarse-0.vtk
+GRID
+    -5.715615713379859 -4.78281710810815 -4.090883383709764
+    43 41 32
+    1.0 0.0 0.0 11.11272142682111
+    0.0 1.0 0.0 10.5835442160201
+    0.0 0.0 1.0 8.202246767415581
+END
+UNITS
+  length Angstrom
+END
+Orbitals SCF
+ALPHA
+A 83
+End
+
+eor

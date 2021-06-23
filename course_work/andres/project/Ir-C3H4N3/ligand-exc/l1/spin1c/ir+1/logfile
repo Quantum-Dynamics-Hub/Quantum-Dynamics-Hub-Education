@@ -1,0 +1,355 @@
+<Jun17-2020> <14:52:03>  ADF 2019.403  RunTime: Jun17-2020 14:52:03  Nodes: 1  Procs: 1
+<Jun17-2020> <14:52:03>  Temporary file I/O may be slow!
+<Jun17-2020> <14:52:03>  Hydrogen (TZP)
+<Jun17-2020> <14:52:03>  RunType   : CREATE
+<Jun17-2020> <14:52:03>  Net Charge: 0 (Nuclei minus Electrons)
+<Jun17-2020> <14:52:03>  Symmetry  : ATOM
+ Coordinates
+   Atom         X           Y           Z   (Angstrom)
+   1.H         0.000000    0.000000    0.000000
+<Jun17-2020> <14:52:03>  >>>> CORORT
+<Jun17-2020> <14:52:03>  >>>> CLSMAT
+<Jun17-2020> <14:52:03>  >>>> ORTHON
+<Jun17-2020> <14:52:03>  >>>> GENPT
+<Jun17-2020> <14:52:03>  Block Length=  64
+<Jun17-2020> <14:52:03>  >>>> PTBAS
+<Jun17-2020> <14:52:03>  >>>> CYCLE
+<Jun17-2020> <14:52:03>              |Error|         MaxErr       Wt(A-DIIS)
+<Jun17-2020> <14:52:03>      1      0.00000000      0.00000000
+<Jun17-2020> <14:52:03>      2      0.03153640      0.03010895
+<Jun17-2020> <14:52:03>      3      0.00861709      0.00834219    100.0
+<Jun17-2020> <14:52:03>      4      0.00173204      0.00171831      0.7
+<Jun17-2020> <14:52:03>      5      0.00004367      0.00003976      0.0
+<Jun17-2020> <14:52:03>      6      0.00000238      0.00000216      0.0
+<Jun17-2020> <14:52:03>      7      0.00000001      0.00000001      0.0
+<Jun17-2020> <14:52:03>  SCF converged
+<Jun17-2020> <14:52:03>      8      0.00000000      0.00000000      0.0
+<Jun17-2020> <14:52:03>  >>>> POPAN
+<Jun17-2020> <14:52:03>  >>>> DEBYE
+<Jun17-2020> <14:52:03>  NORMAL TERMINATION
+<Jun17-2020> <14:52:03>  END
+<Jun17-2020> <14:52:03>  ADF 2019.403  RunTime: Jun17-2020 14:52:03  Nodes: 1  Procs: 1
+<Jun17-2020> <14:52:03>  Temporary file I/O may be slow!
+<Jun17-2020> <14:52:03>  Nitrogen (TZP)
+<Jun17-2020> <14:52:03>  RunType   : CREATE
+<Jun17-2020> <14:52:04>  Net Charge: 0 (Nuclei minus Electrons)
+<Jun17-2020> <14:52:04>  Symmetry  : ATOM
+ Coordinates
+   Atom         X           Y           Z   (Angstrom)
+   1.N         0.000000    0.000000    0.000000
+<Jun17-2020> <14:52:04>  >>>> CORORT
+<Jun17-2020> <14:52:04>  >>>> CLSMAT
+<Jun17-2020> <14:52:04>  >>>> ORTHON
+<Jun17-2020> <14:52:04>  >>>> GENPT
+<Jun17-2020> <14:52:04>  Block Length=  72
+<Jun17-2020> <14:52:04>  >>>> PTBAS
+<Jun17-2020> <14:52:04>  >>>> CYCLE
+<Jun17-2020> <14:52:04>              |Error|         MaxErr       Wt(A-DIIS)
+<Jun17-2020> <14:52:04>      1      0.00000000      0.00000000
+<Jun17-2020> <14:52:04>      2      6.47106269      4.23751278    100.0
+<Jun17-2020> <14:52:04>      3      2.46539537      1.94535533    100.0
+<Jun17-2020> <14:52:04>      4      1.00959036      0.66216387    100.0
+<Jun17-2020> <14:52:04>      5      0.78723964      0.54127164    100.0
+<Jun17-2020> <14:52:04>      6      0.08936579      0.05270658     52.2
+<Jun17-2020> <14:52:04>      7      0.05649077      0.03748415     36.9
+<Jun17-2020> <14:52:04>      8      0.00842640      0.00573577      4.8
+<Jun17-2020> <14:52:04>      9      0.00035029      0.00023420      0.0
+<Jun17-2020> <14:52:04>     10      0.00000403      0.00000239      0.0
+<Jun17-2020> <14:52:04>     11      0.00000004      0.00000002      0.0
+<Jun17-2020> <14:52:04>     12      0.00000000      0.00000000      0.0
+<Jun17-2020> <14:52:04>  SCF converged
+<Jun17-2020> <14:52:04>     13      0.00000000      0.00000000      0.0
+<Jun17-2020> <14:52:04>  >>>> POPAN
+<Jun17-2020> <14:52:04>  >>>> DEBYE
+<Jun17-2020> <14:52:04>  NORMAL TERMINATION
+<Jun17-2020> <14:52:04>  END
+<Jun17-2020> <14:52:04>  ADF 2019.403  RunTime: Jun17-2020 14:52:04  Nodes: 1  Procs: 1
+<Jun17-2020> <14:52:04>  Temporary file I/O may be slow!
+<Jun17-2020> <14:52:04>  Carbon (TZP)
+<Jun17-2020> <14:52:04>  RunType   : CREATE
+<Jun17-2020> <14:52:05>  Net Charge: 0 (Nuclei minus Electrons)
+<Jun17-2020> <14:52:05>  Symmetry  : ATOM
+ Coordinates
+   Atom         X           Y           Z   (Angstrom)
+   1.C         0.000000    0.000000    0.000000
+<Jun17-2020> <14:52:05>  >>>> CORORT
+<Jun17-2020> <14:52:05>  >>>> CLSMAT
+<Jun17-2020> <14:52:05>  >>>> ORTHON
+<Jun17-2020> <14:52:05>  >>>> GENPT
+<Jun17-2020> <14:52:05>  Block Length=  72
+<Jun17-2020> <14:52:05>  >>>> PTBAS
+<Jun17-2020> <14:52:05>  >>>> CYCLE
+<Jun17-2020> <14:52:05>              |Error|         MaxErr       Wt(A-DIIS)
+<Jun17-2020> <14:52:05>      1      0.00000000      0.00000000
+<Jun17-2020> <14:52:05>      2      4.50009691      3.33485770    100.0
+<Jun17-2020> <14:52:05>      3      1.59725725      1.29840256    100.0
+<Jun17-2020> <14:52:05>      4      0.75666708      0.61107573    100.0
+<Jun17-2020> <14:52:05>      5      0.37711559      0.30463983    100.0
+<Jun17-2020> <14:52:05>      6      0.15580084      0.12228784    100.0
+<Jun17-2020> <14:52:05>      7      0.10544372      0.08341859     83.3
+<Jun17-2020> <14:52:05>      8      0.02135046      0.01680823     16.0
+<Jun17-2020> <14:52:05>      9      0.00287222      0.00227461      1.3
+<Jun17-2020> <14:52:05>     10      0.00003404      0.00002704      0.0
+<Jun17-2020> <14:52:05>     11      0.00000009      0.00000007      0.0
+<Jun17-2020> <14:52:05>     12      0.00000000      0.00000000      0.0
+<Jun17-2020> <14:52:05>  SCF converged
+<Jun17-2020> <14:52:05>     13      0.00000000      0.00000000      0.0
+<Jun17-2020> <14:52:05>  >>>> POPAN
+<Jun17-2020> <14:52:05>  >>>> DEBYE
+<Jun17-2020> <14:52:05>  NORMAL TERMINATION
+<Jun17-2020> <14:52:05>  END
+<Jun17-2020> <14:52:05>  ADF 2019.403  RunTime: Jun17-2020 14:52:05  Nodes: 1  Procs: 1
+<Jun17-2020> <14:52:05>  Temporary file I/O may be slow!
+<Jun17-2020> <14:52:05>  Iridium (TZP, all electron)
+<Jun17-2020> <14:52:05>  RunType   : CREATE
+<Jun17-2020> <14:52:06>  Net Charge: 0 (Nuclei minus Electrons)
+<Jun17-2020> <14:52:06>  Symmetry  : ATOM
+ Coordinates
+   Atom         X           Y           Z   (Angstrom)
+   1.Ir        0.000000    0.000000    0.000000
+<Jun17-2020> <14:52:06>  >>>> CORORT
+<Jun17-2020> <14:52:06>  >>>> CLSMAT
+<Jun17-2020> <14:52:06>  >>>> ORTHON
+<Jun17-2020> <14:52:06>  >>>> GENPT
+<Jun17-2020> <14:52:06>  Block Length= 113
+<Jun17-2020> <14:52:06>  >>>> PTBAS
+<Jun17-2020> <14:52:06>  >>>> CYCLE
+<Jun17-2020> <14:52:06>              |Error|         MaxErr       Wt(A-DIIS)
+<Jun17-2020> <14:52:06>      1      0.00000000      0.00000000
+<Jun17-2020> <14:52:06>      2    474.76388386     91.09396273    100.0
+<Jun17-2020> <14:52:07>      3    239.01902913     55.34766640    100.0
+<Jun17-2020> <14:52:07>      4     49.19494632      8.66747280    100.0
+<Jun17-2020> <14:52:07>      5     77.45172012     14.49165000    100.0
+<Jun17-2020> <14:52:07>      6     12.34984768      3.04066751    100.0
+<Jun17-2020> <14:52:07>      7     16.10569098      3.61131416    100.0
+<Jun17-2020> <14:52:07>      8      2.15087028      0.53080012    100.0
+<Jun17-2020> <14:52:07>      9      2.95454991      0.72771030    100.0
+<Jun17-2020> <14:52:08>     10      0.40761276      0.09838485     98.4
+<Jun17-2020> <14:52:08>     11      0.45974964      0.11006438    100.0
+<Jun17-2020> <14:52:08>     12      0.03325741      0.00652430      5.6
+<Jun17-2020> <14:52:08>     13      0.00370318      0.00084309      0.0
+<Jun17-2020> <14:52:08>     14      0.00000793      0.00000145      0.0
+<Jun17-2020> <14:52:08>     15      0.00000008      0.00000002      0.0
+<Jun17-2020> <14:52:08>     16      0.00000001      0.00000000      0.0
+<Jun17-2020> <14:52:09>  SCF converged
+<Jun17-2020> <14:52:09>     17      0.00000000      0.00000000      0.0
+<Jun17-2020> <14:52:09>  >>>> POPAN
+<Jun17-2020> <14:52:09>  >>>> DEBYE
+<Jun17-2020> <14:52:09>  NORMAL TERMINATION
+<Jun17-2020> <14:52:09>  END
+<Jun17-2020> <14:52:10>  ADF 2019.403  RunTime: Jun17-2020 14:52:10  Nodes: 20  Procs: 20
+<Jun17-2020> <14:52:10>  Temporary file I/O may be slow!
+<Jun17-2020> <14:52:10>  ChargeTransfer
+<Jun17-2020> <14:52:10>  RunType   : SINGLE POINT
+<Jun17-2020> <14:52:11>  Net Charge: 0 (Nuclei minus Electrons)
+<Jun17-2020> <14:52:11>  Spin polar: 2 (Spin_A minus Spin_B electrons)
+<Jun17-2020> <14:52:11>  Symmetry  : NOSYM
+<Jun17-2020> <14:52:11>  >>>> FRAGM
+ Coordinates
+   Atom         X           Y           Z   (Angstrom)
+   1.Ir        0.000000    0.000000   -0.007030
+   2.N         0.952570   -1.527720   -1.128470
+   3.N        -1.799330   -0.061090   -1.128470
+   4.C        -0.481440    1.597200    1.073260
+   5.C         1.623940   -0.381660    1.073260
+   6.C         2.059230   -1.953930   -0.606150
+   7.C         2.466610   -1.354210    0.616140
+   8.N         0.846760    1.588810   -1.128470
+   9.C        -1.142500   -1.215540    1.073260
+  10.C         0.662540    2.760310   -0.606150
+  11.C        -0.060530    2.813250    0.616140
+  12.C        -2.721770   -0.806380   -0.606150
+  13.C        -2.406090   -1.459040    0.616140
+  14.H         1.878390    0.107600    2.014460
+  15.H         3.373380   -1.672690    1.118800
+  16.H         2.638180   -2.739870   -1.091730
+  17.H         1.053700    3.654670   -1.091730
+  18.H        -0.238100    3.757780    1.118800
+  19.H        -1.032380    1.572930    2.014460
+  20.H        -3.135280   -2.085090    1.118800
+  21.H        -0.846010   -1.680530    2.014460
+  22.H        -3.691890   -0.914800   -1.091730
+  23.H         0.667350   -1.965590   -1.993980
+  24.H         1.368570    1.560740   -1.993980
+  25.H        -2.035920    0.404850   -1.993980
+<Jun17-2020> <14:52:11>  >>>> CORORT
+<Jun17-2020> <14:52:11>  >>>> CLSMAT
+<Jun17-2020> <14:52:12>  >>>> ORTHON
+<Jun17-2020> <14:52:13>  >>>> GENPT
+<Jun17-2020> <14:52:13>  Block Length= 128
+<Jun17-2020> <14:52:14>  >>>> PTBAS
+<Jun17-2020> <14:52:14>  >>>> CYCLE
+<Jun17-2020> <14:52:18>              |Error|         MaxErr       Wt(A-DIIS)
+<Jun17-2020> <14:52:18>      1     13.93199561      0.99235702
+<Jun17-2020> <14:52:21>  Entering Electron Transfer Program
+<Jun17-2020> <14:52:21>  Create the diabats EIGA and EIGB
+<Jun17-2020> <14:52:21>  Warning: Wrong dim2 in ET   400   402
+<Jun17-2020> <14:52:21>  Fragment file fragA1.t21 found
+<Jun17-2020> <14:52:21>      nspin of fragment fragA1.t21= 2
+<Jun17-2020> <14:52:21>  There are  428 AOs in frag 1
+<Jun17-2020> <14:52:21>      Fragment 1    is doublet
+<Jun17-2020> <14:52:21>  SpinFrag( 1)= 1
+<Jun17-2020> <14:52:21>  SpinFrag( 1)= 1
+<Jun17-2020> <14:52:21>  SpinFrag( 1)= 1
+<Jun17-2020> <14:52:21>  Warning: Wrong dim2 in ET   400   402
+<Jun17-2020> <14:52:21>  Fragment file fragA1.t21 found
+<Jun17-2020> <14:52:21>      nspin of fragment fragA1.t21= 2
+<Jun17-2020> <14:52:21>  There are  428 AOs in frag 1
+<Jun17-2020> <14:52:21>      Fragment 1    is doublet
+<Jun17-2020> <14:52:21>  SpinFrag( 1)= 1
+<Jun17-2020> <14:52:21>  SpinFrag( 1)= 1
+<Jun17-2020> <14:52:21>  SpinFrag( 1)= 1
+<Jun17-2020> <14:52:21>      dims 1,2,3 of EIGA in ETmain   428   400     2
+<Jun17-2020> <14:52:21>      nocc_A=   83 nocc_B=   81
+<Jun17-2020> <14:52:21>  Create the overlap matrix
+<Jun17-2020> <14:52:22>  Done with the overlap matrix
+<Jun17-2020> <14:52:22>  Create the overlap matrix
+<Jun17-2020> <14:52:23>  Done with the overlap matrix
+<Jun17-2020> <14:52:23>  Start with the MO transition density matrix
+<Jun17-2020> <14:52:23>  START inversion
+<Jun17-2020> <14:52:23>  Calculate the inverse of the COUPLED overlap matrix
+<Jun17-2020> <14:52:23>
+<Jun17-2020> <14:52:23>  -------------------------------------------------------------------
+<Jun17-2020> <14:52:23>  ==> WARNING: one less electron in the transition density matrix <==
+<Jun17-2020> <14:52:23>  ==>          applying the Penrose inversion of the N-k          <==
+<Jun17-2020> <14:52:23>  ==>          dimensional subspace                               <==
+<Jun17-2020> <14:52:23>  -------------------------------------------------------------------
+<Jun17-2020> <14:52:23>
+<Jun17-2020> <14:52:23>  SAB-1 successfully calculated
+<Jun17-2020> <14:52:23>  START inversion
+<Jun17-2020> <14:52:23>  Calculate the inverse of the COUPLED overlap matrix
+<Jun17-2020> <14:52:23>  SAB-1 successfully calculated
+<Jun17-2020> <14:52:23>  Done with the MO transition density matrix
+<Jun17-2020> <14:52:23>  Entering ETgetPmatFromMOs
+<Jun17-2020> <14:52:24>  Pmat successfully calculated in ETgetPmatFromMOs
+<Jun17-2020> <14:52:25>  Pmat successfully calculated in ETgetPmatFromMOs
+<Jun17-2020> <14:52:25>  get the fita1
+<Jun17-2020> <14:52:25>  done with the fita1
+<Jun17-2020> <14:52:26>  Warning: Wrong dim2 in ET   400   402
+<Jun17-2020> <14:52:26>  Fragment file fragB1.t21 found
+<Jun17-2020> <14:52:26>      nspin of fragment fragB1.t21= 2
+<Jun17-2020> <14:52:26>  There are  428 AOs in frag 1
+<Jun17-2020> <14:52:26>      Fragment 1    is triplet
+<Jun17-2020> <14:52:26>  SpinFrag( 1)= 0
+<Jun17-2020> <14:52:26>  SpinFrag( 1)= 3
+<Jun17-2020> <14:52:26>  SpinFrag( 1)= 3
+<Jun17-2020> <14:52:26>  Warning: Wrong dim2 in ET   400   402
+<Jun17-2020> <14:52:26>  Fragment file fragB1.t21 found
+<Jun17-2020> <14:52:26>      nspin of fragment fragB1.t21= 2
+<Jun17-2020> <14:52:26>  There are  428 AOs in frag 1
+<Jun17-2020> <14:52:26>      Fragment 1    is triplet
+<Jun17-2020> <14:52:27>  SpinFrag( 1)= 0
+<Jun17-2020> <14:52:27>  SpinFrag( 1)= 3
+<Jun17-2020> <14:52:27>  SpinFrag( 1)= 3
+<Jun17-2020> <14:52:27>      dims 1,2,3 of EIGA in ETmain   428   400     2
+<Jun17-2020> <14:52:27>      nocc_A=   83 nocc_B=   81
+<Jun17-2020> <14:52:27>  Create the overlap matrix
+<Jun17-2020> <14:52:27>  Done with the overlap matrix
+<Jun17-2020> <14:52:27>  Create the overlap matrix
+<Jun17-2020> <14:52:28>  Done with the overlap matrix
+<Jun17-2020> <14:52:28>  Start with the MO transition density matrix
+<Jun17-2020> <14:52:28>  START inversion
+<Jun17-2020> <14:52:28>  Calculate the inverse of the COUPLED overlap matrix
+<Jun17-2020> <14:52:28>  SAB-1 successfully calculated
+<Jun17-2020> <14:52:28>  START inversion
+<Jun17-2020> <14:52:28>  Calculate the inverse of the COUPLED overlap matrix
+<Jun17-2020> <14:52:28>  SAB-1 successfully calculated
+<Jun17-2020> <14:52:28>  Done with the MO transition density matrix
+<Jun17-2020> <14:52:28>  Entering ETgetPmatFromMOs
+<Jun17-2020> <14:52:29>  Pmat successfully calculated in ETgetPmatFromMOs
+<Jun17-2020> <14:52:30>  Pmat successfully calculated in ETgetPmatFromMOs
+<Jun17-2020> <14:52:30>  get the fita1
+<Jun17-2020> <14:52:30>  done with the fita1
+<Jun17-2020> <14:52:31>  Warning: Wrong dim2 in ET   400   402
+<Jun17-2020> <14:52:31>  Fragment file fragA1.t21 found
+<Jun17-2020> <14:52:31>      nspin of fragment fragA1.t21= 2
+<Jun17-2020> <14:52:31>  There are  428 AOs in frag 1
+<Jun17-2020> <14:52:31>      Fragment 1    is doublet
+<Jun17-2020> <14:52:31>  SpinFrag( 1)= 1
+<Jun17-2020> <14:52:31>  SpinFrag( 1)= 1
+<Jun17-2020> <14:52:31>  SpinFrag( 1)= 1
+<Jun17-2020> <14:52:31>  Warning: Wrong dim2 in ET   400   402
+<Jun17-2020> <14:52:31>  Fragment file fragB1.t21 found
+<Jun17-2020> <14:52:31>      nspin of fragment fragB1.t21= 2
+<Jun17-2020> <14:52:31>  There are  428 AOs in frag 1
+<Jun17-2020> <14:52:31>      Fragment 1    is triplet
+<Jun17-2020> <14:52:32>  SpinFrag( 1)= 0
+<Jun17-2020> <14:52:32>  SpinFrag( 1)= 3
+<Jun17-2020> <14:52:32>  SpinFrag( 1)= 3
+<Jun17-2020> <14:52:32>      dims 1,2,3 of EIGA in ETmain   428   400     2
+<Jun17-2020> <14:52:32>      nocc_A=   83 nocc_B=   81
+<Jun17-2020> <14:52:32>  Create the overlap matrix
+<Jun17-2020> <14:52:32>  Done with the overlap matrix
+<Jun17-2020> <14:52:32>  Create the overlap matrix
+<Jun17-2020> <14:52:33>  Done with the overlap matrix
+<Jun17-2020> <14:52:33>  Start with the MO transition density matrix
+<Jun17-2020> <14:52:33>  START inversion
+<Jun17-2020> <14:52:33>  Calculate the inverse of the COUPLED overlap matrix
+<Jun17-2020> <14:52:33>
+<Jun17-2020> <14:52:33>  -------------------------------------------------------------------
+<Jun17-2020> <14:52:33>  ==> WARNING: one less electron in the transition density matrix <==
+<Jun17-2020> <14:52:33>  ==>          applying the Penrose inversion of the N-k          <==
+<Jun17-2020> <14:52:33>  ==>          dimensional subspace                               <==
+<Jun17-2020> <14:52:33>  -------------------------------------------------------------------
+<Jun17-2020> <14:52:33>
+<Jun17-2020> <14:52:33>  SAB-1 successfully calculated
+<Jun17-2020> <14:52:33>  START inversion
+<Jun17-2020> <14:52:33>  Calculate the inverse of the COUPLED overlap matrix
+<Jun17-2020> <14:52:33>  SAB-1 successfully calculated
+<Jun17-2020> <14:52:33>  Done with the MO transition density matrix
+<Jun17-2020> <14:52:33>  Entering ETgetPmatFromMOs
+<Jun17-2020> <14:52:34>  Pmat successfully calculated in ETgetPmatFromMOs
+<Jun17-2020> <14:52:35>  Pmat successfully calculated in ETgetPmatFromMOs
+<Jun17-2020> <14:52:35>  get the fita1
+<Jun17-2020> <14:52:35>  done with the fita1
+<Jun17-2020> <14:52:36>
+<Jun17-2020> <14:52:36>  ** COULOMB ONLY RESULTS **
+<Jun17-2020> <14:52:36>  Electronic Coupling =              NaN eV
+<Jun17-2020> <14:52:36>  Electronic Coupling =              NaN cm-1
+<Jun17-2020> <14:52:36>  H11-H22             =         6.484849 eV
+<Jun17-2020> <14:52:36>  Excitation Energy   =              NaN eV
+<Jun17-2020> <14:52:36>  Overlap             =              NaN
+<Jun17-2020> <14:52:36>  H11 H22 H12 = ****************** ****************** ****************** Eh
+<Jun17-2020> <14:52:36>  S11 S22 S12 =     0.000000000000     1.000000000000                NaN
+<Jun17-2020> <14:52:36>  ** END COULOMB ONLY RESULTS **
+<Jun17-2020> <14:52:36>
+<Jun17-2020> <14:52:36>
+<Jun17-2020> <14:52:36>  ** Written by M. Pavanello **
+<Jun17-2020> <14:52:36>  ** With contributions from: **
+<Jun17-2020> <14:52:36>  ** -> J. Neugebauer
+<Jun17-2020> <14:52:36>  ** -> A. Solovyeva
+<Jun17-2020> <14:52:36>  ** -> P. Ramos
+<Jun17-2020> <14:52:36>  ** see also:
+<Jun17-2020> <14:52:36>  ** [1] M. Pavanello and J. Neugebauer,
+<Jun17-2020> <14:52:36>         J. Chem. Phys. 135, 234103 (2011)
+<Jun17-2020> <14:52:36>  ** [2] M. Pavanello, T. Van Voorhis, L. Visscher, and J. Neugebauer,
+<Jun17-2020> <14:52:36>         J. Chem. Phys. 138, 054101 (2013)
+<Jun17-2020> <14:52:36>  ** [3] A. Solovyeva, M. Pavanello, and J. Neugebauer,
+<Jun17-2020> <14:52:36>         J. Chem. Phys. 140, 164103 (2013)
+<Jun17-2020> <14:52:36>  ** [4] P. Ramos, M. Papadakis, M. Pavanello,
+<Jun17-2020> <14:52:36>         J. Phys. Chem. B 119, 7541-7557 (2015)
+<Jun17-2020> <14:52:36>
+<Jun17-2020> <14:52:36>  ** See Ref.[2] for a description of the theory and pilot calculations for hole transfer
+<Jun17-2020> <14:52:36>  ** See Ref.[3] for a description of the theory and pilot calculations for charge separation and recombination
+<Jun17-2020> <14:52:36>  ** See Ref.[4] for a benchmark study of hole transfer
+<Jun17-2020> <14:52:36>
+<Jun17-2020> <14:52:36>  ============  Electron Transfer RESULTS ===================
+<Jun17-2020> <14:52:36>  Electronic Coupling =              NaN eV
+<Jun17-2020> <14:52:36>  Electronic Coupling =              NaN cm-1
+<Jun17-2020> <14:52:36>  H11-H22             =        12.210379 eV
+<Jun17-2020> <14:52:36>  Excitation Energy   =              NaN eV
+<Jun17-2020> <14:52:36>  Overlap             =              NaN
+<Jun17-2020> <14:52:36>  H11 H22 H12 = ****************** ****************** ****************** Eh
+<Jun17-2020> <14:52:36>  S11 S22 S12 =     0.000000000000     1.000000000000                NaN
+<Jun17-2020> <14:52:36>  Electronic Coupling =              NaN eV
+<Jun17-2020> <14:52:36>  Electronic Coupling =              NaN cm-1
+<Jun17-2020> <14:52:36>  H11-H22             =        12.210379 eV
+<Jun17-2020> <14:52:36>  Excitation Energy   =              NaN eV
+<Jun17-2020> <14:52:36>  Overlap             =              NaN
+<Jun17-2020> <14:52:36>  H11 H22 H12 = ****************** ****************** ****************** Eh
+<Jun17-2020> <14:52:36>  S11 S22 S12 =     0.000000000000     1.000000000000                NaN
+<Jun17-2020> <14:52:36>
+<Jun17-2020> <14:52:36>  =========== END Electron Transfer RESULTS ================
+<Jun17-2020> <14:52:36>  Exiting Electron Transfer Program
+<Jun17-2020> <14:52:36>  NORMAL TERMINATION
+<Jun17-2020> <14:52:36>  END

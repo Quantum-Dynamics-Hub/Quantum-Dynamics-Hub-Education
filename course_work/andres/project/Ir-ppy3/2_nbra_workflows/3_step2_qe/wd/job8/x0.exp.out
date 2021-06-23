@@ -1,0 +1,44 @@
+
+     Program PW_EXPORT v.6.2 (svn rev. 14038) starts on 21Jun2021 at 20:41:29 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    12 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      12
+
+     Reading data from directory:
+     ./x0.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      = PBE ( 1  4  3  4 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file Ti.pbe-mt_fhi.UPF: wavefunction(s)  4f renormalized
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         147      59     13                 3128      788      94
+     Max         150      62     16                 3138      792     100
+     Sum        1789     725    177                37603     9479    1169
+ 
+
+     Check: negative/imaginary core charge=   -0.000092    0.000000
+ 
+     PW_EXPORT    :     0.69s CPU         1.27s WALL
+
+ 
+   This run was terminated on:  20:41:30  21Jun2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
