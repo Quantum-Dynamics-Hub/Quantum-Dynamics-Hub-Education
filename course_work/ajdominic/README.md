@@ -1,0 +1,1 @@
+This directory contains the exercises/tutorials I have completed on each day of the workshop and will ultimately have 11 folders (e.g., Day_1, ..., Day_11), assuming that the last day will be reserved for presentations.
