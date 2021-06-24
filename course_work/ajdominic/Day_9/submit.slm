@@ -1,0 +1,20 @@
+#!/bin/sh
+#SBATCH --partition=valhalla  --qos=valhalla
+#SBATCH --clusters=faculty
+#SBATCH --account=cyberwksp21
+#SBATCH --time=01:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=122
+#SBATCH --mem=28000
+
+eval "$(/projects/academic/cyberwksp21/Software/Conda/Miniconda3/bin/conda shell.bash hook)"
+module load jupyter
+module load python/anaconda2-4.3.0
+module load nexmd
+
+for word in $(cat dirlist);
+  do
+  cd ./$word
+  nexmd.exe > md.out
+  cd ..
+  done
