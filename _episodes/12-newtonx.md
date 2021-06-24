@@ -19,7 +19,13 @@ date: June 24, 2021, 11:00 am - 5:00 pm EDT
 autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
+ * Working files
 
+   - [starting.tgz](../files/episode_12/starting.tgz)
+
+   - [input-files.tgz](../files/episode_12/input-files.tgz)
+
+   - [results.tgz](../files/episode_12/results.tgz)
 
 {% include links.md %}
 
