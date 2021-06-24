@@ -1,1 +1,0 @@
-QXMD tutorial
