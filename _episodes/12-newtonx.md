@@ -21,11 +21,11 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
  * Working files
 
-   - [starting.tgz](../files/episode12/starting.tgz)
+   - [starting.tgz](../files/episode_12/starting.tgz)
 
-   - [input-files.tgz](../files/episode12/input-files.tgz)
+   - [input-files.tgz](../files/episode_12/input-files.tgz)
 
-   - [results.tgz](../files/episode12/results.tgz)
+   - [results.tgz](../files/episode_12/results.tgz)
 
 {% include links.md %}
 
