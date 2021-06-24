@@ -12,3 +12,8 @@ This folder contains
 1. an input file used for the calculation
 2. a basis set and potential file used for the calculation
 3. a shell script for slurm job submission
+4. COF-MOS-1_0.molden, molecular orbital file
+
+Note the DFT calculation is done but the TD-DFT calculation is
+terminated due to out-of-memory. But this is a good exercise to
+run the TD-DFT calculation.

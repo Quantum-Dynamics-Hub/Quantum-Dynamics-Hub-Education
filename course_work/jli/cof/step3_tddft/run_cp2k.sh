@@ -6,7 +6,7 @@
 #SBATCH --job-name=cp2k-t
 #SBATCH --partition=valhalla  --qos=valhalla
 #SBATCH --clusters=faculty
-#SBATCH --mem=150GB
+#SBATCH --mem=200GB
 #SBATCH --output=%j.o.slurm
 #SBATCH --error=%j.e.slurm
 

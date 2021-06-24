@@ -26,3 +26,4 @@ This folder contains
 3. dftd3.dat for Grimme's D3 correction
 4. a shell script for slurm job submission
 5. a log file and optimized geometry
+6. COF-frc-1.xyz, the latest geometry
