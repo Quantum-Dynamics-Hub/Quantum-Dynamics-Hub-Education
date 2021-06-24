@@ -1,0 +1,42 @@
+
+Host: cpn-p27-15.compute.cbls.ccr.buffalo.edu
+
+Timers On : Tue Jun 15 15:48:03 2021
+Timers Off: Tue Jun 15 16:11:30 2021
+
+Wall Time:     1407.12 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
+
+Host: cpn-f11-11.cbls.ccr.buffalo.edu
+
+Timers On : Wed Jun 23 15:49:15 2021
+Timers Off: Wed Jun 23 15:51:49 2021
+
+Wall Time:      153.62 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
+
+Host: cpn-f11-11.cbls.ccr.buffalo.edu
+
+Timers On : Wed Jun 23 15:49:14 2021
+Timers Off: Wed Jun 23 15:51:54 2021
+
+Wall Time:      159.98 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************

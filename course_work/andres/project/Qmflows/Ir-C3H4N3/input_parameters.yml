@@ -1,0 +1,131 @@
+active_space:
+- 82
+- 18
+calculate_guesses: first
+compute_orbitals: true
+cp2k_general_settings:
+    aux_fit: verygood
+    basis: DZVP-MOLOPT-SR-GTH
+    cell_parameters: 10
+    charge: 0
+    cp2k_settings_guess:
+        basis: DZVP-MOLOPT-SR-GTH
+        cell_angles: null
+        cell_parameters: 10
+        executable: cp2k.popt
+        potential: GTH-PBE
+        specific:
+            cp2k:
+                force_eval:
+                    dft:
+                        basis_set_file_name:
+                        - /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows/lib/python3.7/site-packages/nanoqm/basis/BASIS_MOLOPT
+                        charge: 0
+                        potential_file_name: /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows/lib/python3.7/site-packages/nanoqm/basis/GTH_POTENTIALS
+                        scf:
+                            added_mos: 0
+                            eps_scf: 1e-6
+                            ot:
+                                minimizer: DIIS
+                                n_diis: 7
+                                preconditioner: FULL_SINGLE_INVERSE
+                            scf_guess: restart
+                        xc:
+                            xc_functional pbe: {}
+                    subsys:
+                        cell:
+                            periodic: none
+                        kind:
+                            C:
+                                basis_set:
+                                - DZVP-MOLOPT-SR-GTH-q4
+                                potential: GTH-PBE-q4
+                            H:
+                                basis_set:
+                                - DZVP-MOLOPT-SR-GTH-q1
+                                potential: GTH-PBE-q1
+                            Ir:
+                                basis_set:
+                                - DZVP-MOLOPT-SR-GTH-q17
+                                potential: GTH-PBE-q17
+                            N:
+                                basis_set:
+                                - DZVP-MOLOPT-SR-GTH-q5
+                                potential: GTH-PBE-q5
+                global:
+                    run_type: energy
+    cp2k_settings_main:
+        basis: DZVP-MOLOPT-SR-GTH
+        cell_angles: null
+        cell_parameters: 10
+        executable: cp2k.popt
+        potential: GTH-PBE
+        specific:
+            cp2k:
+                force_eval:
+                    dft:
+                        basis_set_file_name:
+                        - /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows/lib/python3.7/site-packages/nanoqm/basis/BASIS_MOLOPT
+                        charge: 0
+                        potential_file_name: /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows/lib/python3.7/site-packages/nanoqm/basis/GTH_POTENTIALS
+                        print:
+                            mo:
+                                add_last: numeric
+                                each:
+                                    qs_scf: 0
+                                eigenvalues: ''
+                                eigenvectors: ''
+                                mo_index_range: -41 58
+                                ndigits: 36
+                        scf:
+                            added_mos: 18
+                            eps_scf: 5e-4
+                            max_scf: 200
+                            scf_guess: restart
+                        xc:
+                            xc_functional pbe: {}
+                    subsys:
+                        cell:
+                            periodic: none
+                        kind:
+                            C:
+                                basis_set:
+                                - DZVP-MOLOPT-SR-GTH-q4
+                                potential: GTH-PBE-q4
+                            H:
+                                basis_set:
+                                - DZVP-MOLOPT-SR-GTH-q1
+                                potential: GTH-PBE-q1
+                            Ir:
+                                basis_set:
+                                - DZVP-MOLOPT-SR-GTH-q17
+                                potential: GTH-PBE-q17
+                            N:
+                                basis_set:
+                                - DZVP-MOLOPT-SR-GTH-q5
+                                potential: GTH-PBE-q5
+                global:
+                    run_type: energy
+    executable: cp2k.popt
+    file_cell_parameters: null
+    multiplicity: 1
+    path_basis: /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows/lib/python3.7/site-packages/nanoqm/basis
+    periodic: none
+    potential: GTH-PBE
+    wfn_restart_file_name: null
+dt: 1
+enumerate_from: 0
+geometry_units: angstrom
+ignore_warnings: false
+mo_index_range: !!python/tuple
+- -42
+- 58
+nHOMO: 40
+orbitals_type: ''
+package_name: cp2k
+path_hdf5: iridium-1.hdf5
+path_traj_xyz: iridium-1.xyz
+project_name: iridium-1
+remove_log_file: false
+scratch_path: /panasas/scratch/grp-cyberwksp21/ub2050/single_point_iridium
+workflow: single_points

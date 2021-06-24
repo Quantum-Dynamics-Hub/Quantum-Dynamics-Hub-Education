@@ -1,8 +1,0 @@
-/usr/bin/cp: cannot stat ‘fragA1.t21’: No such file or directory
-srun: error: nm346: task 0: Exited with exit code 1
-/usr/bin/cp: cannot stat ‘fragB1.t21’: No such file or directory
-srun -N 1 -n 1 hostname
-NORMAL TERMINATION
-NORMAL TERMINATION
-NORMAL TERMINATION
-NORMAL TERMINATION
