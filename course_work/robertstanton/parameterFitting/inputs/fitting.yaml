@@ -1,0 +1,93 @@
+param:
+    charge:
+        param: charge
+        Cd: 0.6
+        S: -0.6
+        constraints:
+            - '0 < Cd < 2'
+            - '-2 < S < 0'
+            - 'Cd == -1 * S'
+
+    lennard_jones:
+        - param: epsilon
+          unit: kjmol
+          frozen:
+              guess: uff
+        - param: sigma
+          unit: nm
+          Cd Cd:  0.285
+          Cd S:   0.225
+          S S:  0.340
+          constraints:
+              - 'Cd Cd   > 0.2'
+              - 'Cd S   > 0.18'
+              - 'S S   > 0.24'
+
+pes:
+    rdf:
+        func: FOX.MultiMolecule.init_rdf
+        kwargs:
+            atom_subset: [Cd, S]
+
+job:
+    molecule: CdSQD.xyz
+
+    md_settings:
+        template: qmflows.templates.md.specific.cp2k_mm
+        settings:
+            input:
+                global:
+                    print_level: LOW
+                force_eval:
+                    mm:
+                      poisson:
+                         periodic: xyz
+                         ewald:
+                           ewald_type: spme
+                           gmax: '62 62 62'
+                           o_spline: 4
+                    subsys:
+                        cell:
+                            abc: '[angstrom] 100.0 100.0 100.0'
+                            periodic: xyz
+
+                motion:
+                    print:
+                        cell:
+                           each:
+                              md: 10
+                        restart:
+                           each:
+                              md: 10
+                        trajectory:
+                           each:
+                              md: 10
+                        velocities:
+                           each:
+                              md: 10
+                        forces:
+                           each:
+                              md: 10
+                    md:
+                        ensemble: NVT
+                        temperature: 300.0
+                        timestep: 2.5
+                        steps: 10000
+                        thermostat:
+                            type: csvr
+                            csvr:
+                                timecon: 10000
+                        print:
+                             energy:
+                                 each:
+                                    md: 10
+                        barostat:
+                            pressure: 1.01
+                            timecon: 10000
+
+monte_carlo:
+    logfile: armc.log
+    hdf5_file: armc.hdf5
+    path: ./
+    folder: MM_MD_workdir
+    keep_files: True
