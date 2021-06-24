@@ -1,0 +1,18 @@
+#!/bin/csh
+
+set gms='~/GAMESS/gamess/rungms'
+set scr_dir='/tmp'
+set loc_dir='/home3/molecula1/maplima/agf18/benzene_2/gamess-orbitals'
+
+set JOB='benzene_2'
+
+cd $scr_dir
+rm -f $JOB'.irc'
+rm -f $JOB'.dat'
+rm -f $JOB'.F77'
+
+cd $loc_dir
+
+$gms $JOB > & $JOB'.log'
+
+mv $scr_dir/$JOB'.dat' $loc_dir/
