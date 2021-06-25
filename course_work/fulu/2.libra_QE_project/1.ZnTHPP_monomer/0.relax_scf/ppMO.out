@@ -1,0 +1,326 @@
+
+     Program POST-PROC v.6.4.1 starts on 29May2021 at 11:36: 0 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      64 processor cores
+     Number of MPI processes:                 2
+     Threads/MPI process:                    32
+
+     MPI processes distributed on     2 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       2
+
+     Reading data from directory:
+     ./ZnTHPP_relax.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      = PBE ( 1  4  3  4 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file C.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+               file O.pbe-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P renormalized
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min       44744   17889   4484             10074033  2548489  318740
+     Max       44749   17892   4485             10074036  2548496  318743
+     Sum       89493   35781   8969             20148069  5096985  637483
+ 
+
+     negative rho (up, down):  3.844E-02 0.000E+00
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =120
+     Writing data to file  psi2.ZnTHPP_K001_B120
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =121
+     Writing data to file  psi2.ZnTHPP_K001_B121
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =122
+     Writing data to file  psi2.ZnTHPP_K001_B122
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =123
+     Writing data to file  psi2.ZnTHPP_K001_B123
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =124
+     Writing data to file  psi2.ZnTHPP_K001_B124
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =125
+     Writing data to file  psi2.ZnTHPP_K001_B125
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =126
+     Writing data to file  psi2.ZnTHPP_K001_B126
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =127
+     Writing data to file  psi2.ZnTHPP_K001_B127
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =128
+     Writing data to file  psi2.ZnTHPP_K001_B128
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =129
+     Writing data to file  psi2.ZnTHPP_K001_B129
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =130
+     Writing data to file  psi2.ZnTHPP_K001_B130
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =131
+     Writing data to file  psi2.ZnTHPP_K001_B131
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =132
+     Writing data to file  psi2.ZnTHPP_K001_B132
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =133
+     Writing data to file  psi2.ZnTHPP_K001_B133
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =134
+     Writing data to file  psi2.ZnTHPP_K001_B134
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =135
+     Writing data to file  psi2.ZnTHPP_K001_B135
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =136
+     Writing data to file  psi2.ZnTHPP_K001_B136
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =137
+     Writing data to file  psi2.ZnTHPP_K001_B137
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =138
+     Writing data to file  psi2.ZnTHPP_K001_B138
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =139
+     Writing data to file  psi2.ZnTHPP_K001_B139
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =140
+     Writing data to file  psi2.ZnTHPP_K001_B140
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =141
+     Writing data to file  psi2.ZnTHPP_K001_B141
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =142
+     Writing data to file  psi2.ZnTHPP_K001_B142
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =143
+     Writing data to file  psi2.ZnTHPP_K001_B143
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =144
+     Writing data to file  psi2.ZnTHPP_K001_B144
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =145
+     Writing data to file  psi2.ZnTHPP_K001_B145
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =146
+     Writing data to file  psi2.ZnTHPP_K001_B146
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =147
+     Writing data to file  psi2.ZnTHPP_K001_B147
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =148
+     Writing data to file  psi2.ZnTHPP_K001_B148
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =149
+     Writing data to file  psi2.ZnTHPP_K001_B149
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =150
+     Writing data to file  psi2.ZnTHPP_K001_B150
+     Reading data from file  psi2.ZnTHPP_K001_B120
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B120.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B121
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B121.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B122
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B122.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B123
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B123.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B124
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B124.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B125
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B125.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B126
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B126.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B127
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B127.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B128
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B128.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B129
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B129.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B130
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B130.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B131
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B131.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B132
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B132.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B133
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B133.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B134
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B134.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B135
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B135.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B136
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B136.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B137
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B137.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B138
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B138.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B139
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B139.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B140
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B140.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B141
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B141.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B142
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B142.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B143
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B143.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B144
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B144.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B145
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B145.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B146
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B146.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B147
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B147.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B148
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B148.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B149
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B149.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_K001_B150
+
+     Writing data to be plotted to file psi2.ZnTHPP_K001_B150.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+ 
+     POST-PROC    :      2h59m CPU  28m55.36s WALL
+
+ 
+   This run was terminated on:  12: 4:56  29May2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
