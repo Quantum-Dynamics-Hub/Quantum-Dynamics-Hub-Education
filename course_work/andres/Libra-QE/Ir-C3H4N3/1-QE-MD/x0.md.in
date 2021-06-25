@@ -1,0 +1,79 @@
+
+&CONTROL
+  calculation   = 'md',
+  nstep         = 100,
+  dt            = 20.67055,
+  pseudo_dir    = '/util/academic/espresso/6.2.1/pseudopotentials/upf_files',
+  outdir        = './',
+  prefix        = 'x0',
+  disk_io       = 'low',
+/
+
+&SYSTEM
+  ibrav       = 0,
+  nat         = 25,
+  ntyp        = 4,
+  nspin       = 1,
+  ecutwfc     = 30,
+  ecutrho     = 300,
+  occupations = 'smearing',
+  smearing    = 'gaussian',
+  degauss     = 0.01,
+  nosym       = true,
+/
+
+&ELECTRONS
+  electron_maxstep = 300,
+  conv_thr         = 1.D-4,
+  mixing_beta      = 0.30,
+/
+
+&IONS
+  ion_dynamics      = 'verlet',
+  ion_temperature   = 'andersen',
+  tempw             = 300,
+  nraise            = 10,
+  pot_extrapolation = 'second-order',
+  wfc_extrapolation = 'second-order',
+/
+
+ATOMIC_SPECIES
+C  12.010     C.pbe-n-rrkjus_psl.0.1.UPF 
+H  1.007      H.pbe-rrkjus_psl.0.1.UPF 
+Ir 192.217    Ir.pbe-n-rrkjus_psl.0.2.3.UPF
+N  14.006     N.pbe-n-rrkjus_psl.0.1.UPF
+
+
+K_POINTS gamma
+
+CELL_PARAMETERS  angstrom
+        7.0652699470        0.0000000000         0.0000000000
+        0.0000000000        7.0652699470         0.0000000000
+        0.0000000000        0.0000000000         7.0652699470 
+
+ATOMIC_POSITIONS angstrom
+Ir         0.00000        0.00000       -0.00703
+N          0.95257       -1.52772       -1.12847
+N         -1.79933       -0.06109       -1.12847
+N          0.84676        1.58881       -1.12847
+C         -0.48144        1.59720        1.07326
+C          1.62394       -0.38166        1.07326
+C          2.05923       -1.95393       -0.60615
+C          2.46661       -1.35421        0.61614
+C         -1.14250       -1.21554        1.07326
+C          0.66254        2.76031       -0.60615
+C         -0.06053        2.81325        0.61614
+C         -2.72177       -0.80638       -0.60615
+C         -2.40609       -1.45904        0.61614
+H          1.87839        0.10760        2.01446
+H          3.37338       -1.67269        1.11880
+H          2.63818       -2.73987       -1.09173
+H          1.05370        3.65467       -1.09173
+H         -0.23810        3.75778        1.11880
+H         -1.03238        1.57293        2.01446
+H         -3.13528       -2.08509        1.11880
+H         -0.84601       -1.68053        2.01446
+H         -3.69189       -0.91480       -1.09173
+H          0.66735       -1.96559       -1.99398
+H          1.36857        1.56074       -1.99398
+H         -2.03592        0.40485       -1.99398

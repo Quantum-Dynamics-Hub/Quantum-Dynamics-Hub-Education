@@ -9,11 +9,12 @@ longitude: "-78.788780"    # decimal longitude of the workshop venue (use https:
 humandate: "June 14-26, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "11:00 am - 5:00 pm EDT"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2021-06-14      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2021-06-26        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+enddate: 2021-06-25        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alexey Akimov", "Jeanette Sperhac", "Sudhakar Pamidighantam",
              "Ivan Infante",  "Felipe Zapata", "Sergei Tretiak", "Walter Malone", 
              "Mario Barbatti", "Hans Lischka", "Amber Jain", "Aiichiro Nakano"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Mohammad Shakiba", "Bas van Beek", "Juliette Zito"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Mohammad Shakiba", "Bas van Beek", "Juliette Zito", "Roberta Pascazio",
+         "Thomas Linker", "Ljiljana Stojanovic", "Reed Nieman", "Bhumika Jayee" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 googleform: https://forms.gle/kup1bkWibLsHH8Bn7
@@ -186,7 +187,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 18, 2021 (Day 5), Friday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/nexmd">Excited state dynamics of extended organic systems using NEXMD</a></li>
+        <li><a href="/_episodes/09-nexmd">Excited state dynamics of extended organic systems using NEXMD</a></li>
       </ul>
     </td>
     <td class="col-md-2">Sergei Tretiak, Walter Malone</td>
@@ -208,45 +209,45 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 21, 2021 (Day 8), <strong>Monday</strong></td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/qxmd">Excited state dynamics of extended inorganic systems using QXMD</a></li>
+        <li><a href="/_episodes/10-qxmd">Excited state dynamics of extended inorganic systems using QXMD</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Aiichiro Nakano, Alexey Akimov</td>
+    <td class="col-md-2">Aiichiro Nakano, Tom Linker, Alexey Akimov</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 22, 2021 (Day 9), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/columbus">Accurate excited state calculations using COLUMBUS package</a></li>
+        <li><a href="/_episodes/11-columbus">Accurate excited state calculations using COLUMBUS package</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Hans Lischka, Mario Barbatti</td>
+    <td class="col-md-2">Hans Lischka, Alexey Akimov</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 23, 2021 (Day 10), Wednesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/newtonx">Nonadiabatic dynamics using Newton-X/DFTB+ package</a></li>
-        <li><a href="/_episodes/columbus">Accurate excited state calculations using COLUMBUS package</a></li>
+        <li><a href="/_episodes/12-newtonx">Nonadiabatic dynamics using Newton-X/DFTB+ package</a></li>
+        <li><a href="/_episodes/11-columbus">Accurate excited state calculations using COLUMBUS package</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Mario Barbatti, Hans Lischka</td>
+    <td class="col-md-2">Mario Barbatti, Ljiljana Stojanovic, Hans Lischka</td>
   </tr>
 
   <tr>
     <td class="col-md-3">June 24, 2021 (Day 11), Thursday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/newtonx">Nonadiabatic dynamics using Newton-X/COLUMBUS package</a></li>        
+        <li><a href="/_episodes/12-newtonx">Nonadiabatic dynamics using Newton-X/COLUMBUS package</a></li>        
       </ul>
     </td>
     <td class="col-md-2">Mario Barbatti, Hans Lischka</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">June 26, 2021 (Day 12), Friday</td>
+    <td class="col-md-3">June 25, 2021 (Day 12), Friday</td>
     <td class="col-md-7">
       <ul>
         <li>Students projects presentations</li>
@@ -286,7 +287,8 @@ The details may vary and the order of topics may be changed, the topics may be o
 | Ms. Roberta Pascazio | Istituto Italiano di Tecnologia, Italy | Co-instructor for **CAT, FOX** | 
 | Dr. Reed Nieman | Texas Tech University, USA | Co-instructor for **COLUMBUS** |
 | Dr. Bhumika Jayee | Texas Tech University, USA | Co-instructor for **COLUMBUS** |
-| Dr. Ljiljana Stojanovic | University College London, UK | Co-instructor for **Newton-X, DFTB+** |
+| [Dr. Ljiljana Stojanovic](https://iris.ucl.ac.uk/iris/browse/profile?upi=LSTOJ81) | University College London, UK | Co-instructor for **Newton-X, DFTB+** |
+| Mr. Thomas Linker | University of Southern California, USA  |  Co-instructor for: **QXMD** |
 
 
 ### The UB Center for Computational Research team

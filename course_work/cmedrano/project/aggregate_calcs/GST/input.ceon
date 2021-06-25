@@ -1,0 +1,249 @@
+&qmmm
+   !***** Geometry Optimization
+   maxcyc=0, ! Number of cycles for geometry optimization [0]
+   ntpr=1, ! Print results every ntpr cycles [1]
+   grms_tol=1.0d-2, ! Tolerance in eV/A (derivatives) [1.0d-2]
+
+   !***** Ground-State and Output Parameters
+   qm_theory='AM1', ! Integral type, check Amber's SQM for more options [AM1]
+   scfconv=1.0d-6, ! Ground-state SCF convergence criteria, eV [1.0d-6]
+   verbosity=5, ! QM/MM output verbosity (0-minimum, 5-maximum)
+   ! [1 for dynamics and optimization, 5 for others]
+   printdipole=0, ! (0) No dipole data, (1) Unrelaxed transitions plus 
+   ! ground state total molecular, or (2) Unrelaxed/relaxed transitions plus 
+   ! total molecular WARNING: option 2 is expensive [1 for dynamics, 2 for optimization and single-point]
+   printcharges=0, ! Print (1) or do not print (0) Mulliken charges of QM atoms [0]
+   ! charges for excited states will be printed if printdipole=2
+   itrmax=300, ! Max SCF iterations for ground state 
+   ! (negative to ignore convergence) [300]
+
+   !***** Excited-State Parameters
+   exst_method=1, ! CIS (1) or RPA (2) [1]
+   dav_guess=1, ! Restart Davidson from (0) Scratch, (1) Previous, 
+   ! or (2) XL-BOMD [1] *** (2) IS UNDER DEVELOPMENT, DO NOT USE ***
+   ftol0=1.0d-7, ! Acceptance tolerance (|emin-eold|) [1.0d-5]
+   dav_maxcyc=200, ! Max cycles for Davidson diagonalization 
+   ! (negative to ignore convergence) [100]
+   calcxdens=.false., ! Print (.true.) or do not print (.false.) 
+   ! excited-to-excited transition dipole moments [.false.]
+
+   !***** Solvent Models and External Electric Fields
+   solvent_model=0, ! (0) None, (1) Linear response, (2) Vertical excitation, 
+   ! or (3) State-specific  [0]
+   potential_type=1, ! (1) COSMO or (2) Onsager [1]
+   onsager_radius=2, ! Onsager radius, A (system dependent) [2]
+   ceps=10, ! Dielectric constant, unitless [10]
+   linmixparam=1, ! Linear mixing parameter for vertical excitation
+   ! or state-specific SCF calculation [1]
+   cosmo_scf_ftol=1.0d-5, ! Vertical excitation or state-specific
+   ! SCF tolerance, eV [1.0d-5]
+   doZ=.false., ! Use relaxed (.true.) or unrelaxed (.false) density for 
+   ! vertical excitation or state-specific COSMO or Onsager [.false.]
+   EF=0, ! (0) None or (1) Electric field in ground- and excited-state [0]
+   Ex=0, ! Electric field vector X, eV/A [0]
+   Ey=0, ! Electric field vector Y, eV/A [0]
+   Ez=0, ! Electric field vector Z, eV/A [0] 
+&endqmmm
+
+&moldyn
+   !***** General Parameters
+   natoms=134, ! Number of atoms 
+   ! (must be equal to number of atoms in system)
+   rnd_seed=19345, ! Seed for the random number generator
+   bo_dynamics_flag=1, ! (0) Non-BO or (1) BO [1]
+   exc_state_init=0, ! Initial excited state (0 - ground state) [0]
+   n_exc_states_propagate=0, ! Number of excited states [0]
+
+   !***** Dynamics Parameters
+   time_init=0.0, ! Initial time, fs [0.0]
+   time_step=0.1, ! Time step, fs [0.1]
+   n_class_steps=100000, ! Number of classical steps [1]
+   n_quant_steps=4, ! Number of quantum steps for each classical step [4]
+   moldyn_deriv_flag=1, ! (0) None, (1) Analytical, or (2) Numerical [1]
+   num_deriv_step=1.0d-3, ! Displacement for numerical derivatives, A [1.0d-3]
+   rk_tolerance=1.0d-6, ! Tolerance for the Runge-Kutta propagator [1.0d-6]
+
+   !***** Non-Adiabatic Parameters
+   decoher_type=2, ! Type of decoherence: Reinitialize (0) Never, 
+   ! (1) At successful hops, (2) At successful plus frustrated hops... 
+   dotrivial=1, ! Do unavoided (trivial) crossing routine (1) or not (0) [1]
+   quant_step_reduction_factor=2.5d-2, ! Quantum step reduction factor [2.5d-2]
+
+   !***** Thermostat Parameters
+   therm_type=0, ! Thermostat type: (0) Newtonian, (1) Langevin, 
+   therm_temperature=300, ! Thermostat temperature, K [300]
+   therm_friction=20, ! Thermostat friction coefficient, 1/ps [20]
+
+
+   !***** Output & Log Parameters
+   verbosity=3, ! NEXMD output verbosity (0-minimum, 3-maximum)
+   ! [2 for dynamics, 3 for optimization and single-point]
+   out_data_steps=1, ! Number of steps to write data [1]
+   out_coords_steps=10, ! Number of steps to write the restart file [10]
+   out_data_cube=0, ! Write (1) or do not write (0) view files to generate cubes [0]
+   out_count_init=0, ! Initial count for view files [0]
+&endmoldyn
+
+&coord
+    6         2.847746   -0.000600   -0.001092
+    6         1.428710   -0.000234    0.000733
+    6         3.562358    1.227154   -0.004544
+    6         2.872567    2.422006   -0.004728
+    6         1.462884    2.428045   -0.002187
+    6         0.731554    1.250149    0.000584
+    6         3.561534   -1.228836   -0.002122
+    6         2.871363   -2.423397   -0.001122
+    6         1.461796   -2.428712   -0.000508
+    6         0.731193   -1.250350    0.000231
+    6        -0.728934    1.250376    0.001873
+    6        -1.426326    0.000145   -0.000533
+    6        -0.729208   -1.250189   -0.000964
+    6        -1.459918    2.428476    0.005973
+    6        -2.869625    2.422858    0.006839
+    6        -3.559542    1.228188    0.003209
+    6        -2.845317    0.000180   -0.000571
+    6        -3.559306   -1.227918   -0.001874
+    6        -2.869665   -2.422716   -0.002248
+    6        -1.460066   -2.428380   -0.001683
+    1         3.426189    3.377136   -0.007696
+    1         0.963844    3.409237   -0.003917
+    1         3.424702   -3.378629   -0.001757
+    1         0.962320   -3.409641   -0.002004
+    1        -0.960776    3.409587    0.009713
+    1        -3.423241    3.378002    0.010966
+    1        -0.960989   -3.409508   -0.000875
+    1        -3.423497   -3.377718   -0.002286
+    6         5.048449    1.229939   -0.012180
+    6         5.047335   -1.232251   -0.008710
+    6        -5.045618    1.231272    0.006810
+    6        -5.045127   -1.230975    0.000524
+    7         5.727191   -0.001566    0.001892
+    7        -5.724168    0.000109   -0.015415
+    8         5.692442    2.295105   -0.021618
+    8         5.691923   -2.297296   -0.015430
+    8        -5.689641    2.296516    0.019006
+    8        -5.689872   -2.295821    0.006850
+    6         7.185674   -0.006493   -0.023540
+    6        -7.182586   -0.003737    0.006548
+    6        -7.787896   -0.067091    1.409983
+    1        -7.532455   -0.896680   -0.587498
+    1        -7.538998    0.933084   -0.510513
+    6        -9.302489   -0.075434    1.350381
+    1        -7.442887    0.816667    2.008036
+    1        -7.429358   -0.994578    1.929239
+    6        -9.894353   -0.172739    2.743709
+    1        -9.654523   -0.942212    0.731397
+    1        -9.668513    0.859638    0.850390
+    6       -11.409164   -0.175216    2.719929
+    1        -9.532744    0.690246    3.363039
+    1        -9.528063   -1.110734    3.238890
+    6       -11.988053   -0.277366    4.117274
+    1       -11.774686   -1.036583    2.101078
+    1       -11.779665    0.763753    2.230451
+    6       -13.502927   -0.275274    4.093214
+    1       -11.623513    0.581418    4.740374
+    1       -11.623847   -1.217912    4.608604
+    6       -14.089971   -0.377658    5.477975
+    1       -13.867953   -1.133975    3.469720
+    1       -13.867539    0.666077    3.603029
+    6         7.789541   -0.092720   -1.426730
+    1         7.536015   -0.890492    0.583555
+    1         7.543904    0.937846    0.478361
+    6         9.304652   -0.085295   -1.370434
+    1         7.434771    0.774339   -2.042921
+    1         7.439649   -1.035209   -1.924891
+    6         9.896578   -0.164211   -2.765219
+    1         9.665308   -0.955953   -0.760609
+    1         9.662878    0.848083   -0.862226
+    6        11.411691   -0.147723   -2.744308
+    1         9.521916    0.696170   -3.379723
+    1         9.542645   -1.105263   -3.265027
+    6        11.990799   -0.205749   -4.144371
+    1        11.787978   -1.022599   -2.149883
+    1        11.772320    0.781209   -2.229898
+    6        13.505772   -0.184166   -4.122613
+    1        11.612267    0.660712   -4.747306
+    1        11.639623   -1.140049   -4.657912
+    6        14.093043   -0.208232   -5.510955
+    1        13.883118   -1.070169   -3.544831
+    1        13.859905    0.734122   -3.584527
+    1       -15.206138   -0.373534    5.426253
+    1       -13.766102    0.482696    6.112114
+    1       -13.766581   -1.322209    5.978446
+    1        13.731054    0.659164   -6.113270
+    1        13.808386   -1.146356   -6.046844
+    1        15.208894   -0.163227   -5.461722
+    6         9.271135   -4.146253   -1.414769
+    1        11.733804   -3.232474   -2.218356
+    1        11.736830   -5.038084   -2.249764
+    6        11.369634   -4.127100   -2.790695
+    6         9.854108   -4.126672   -2.805176
+    1        13.825047   -3.205982   -3.614474
+    1        13.829012   -5.011698   -3.652558
+    6        13.457798   -4.098815   -4.187656
+    6        11.941854   -4.099626   -4.194740
+    1         9.487518   -3.213600   -3.346291
+    1        15.906239   -3.152900   -4.996654
+    1         9.484785   -5.018343   -3.376934
+    1        15.926314   -4.961418   -5.037095
+    6        20.770937   -2.331391   -7.081718
+    6        15.549115   -4.049189   -5.568196
+    1        21.826306   -2.640547   -7.085156
+    6        20.424864   -0.981259   -7.084360
+    6        20.767786   -5.688208   -7.085951
+    1        21.823829   -5.381575   -7.088107
+    6        20.418641   -7.037560   -7.092102
+    6        19.760982   -3.283551   -7.075882
+    6        19.759983   -4.733712   -7.078171
+    1        21.208211   -7.803037   -7.095075
+    6        14.032964   -4.066018   -5.591280
+    1        11.570004   -3.184234   -4.727515
+    6        19.083851   -0.583020   -7.084510
+    1        11.568348   -4.987961   -4.768039
+    6        19.076791   -7.433090   -7.094963
+    6        18.373229   -2.869756   -7.073705
+    6        18.043926   -1.509555   -7.078615
+    6        18.371829   -5.144948   -7.078298
+    6        18.039148   -6.504196   -7.088770
+    7        17.541941   -4.006778   -7.105033
+    1        18.832912   -8.506391   -7.102035
+    6        16.112648   -4.009430   -6.993462
+    1        13.654245   -3.156070   -6.128246
+    1        16.996964   -1.177669   -7.076836
+    1        13.671772   -4.958927   -6.165728
+    1        16.991417   -6.832126   -7.092772
+    1        15.730316   -3.080854   -7.508490
+    1        15.730634   -4.908756   -7.558499
+    1        21.216246   -0.217644   -7.086258
+    1        18.842618    0.490959   -7.089211
+    1         9.614931   -3.260857   -0.825950
+    1         9.575058   -5.070454   -0.867113
+    1         8.154595   -4.117229   -1.461522
+&endcoord
+
+&veloc
+     3.3718248255    -5.6032885851    -1.1970845430
+     2.5106648755     2.0978837936    -1.0696411897
+    -5.9135180273    -3.7505826950     1.1689299883
+     7.7194332369     4.8702351843     0.6576546539
+    -7.1851218597    -2.0113572464    -0.6329683366
+    -1.7276579899     0.3919019235    -0.0257452789
+   -17.0279163131     9.9875659542     5.3513734186
+    -4.7222747943    18.9640275032    11.9601977632
+    10.9539809532    17.0164104392    -9.7113209726
+    25.7548696749     2.2116651958    -0.5444198125
+   -16.5303708308    -2.3313274630    -3.2147489925
+    16.2776787026     2.2582071549     9.3572624705
+&endveloc
+
+&coeff
+  0.00  0.00
+  0.00  0.00
+  0.00  0.00
+  0.00  0.00
+  0.00  0.00
+  1.00  0.00
+  0.00  0.00
+  0.00  0.00
+&endcoeff
+

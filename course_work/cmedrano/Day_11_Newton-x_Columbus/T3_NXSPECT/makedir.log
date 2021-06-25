@@ -1,0 +1,122 @@
+
+          ============================================================  
+                                     NEWTON-X                           
+                   Newtonian dynamics close to the crossing seam        
+          ============================================================  
+
+                                  www.newtonx.org                       
+
+    Newton-X version 2.2 (build 9, 2020-03-04)
+    www.newtonx.org
+----------------------------------------------------------------------
+    The Newton-X program is distributed free of charge for non-
+    commercial and non-profit uses. You may use the program freely 
+    and adapt the code to your needs. Please, if you have any 
+    enhancements, share them with us. You are, however, not allowed 
+    to re-distribute code or binaries in parts or total. Anyone 
+    intending to use Newton-X must contact us. This program is 
+    shipped to the user "as is". There is no guarantee that it will 
+    work as described. Usage is at your own risk, there is no 
+    liability taken for any damage or loss of data and/or money. 
+    If you experience problems, you may contact the developers and 
+    a community of users at the Newton-X discussion group, but bear 
+    in mind that there is no kind of official support for Newton-X.
+
+    Cite Newton-X as:
+    M. Barbatti, G. Granucci, M. Ruckenbauer, F. Plasser, 
+    R. Crespo-Otero, J. Pittner, M. Persico, H. Lischka, NEWTON-X: 
+    a package for Newtonian dynamics close to the crossing seam, 
+    version 2.2, www.newtonx.org (2017).
+
+    M. Barbatti, M. Ruckenbauer, F. Plasser, J. Pittner, G. Granucci, 
+    M. Persico, H. Lischka, WIREs: Comp. Mol. Sci., 4, 26 (2014).
+
+    Please, check the documentation for references to specific 
+    methods and algorithms.
+
+    For download the program, documentation, and tutorial, visit:
+    http://www.newtonx.org
+
+    For support, visit the Newton-X discussion group at:
+    https://groups.google.com/d/forum/newtonx
+----------------------------------------------------------------------
+
+
+Newton-X path: /util/academic/newton-x/NX-2.2-B09/bin
+
+Starting Initial Condition selection 
+ 
+
+makedir.pl:
+    title     = title
+    type      = 1
+    subfile   = pmold
+    batchdef  = #PBS -N
+    seed      = 1234
+    nis       = 1
+    nfs       = 2
+    delta     = 0.05
+    eps       = 0.005
+    kappa     = 3
+    os_condon = -1
+    prob_kind = F 
+    screen    = 0 
+    norm      = local 
+    e_center  = 0 
+    e_var     = 0.5 
+    nref      = 1 
+    temp      = 0
+    l_shape   = gauss
+    run_IS    = 0
+    prtlv     = 1 
+
+
+
+ The following transitions will be considered:
+ Initial state = 1   =>   Final state = 2
+
+
+=============== Checking obligatory files and directories ===============
+
+ Number of points for state 2 = 5
+File final_output.1.2 exists.
+This file will be used to generate spectrum. 
+
+
+===============             Ending checking            ==================
+
+Energy transitions will not be restricted.
+
+makedir.pl: 
+The largest transition intensity in final_output has
+oscillator strength -0.0081 and vertical excitation energy (eV) 4.2228.
+Normalization factor for probabilities F = 0.0081.
+
+ini.state  fin.state   DE    Osc.St. Intensity  Energ.Window  Prob      Rand.N.  Status
+   1          2       4.459   0.004   0.00420      YES        0.51852   1.00000  accept 
+   1          2       4.261   0.005   0.00460      YES        0.56790   1.00000  accept 
+   1          2       3.558   0.004   0.00370      YES        0.45679   1.00000  accept 
+   1          2       4.223   0.008   0.00810      YES        1.00000   1.00000  accept 
+   1          2       3.979   0.001   0.00140      YES        0.17284   1.00000  accept 
+
+Starting to compute spectrum. 
+
+The importance sampling program will not be called (run_IS = 0). 
+
+ Range definition:
+ ------------------------
+ emin     = 3.5584
+ emax     = 4.4592
+ rmin     = 3.4084
+ rmax     = 4.6092
+ np[1->2] = 5
+ i_points = 5
+
+Starting run over domain ...
+
+Absorption cross section was written to cross-section.dat file.
+
+
+
+ End of initial conditions selection. 
+          ====================== NEWTON-X ends here ==================  
