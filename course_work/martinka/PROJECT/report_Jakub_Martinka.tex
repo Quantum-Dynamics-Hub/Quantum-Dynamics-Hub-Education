@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tgschola} 
+
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{sidecap}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+\sidecaptionvpos{figure}{t}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+  \footnotesize\sffamily}
+
+\newcommand{\soptitle}{Report}
+\newcommand{\yourname}{Jakub Martinka}
+\newcommand{\youremail}{jakubmartinka@centrum.cz}
+
+\newcommand{\statement}[1]{\par\medskip
+  \underline{\textcolor{blue}{\textbf{#1:}}}\space
+}
+
+\usepackage[
+  pdftitle={\yourname - \soptitle},
+  pdfauthor={\yourname},
+]{hyperref}
+
+\begin{document}
+
+\begin{center}\LARGE\soptitle\\
+\large of \yourname\ \\Excited States and Nonadiabatic Dynamics CyberTraining Workshop 2021
+\end{center}
+
+\hrule
+\vspace{1pt}
+\hrule height 1pt
+
+\bigskip
+\vspace{1cm}
+For my project, I chose vinyl chloride as a test molecule. Vinyl chloride is mainly used for the preparation of polyvinyl chloride (PVC). At first, I wanted to use vinyl bromide as a test molecule, but NEXMD does not support the Br atom yet. Because of that, I used a similar molecule - vinyl chloride. The reason for choosing this molecule was that I have already worked with a similar one. It is a small molecule, making it an ideal system for test trajectories because in the case of very accurate methods it is a good idea not to perform expensive calculations. I also chose this molecule because I will be working on machine-learning of spin-orbital couplings in the future and I will use vinyl bromide as a test molecule. I was interested in using various programs to study this molecule, especially I focused on NEXMD and NewtonX using DFTB+, I also tried QXMD but after several problems, I gave up. I followed the NEXMD outline in the standard way that the manual recommends, so I got, for example, \hyperref[nexmd]{Figure 1a} and the spectrum in \hyperref[nexmd]{Figure 1b}, but I did not further analyze obtained information. \vspace{.4cm}
+
+\begin{figure}[h!]
+    \centering
+\begin{subfigure}{.45\textwidth}
+    \includegraphics[width=\textwidth]{figures/traj_NEXMD.png}   
+    \caption{Potential energy as a function of time}
+\end{subfigure}
+\begin{subfigure}{.45\textwidth}
+    \includegraphics[width=\textwidth]{figures/spectrum_NEXMD.png}   
+    \caption{Absorption spectra}
+\end{subfigure}
+\label{nexmd}
+\caption{Results for NEXMD}
+\end{figure}
+\vspace{.4cm}
+The main part of my project was the use of Newton X by FSSH-NAMD with DFTB+, for example for spectrum simulation. I followed the standard procedure, which is also described in the tutorial, I prepared the structure and optimized it, calculated the normal modes, and used it to create 500 initial conditions. I used the halorg kit, which I downloaded from the official dftb+ website. Using NewtonX, I created a spectrum (\hyperref[spec]{Figure 2a})that is similar in the peak position compared to the experimental spectrum \hyperref[spec]{Figure 2b}. Then I prepared the input for SH-NAMD. I selected the initial state according to the oscillator strenght as S$_2$. Then I started a total of 30 trajectories. Most of them terminated around 60 fs. I analyzed the trajectory using available statistical methods, the results of which I present below. The pictures show the potential energies of the ten states as a function of time. The blue triangles indicate the current state of the system at each time step. \hyperref[sps]{Figure 3} shows a fraction of trajectories and average adiabatic population in the second excited state as a function of time.\vspace{.4cm}
+
+\begin{figure}[h!]
+    \centering
+\begin{subfigure}{.42\textwidth}
+    \includegraphics[width=\textwidth]{figures/spectrum2.png}   
+    \caption{Photoabsorption cross section (Å$^2$.molecule$^{-1}$) as a function of energy (eV).}
+\end{subfigure}
+\begin{subfigure}{.42\textwidth}
+    \includegraphics[width=\textwidth]{figures/spectrum_exp.png}   
+    \caption{Experimental spectra \tiny{(Limão-Vieira \textit{et. al.}, CP 2006)}}
+\end{subfigure}
+\label{spec}
+\caption{Potential energies of some trajectories - ten states as a function of time. The blue triangles indicate the current state of the system at each time step.}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.80\textwidth]{figures/pop_new.png}   
+    \caption{Fraction of trajectories and average adiabatic population in the second excited state as a function of time}
+    \label{sps}
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{.42\textwidth}
+        \includegraphics[width=\textwidth]{figures/traj36.png}
+        \caption{TRAJ36}    
+    \end{subfigure}
+    \begin{subfigure}{.42\textwidth}
+        \includegraphics[width=\textwidth]{figures/traj37.png}
+        \caption{TRAJ37}
+    \end{subfigure}
+    \begin{subfigure}{.42\textwidth}
+        \includegraphics[width=\textwidth]{figures/traj42.png}
+        \caption{TRAJ42}    
+    \end{subfigure}
+    \begin{subfigure}{.42\textwidth}
+        \includegraphics[width=\textwidth]{figures/traj45.png}
+        \caption{TRAJ45}
+    \end{subfigure}
+        \begin{subfigure}{.42\textwidth}
+        \includegraphics[width=\textwidth]{figures/traj45.png}
+        \caption{TRAJ48}    
+    \end{subfigure}
+    \begin{subfigure}{.42\textwidth}
+        \includegraphics[width=\textwidth]{figures/traj48.png}
+        \caption{TRAJ49}
+    \end{subfigure}
+    \begin{subfigure}{.42\textwidth}
+        \includegraphics[width=\textwidth]{figures/traj50.png}
+        \caption{TRAJ50}    
+    \end{subfigure}
+    \begin{subfigure}{.42\textwidth}
+        \includegraphics[width=\textwidth]{figures/traj52.png}
+        \caption{TRAJ52}
+    \end{subfigure}
+        \begin{subfigure}{.42\textwidth}
+        \includegraphics[width=\textwidth]{figures/traj57.png}
+        \caption{TRAJ57}    
+    \end{subfigure}
+    \begin{subfigure}{.42\textwidth}
+        \includegraphics[width=\textwidth]{figures/traj59.png}
+        \caption{TRAJ59}
+    \end{subfigure}
+    \caption{Potential energies of some trajectories - ten states as a function of time. The blue triangles indicate the current state of the system at each time step.}
+\end{figure}
+
+
+
+\end{document}
