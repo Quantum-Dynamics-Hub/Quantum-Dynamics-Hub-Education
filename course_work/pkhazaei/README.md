@@ -1,0 +1,1 @@
+The folder named "project" has all the files for my final project and the write-up. The file "ale.py" is the code for the simulations, "Figure_1.png"/"Figure_2.png" are the results of running the code, and paper.pdf is my write-up.
