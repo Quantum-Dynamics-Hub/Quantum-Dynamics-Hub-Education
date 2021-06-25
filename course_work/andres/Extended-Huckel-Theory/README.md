@@ -1,5 +1,3 @@
 [Go back to TOC](../../../README.md)
 
-This tutorial demonstrates how to perform extended Huckel theory (EHT) calculations built-in in Libra
-In addition, it covers the visualization of produced MOs (.cube files), computing and visualizing pDOSs
-
+This folder contains the files required to carry out the complete extended Huckel theory for both organic complexes ir-ch3h4n3, and Ir-ppy-3, only require open and run the jupyter-notebooks.
