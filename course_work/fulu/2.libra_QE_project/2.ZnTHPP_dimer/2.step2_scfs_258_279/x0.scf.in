@@ -1,0 +1,53 @@
+&CONTROL
+    calculation   = "scf"
+    prefix        = "x0"
+    outdir        = "./"
+    pseudo_dir    = '/u/fzheng/0.qe_calculations/pseudos/SSSP_efficiency_pseudos'
+    etot_conv_thr = 1e-5
+    forc_conv_thr = 1e-4
+/
+
+&SYSTEM
+    ecutrho     =  400.0
+    ecutwfc     =  40.0
+    ibrav       = 0
+    nat         = 162
+    ntyp        = 5
+    nbnd        = 289
+    nspin       = 1
+    occupations = 'smearing'
+    smearing    = 'gaussian'
+    degauss     = 0.0019
+    !input_dft = 'PBE'
+    !vdw_corr = 'DFT-D'
+    !lda_plus_u  = .true.
+    !lda_plus_u_kind = 1
+    !Hubbard_U(4) = 4
+    !Hubbard_J(1,4) = 1
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-10
+    mixing_beta = 0.4D0
+    electron_maxstep = 300
+/
+
+&IONS
+/
+
+&CELL
+/
+
+K_POINTS {gamma}
+
+ATOMIC_SPECIES
+C      12.01070  C.pbe-n-kjpaw_psl.1.0.0.UPF
+N      14.00674  N.pbe-n-radius_5.UPF
+H       1.00794  H.pbe-rrkjus_psl.1.0.0.UPF
+Zn     65.39000  Zn_pbe_v1.uspp.F.UPF
+O      15.999    O.pbe-n-kjpaw_psl.0.1.UPF
+
+CELL_PARAMETERS {angstrom}
+ 30.000000   0.000000   0.000000
+  0.000000  30.000000   0.000000
+  0.000000   0.000000  30.000000

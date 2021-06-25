@@ -1,0 +1,328 @@
+
+     Program POST-PROC v.6.4.1 starts on 29May2021 at 12: 4:54 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      32 processor cores
+     Number of MPI processes:                32
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      32
+
+     Reading data from directory:
+     ./ZnTHPP_dimer.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      = PBE ( 1  4  3  4 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file C.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+               file O.pbe-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P renormalized
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        2795    1117    280               629624   159274   19920
+     Max        2800    1120    282               629634   159284   19926
+     Sum       89493   35781   8969             20148069  5096985  637483
+ 
+
+     Check: negative core charge=   -0.000001
+
+     negative rho (up, down):  4.900E-02 0.000E+00
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =250
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B250
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =251
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B251
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =252
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B252
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =253
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B253
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =254
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B254
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =255
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B255
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =256
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B256
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =257
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B257
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =258
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B258
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =259
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B259
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =260
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B260
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =261
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B261
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =262
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B262
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =263
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B263
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =264
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B264
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =265
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B265
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =266
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B266
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =267
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B267
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =268
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B268
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =269
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B269
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =270
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B270
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =271
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B271
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =272
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B272
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =273
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B273
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =274
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B274
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =275
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B275
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =276
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B276
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =277
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B277
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =278
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B278
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =279
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B279
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =280
+     Writing data to file  psi2.ZnTHPP_dimer_K001_B280
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B250
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B250.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B251
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B251.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B252
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B252.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B253
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B253.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B254
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B254.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B255
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B255.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B256
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B256.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B257
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B257.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B258
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B258.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B259
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B259.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B260
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B260.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B261
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B261.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B262
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B262.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B263
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B263.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B264
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B264.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B265
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B265.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B266
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B266.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B267
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B267.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B268
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B268.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B269
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B269.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B270
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B270.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B271
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B271.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B272
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B272.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B273
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B273.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B274
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B274.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B275
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B275.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B276
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B276.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B277
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B277.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B278
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B278.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B279
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B279.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+     Reading data from file  psi2.ZnTHPP_dimer_K001_B280
+
+     Writing data to be plotted to file psi2.ZnTHPP_dimer_K001_B280.xsf
+     Plot Type: 3D                     Output format: XCrySDen     
+ 
+     POST-PROC    :  25m17.61s CPU  29m 0.30s WALL
+
+ 
+   This run was terminated on:  12:33:54  29May2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

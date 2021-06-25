@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: fzheng(24386)
+Job name:  monomer_md
+Node list: drag[016-017,019,022-026]
+Job start: Sun May 30 00:49:01 CEST 2021
+Job end:   Sun May 30 22:02:54 CEST 2021
+Work dir:  /u/fzheng/0.qe_calculations/4.ZnTHPP/0.monomer/2.md_256cores/./
+Command:   /draco/u/fzheng/0.qe_calculations/4.ZnTHPP/0.monomer/2.md_256cores/job_qe_md.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+20736137     monomer_md      8           512                             21:13:53      0:0 
+20736137.0         pw.x      8    256    256     1120.58M      823.83M   21:13:46      0:0 
+  
+Maximum memory per node: 36.719 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 98.5 %
+     
