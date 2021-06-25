@@ -1,0 +1,41 @@
+&CONTROL
+  calculation   = 'scf',
+  pseudo_dir    = '/util/academic/espresso/6.2.1/pseudopotentials/upf_files/',
+  outdir        = './',
+  prefix        = 'x0',
+  disk_io       = 'low',
+/
+
+&SYSTEM
+  ibrav       = 0,
+  nat         = 25,
+  ntyp        = 4,
+  nspin       = 1,
+  nbnd        = 50
+  ecutwfc     = 30,
+  ecutrho     = 300,
+  occupations = 'smearing',
+  smearing    = 'gaussian',
+  degauss     = 0.01,
+  nosym       = true,
+/
+
+&ELECTRONS
+  electron_maxstep = 300,
+  conv_thr         = 1.D-4,
+  mixing_beta      = 0.30,
+/
+
+ATOMIC_SPECIES
+C  12.010     C.pbe-n-rrkjus_psl.0.1.UPF 
+H  1.007      H.pbe-rrkjus_psl.0.1.UPF 
+Ir 192.217    Ir.pbe-n-rrkjus_psl.0.2.3.UPF
+N  14.006     N.pbe-n-rrkjus_psl.0.1.UPF
+
+K_POINTS gamma
+
+CELL_PARAMETERS  angstrom
+        7.0652699470        0.0000000000         0.0000000000
+        0.0000000000        7.0652699470         0.0000000000
+        0.0000000000        0.0000000000         7.0652699470 
+
