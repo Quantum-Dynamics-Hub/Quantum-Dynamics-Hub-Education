@@ -3,6 +3,6 @@ This folder contains the input and output files as a result of carrying out the 
 2-Libra-QE  
 3-QmFlows
 
-All folders contain the input files request to carry out the calculations were schematic in Jupyter-notebook. All Jupyter-notebooks were modified from the set of Tutorials developed by Professor Alexey Akimov available in  https://github.com/compchem-cybertraining/Tutorials_Libra.git 
+All folders contain the input files request to carry out the calculations that are schematic in Jupyter-notebook. All Jupyter-notebooks were modified from the set of Tutorials developed by Professor Alexey Akimov available in  https://github.com/compchem-cybertraining/Tutorials_Libra.git 
 
 The project description and the principal results are described in the PDF file attached to the main directory.
