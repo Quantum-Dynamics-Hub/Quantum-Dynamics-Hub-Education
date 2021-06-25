@@ -1,0 +1,37 @@
+ nsym=  8
+getvector : 6 5 4 3 0 0 0 0
+getvector2 : 8, 6 5 4 3 0 0 0 0,   8,  8 
+getvector : 0 0 0 0 3 1 1 1
+getvector2 : 8, 0 0 0 0 3 1 1 1,   8,  8 
+groups of 2 elements,  / doubly occupied orbitals ,  35 
+locstr:1:1:1:2:1:3:1:4:1:5:1:6:2:1:2:2:2:3:2:4:2:5:3:1:3:2:3:3:3:4:4:1:4:2:4:3
+groups of 2 elements,  ,  11 
+locstr:5:1:5:2:5:3:6:1:7:1:8:1
+groups of 2 elements, / active orbitals ,  -1 
+locstr:
+groups of 1 elements,  / occmin ,  5 
+locstr:0:0:0:0:0:6
+groups of 1 elements,  / occmax ,  5 
+locstr:6:6:6:6:6:6
+groups of 2 elements,  / doubly occupied orbitals ,  35 
+locstr:1:1:1:2:1:3:1:4:1:5:1:6:2:1:2:2:2:3:2:4:2:5:3:1:3:2:3:3:3:4:4:1:4:2:4:3
+groups of 2 elements,  ,  11 
+locstr:5:1:5:2:5:3:6:1:7:1:8:1
+groups of 2 elements, / active orbitals ,  -1 
+locstr:
+groups of 1 elements,  / occmin ,  5 
+locstr:0:0:0:0:0:6
+groups of 1 elements,  / occmax ,  5 
+locstr:6:6:6:6:6:6
+groups of 2 elements,  / doubly occupied orbitals ,  35 
+locstr:1:1:1:2:1:3:1:4:1:5:1:6:2:1:2:2:2:3:2:4:2:5:3:1:3:2:3:3:3:4:4:1:4:2:4:3
+groups of 2 elements,  ,  11 
+locstr:5:1:5:2:5:3:6:1:7:1:8:1
+groups of 2 elements, / active orbitals ,  -1 
+locstr:
+groups of 1 elements,  / occmin ,  5 
+locstr:0:0:0:0:0:6
+groups of 1 elements,  / occmax ,  5 
+locstr:6:6:6:6:6:6
+entering prodmcscfin\ngroups of 3 elements,  ,  17 
+locstr:5:1:40:5:2:40:5:3:40:6:1:40:7:1:40:8:1:40

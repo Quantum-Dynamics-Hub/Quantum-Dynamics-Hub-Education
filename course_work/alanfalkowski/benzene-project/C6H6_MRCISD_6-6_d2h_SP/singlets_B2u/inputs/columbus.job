@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -M agf18@ifi.unicamp.br
+#PBS -N columbus
+#PBS -e columbus.err
+#PBS -o columbus.out
+#PBS -q par12
+#PBS -l nodes=1:ppn=12
+
+cd $PBS_O_WORKDIR #para ir ao diretorio da onde estou submetendo o job
+
+#./etc/profile.d/modules.sh
+. /home/sw/masternode2/intel/20156223/install/composer_xe_2015/bin/compilervars.sh intel64
+. /home/sw/masternode2/intel/20156223/install/impi/5.1.2.150/intel64/bin/mpivars.sh
+#. $HOME/psi4conda/etc/profile.d/conda.sh
+#conda activate
+export OMP_NUM_THREADS=$PBS_NP #para o programa entender o numero de processadores que serao usados (basta mudar no cabecalho)
+
+export COLUMBUS="/home3/molecula1/maplima/agf18/columbus/Columbus/"
+
+## comando a ser executado, por exemplo a execução através do MPT (MPI da SGI):
+
+#
+$COLUMBUS/runc -m 20000 > runls  #executar o script que executa o programa

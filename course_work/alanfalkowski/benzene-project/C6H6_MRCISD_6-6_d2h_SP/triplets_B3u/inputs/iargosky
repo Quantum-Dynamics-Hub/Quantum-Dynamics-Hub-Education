@@ -1,0 +1,67 @@
+yes
+yes
+1               
+d2h 
+add     
+6               
+C  
+  -2.66062000000000       0.000000000000000E+000  0.000000000000000E+000
+yes
+&Basis
+  6
+library 
+2               
+yes
+proceed 
+&End
+&SO
+proceed 
+&End
+add     
+6               
+C  
+   1.33031000000000       -2.30417000000000       0.000000000000000E+000
+yes
+&Basis
+  6
+library 
+2               
+yes
+proceed 
+&End
+&SO
+proceed 
+&End
+add     
+1               
+H  
+  -4.72847000000000       0.000000000000000E+000  0.000000000000000E+000
+yes
+&Basis
+  1
+library 
+3               
+yes
+proceed 
+&End
+&SO
+proceed 
+&End
+add     
+1               
+H  
+  -2.36422000000000       -4.09499000000000       0.000000000000000E+000
+yes
+&Basis
+  1
+library 
+3               
+yes
+proceed 
+&End
+&SO
+proceed 
+&End
+proceed 
+yes
+yes

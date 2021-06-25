@@ -1,0 +1,129 @@
+
+
+
+          TRANSITION DIPOLE MOMENT CALCULATION PROGRAM
+
+               written by: Michal Dallos
+               Institute for Theoretical Chemistry
+               Vienna, Austria
+
+
+
+
+     ******************************************
+     **    PROGRAM:              TRANSMOM    **
+     **    PROGRAM VERSION:      5.5         **
+     **    DISTRIBUTION VERSION: 5.9.a       **
+     ******************************************
+
+
+ workspace allocation information: lcore=   2500000 mem1=         0 ifirst=         1
+
+
+ INTEGRAL FILE HEADER INFORMATION:
+ Hermit Integral Program : SIFS version  compute-0-37      13:18:28.417 23-Jun-21
+ repulsion energy:    2.015958396276172E+02 hartree.
+ total number of basis functions: 192
+ total number of irreps: 8
+ (isym:nbpsy)  1: 39  2: 39  3: 30  4: 30  5: 16  6: 16  7: 11  8: 11
+
+ USER INPUT INFORMATION:
+
+ ======== echo of the mcscf input ========
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+
+ -6:   read MO coeficients, MORBN, from restart file
+
+
+
+       CI INFORMATIONS
+
+   Number of different sets of CI vectors:  2
+    (defined through different DRT)
+
+   CI set   No of CI vectors   No of csf
+
+     1            1                 33
+     2            2                 24
+
+   Energies from DRT No.:  1
+
+     1     -230.76244844
+
+   Energies from DRT No.:  2
+
+     1     -230.50848799
+     2     -230.46373020
+
+***   DRT table No. 1   ***
+
+
+ DRT HEADER INFORMATION:    title                                                                          
+
+ ndot=      19    nact=       6    nsymd=      8    nrow=      26
+ ssym=       3    smult=      1    nelt=      42    nela=       4
+ nwalk=     24    ncsf=      24    lenbuf=  1600
+
+ modrt(*) 140 141 155 171 182 183
+
+ doub(*)    1   2   3   4   5   6  40  41  42  43            44  79  80  81  82 109 110 111 139
+
+***   DRT table No. 2   ***
+
+
+ DRT HEADER INFORMATION:    title                                                                          
+
+ ndot=      19    nact=       6    nsymd=      8    nrow=      26
+ ssym=       1    smult=      1    nelt=      42    nela=       4
+ nwalk=     33    ncsf=      33    lenbuf=  1600
+
+ modrt(*) 140 141 155 171 182 183
+
+ doub(*)    1   2   3   4   5   6  40  41  42  43            44  79  80  81  82 109 110 111 139
+
+
+   The transition moment will be calculatel between the following CI states:
+
+   CI vector No   space symmetry   set No    sequence No    energy (a.u.)
+
+      1               B2u            2            1         -230.50848799
+      2               Ag             1            1         -230.76244844
+
+
+
+
+********************************************************************************
+
+
+            ***   FINAL RESULTS   ***
+
+
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            B2u                    Ag 
+   Multiplicity:                1                      1
+   No. of CSFs:                24                     33
+   State energies:      -230.50848799          -230.76244844  a.u.
+
+   Transition energy:    -0.25396044  a.u.
+   Transition energy:    -6.91        eV
+   Transition frequency:  *********** 1/sec
+   Transition frequency:  *********** cm-1
+
+
+       Transition moment components:
+
+         x            y            z
+
+     0.000000     0.040757     0.000000  e*bohr
+
+
+   Tr.dipole length:     0.040757    e*bohr
+   Oscillator strength: -0.000281
+   Einstein A coef.:    -5.8275E+05  1/sec
+   Einstein B coef.:     6.7411E+05  sec/g
+
+
+

@@ -1,0 +1,107 @@
+
+ program transft
+
+ formula tape construction for mcscf wave functions
+ using an index driven graphical unitary group approach.
+
+ programmed by: ron shepard
+
+ version date: 24-apr-92
+
+
+ This Version of Program TRANSFT is Maintained by:
+     Thomas Mueller
+     Juelich Supercomputing Centre (JSC)
+     Institute of Advanced Simulation (IAS)
+     D-52425 Juelich, Germany 
+     Email: th.mueller@fz-juelich.de
+
+
+
+     ******************************************
+     **    PROGRAM:              TRANSFT     **
+     **    PROGRAM VERSION:      5.5         **
+     **    DISTRIBUTION VERSION: 5.9.a       **
+     ******************************************
+
+
+
+       CI INFORMATIONS
+
+   Number of different sets of CI vectors:  2
+    (defined through different DRT)
+
+   CI set   No of CI vectors   No of csf
+
+     1            1                 33
+     2            2                 24
+
+
+   Would you like to list state energies ?
+ y                                                                              
+  
+
+Energies from DRT No.:  1
+
+  1     -230.76244844
+
+Energies from DRT No.:  2
+
+  1     -230.50848799
+  2     -230.46373020
+
+
+   Input the set number for the ci vector No.1
+   Input the sequence number for the ci vector No.1
+   Input the set number for the ci vector No.2
+   Input the sequence number for the ci vector No.2
+
+ drt file: mcdrtfl.2                                                                       mcdrtfl.1                                                                       
+ dft file: mcdftfl                                                                         
+ oft file: mcoftfl                                                                         
+
+ drt header information:
+  title                                                                          
+ ndot=      19    nact=       6    nsym=       8    nrow=      26
+ ssym=       3    smult=      1    nelt=      42    nela=       4
+ nwalk=     24    ncsf=      24    lenbuf=  1600
+
+ drt header information:
+  title                                                                          
+ ndot=      19    nact=       6    nsym=       8    nrow=      26
+ ssym=       1    smult=      1    nelt=      42    nela=       4
+ nwalk=     33    ncsf=      33    lenbuf=  1600
+ 
+
+ diagonal ft construction complete.       0 loops constructed.     1 ft buffers used.
+ 
+
+ off-diagonal ft construction complete.      36 loops constructed.     1 ft buffers used.
+ 
+ 
+ 
+
+ drt file: mcdrtfl.2                                                                       mcdrtfl.1                                                                       
+ dft file: mcdftfl.2                                                                       
+ oft file: mcoftfl.2                                                                       
+
+ drt header information:
+  title                                                                          
+ ndot=      19    nact=       6    nsym=       8    nrow=      26
+ ssym=       1    smult=      1    nelt=      42    nela=       4
+ nwalk=     33    ncsf=      33    lenbuf=  1600
+
+ drt header information:
+  title                                                                          
+ ndot=      19    nact=       6    nsym=       8    nrow=      26
+ ssym=       3    smult=      1    nelt=      42    nela=       4
+ nwalk=     24    ncsf=      24    lenbuf=  1600
+ 
+
+ diagonal ft construction complete.       0 loops constructed.     1 ft buffers used.
+ 
+
+ off-diagonal ft construction complete.      36 loops constructed.     1 ft buffers used.
+ 
+ 
+ 
