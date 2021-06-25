@@ -1,0 +1,210 @@
+&qmmm
+   !***** Geometry Optimization ***************************************************************************
+   maxcyc=200, ! Number of cycles for geometry optimization [0] !!
+   ntpr=1, ! Print results every ntpr cycles [1]                !!
+   grms_tol=1.0d-2, ! Tolerance in eV/A (derivatives) [1.0d-2]  !!Tolerance of the forces
+   !*******************************************************************************************************
+
+   !***** Ground-State and Output Parameters
+   qm_theory='AM1', ! Integral type, check Amber's SQM for more options [AM1]
+   scfconv=1.0d-6, ! Ground-state SCF convergence criteria, eV [1.0d-6]
+   verbosity=1, ! QM/MM output verbosity (0-minimum, 5-maximum)
+   ! [1 for dynamics and optimization, 5 for others]
+   printdipole=2, ! (0) No dipole data, (1) Unrelaxed transitions plus 
+   ! ground state total molecular, or (2) Unrelaxed/relaxed transitions plus 
+   ! total molecular WARNING: option 2 is expensive [1 for dynamics, 2 for optimization and single-point]
+   printcharges=0, ! Print (1) or do not print (0) Mulliken charges of QM atoms [0]
+   ! charges for excited states will be printed if printdipole=2
+   itrmax=300, ! Max SCF iterations for ground state 
+   ! (negative to ignore convergence) [300]
+   
+   !***** Excited-State Parameters
+   exst_method=1, ! CIS (1) or RPA (2) [1]
+   dav_guess=1, ! Restart Davidson from (0) Scratch, (1) Previous, 
+   ! or (2) XL-BOMD [1] *** (2) IS UNDER DEVELOPMENT, DO NOT USE ***
+   ftol0=1.0d-7, ! Acceptance tolerance (|emin-eold|) [1.0d-5]
+   dav_maxcyc=200, ! Max cycles for Davidson diagonalization 
+   ! (negative to ignore convergence) [100]
+   calcxdens=.false., ! Print (.true.) or do not print (.false.) 
+   ! excited-to-excited transition dipole moments [.false.]
+
+   !***** Solvent Models and External Electric Fields
+   solvent_model=0, ! (0) None, (1) Linear response, (2) Vertical excitation, 
+   ! or (3) State-specific  [0]
+   potential_type=1, ! (1) COSMO or (2) Onsager [1]
+   onsager_radius=2, ! Onsager radius, A (system dependent) [2]
+   ceps=10, ! Dielectric constant, unitless [10]
+   linmixparam=1, ! Linear mixing parameter for vertical excitation
+   ! or state-specific SCF calculation [1]
+   cosmo_scf_ftol=1.0d-5, ! Vertical excitation or state-specific
+   ! SCF tolerance, eV [1.0d-5]
+   doZ=.false., ! Use relaxed (.true.) or unrelaxed (.false) density for 
+   ! vertical excitation or state-specific COSMO or Onsager [.false.]
+   EF=0, ! (0) None or (1) Electric field in ground- and excited-state [0]
+   Ex=0, ! Electric field vector X, eV/A [0]
+   Ey=0, ! Electric field vector Y, eV/A [0]
+   Ez=0, ! Electric field vector Z, eV/A [0] 
+&endqmmm
+
+&moldyn
+   !***** General Parameters
+   natoms=88, ! Number of atoms 
+   ! (must be equal to number of atoms in system)
+   rnd_seed=19345, ! Seed for the random number generator
+   bo_dynamics_flag=0, ! (0) Non-BO or (1) BO [1]
+   exc_state_init=0, ! Initial excited state (0 - ground state) [0]
+   n_exc_states_propagate=0, ! Number of excited states [0]
+
+   !***** Dynamics Parameters
+   time_init=0.0, ! Initial time, fs [0.0]
+   time_step=0.1, ! Time step, fs [0.1]
+   n_class_steps=0, ! Number of classical steps [1]                            !!MUST BE ZERO
+   n_quant_steps=4, ! Number of quantum steps for each classical step [4]      !!ONLY RELEVANT FOR NAMD 
+   moldyn_deriv_flag=1, ! (0) None, (1) Analytical, or (2) Numerical [1]       !!(here q steps are ignored)   
+   num_deriv_step=1.0d-3, ! Displacement for numerical derivatives, A [1.0d-3]
+   rk_tolerance=1.0d-6, ! Tolerance for the Runge-Kutta propagator [1.0d-6]
+
+   !***** Non-Adiabatic Parameters
+   decoher_type=2, ! Type of decoherence: Reinitialize (0) Never, 
+   ! (1) At successful hops, (2) At successful plus frustrated hops... 
+   dotrivial=1, ! Do unavoided (trivial) crossing routine (1) or not (0) [1]
+   quant_step_reduction_factor=2.5d-2, ! Quantum step reduction factor [2.5d-2]
+
+   !***** Thermostat Parameters
+   therm_type=1, ! Thermostat type: (0) Newtonian, (1) Langevin, 
+   therm_temperature=300, ! Thermostat temperature, K [300]
+   therm_friction=20, ! Thermostat friction coefficient, 1/ps [20]
+
+
+   !***** Output & Log Parameters
+   verbosity=2, ! NEXMD output verbosity (0-minimum, 3-maximum)
+   ! [2 for dynamics, 3 for optimization and single-point]
+   out_data_steps=1, ! Number of steps to write data [1]
+   out_coords_steps=10, ! Number of steps to write the restart file [10]
+   out_data_cube=0, ! Write (1) or do not write (0) view files to generate cubes [0]
+   out_count_init=0, ! Initial count for view files [0]
+&endmoldyn
+
+&coord
+6    2.85700000    0.00000000    0.00000000
+6    1.42900000    0.00000000    0.00000000
+6    3.57900000    1.22400000    -0.00300000
+6    2.87300000    2.42500000    -0.00500000
+6    1.47100000    2.43700000    -0.00300000
+6    0.73100000    1.24800000    0.00000000
+6    3.57900000    -1.22400000    0.00000000
+6    2.87300000    -2.42500000    -0.00200000
+6    1.47100000    -2.43700000    -0.00200000
+6    0.73100000    -1.24800000    0.00000000
+6    -0.73100000    1.24800000    0.00200000
+6    -1.42900000    0.00000000    0.00000000
+6    -0.73100000    -1.24800000    -0.00100000
+6    -1.47200000    2.43700000    0.00700000
+6    -2.87300000    2.42500000    0.00800000
+6    -3.57900000    1.22400000    0.00300000
+6    -2.85700000    0.00000000    0.00000000
+6    -3.57900000    -1.22400000    -0.00200000
+6    -2.87300000    -2.42500000    -0.00100000
+6    -1.47100000    -2.43700000    -0.00100000
+1    3.43200000    3.37100000    -0.00900000
+1    0.95900000    3.40800000    -0.00400000
+1    3.43200000    -3.37100000    -0.00300000
+1    0.95900000    -3.40800000    -0.00300000
+1    -0.96000000    3.40800000    0.00900000
+1    -3.43200000    3.37100000    0.01200000
+1    -0.95900000    -3.40800000    -0.00100000
+1    -3.43200000    -3.37100000    -0.00100000
+6    5.08900000    1.26400000    -0.00600000
+6    5.08800000    -1.26200000    -0.00200000
+6    -5.08900000    1.26400000    0.00400000
+6    -5.08800000    -1.26200000    -0.00200000
+7    5.69200000    0.00100000    0.02800000
+7    -5.69200000    0.00100000    -0.03200000
+8    5.70500000    2.27600000    -0.02600000
+8    5.70700000    -2.27400000    -0.01600000
+8    -5.70500000    2.27600000    0.02400000
+8    -5.70700000    -2.27400000    0.01200000
+6    7.13930000    -0.00702000    0.02358000
+6    -7.13769000    -0.00226000    -0.03778000
+6    -7.76222000    -0.06348000    1.36736000
+1    -7.51177000    -0.86159000    -0.63867000
+1    -7.51357000    0.90213000    -0.56496000
+6    -9.28891000    -0.07427000    1.34308000
+1    -7.40209000    0.79954000    1.96417000
+1    -7.38951000    -0.96898000    1.88910000
+6    -9.89316000    -0.17322000    2.74350000
+1    -9.64668000    -0.92304000    0.72190000
+1    -9.65916000    0.84435000    0.83999000
+6    -11.42100000    -0.17625000    2.73188000
+1    -9.52703000    0.67161000    3.36537000
+1    -9.52323000    -1.09382000    3.24320000
+6    -12.01682000    -0.27880000    4.13637000
+1    -11.78679000    -1.02045000    2.10757000
+1    -11.79140000    0.74597000    2.23411000
+6    -13.54544000    -0.27803000    4.13089000
+1    -11.64547000    0.56379000    4.75938000
+1    -11.64560000    -1.20347000    4.62904000
+6    -14.14759000    -0.38168000    5.53238000
+1    -13.91563000    -1.11951000    3.50561000
+1    -13.91432000    0.64656000    3.63658000
+6    7.76236000    -0.09474000    -1.38281000
+1    7.51446000    -0.85713000    0.63680000
+1    7.51966000    0.90496000    0.53373000
+6    9.29051000    -0.09429000    -1.36394000
+1    7.39483000    0.75421000    -1.99578000
+1    7.39658000    -1.01364000    -1.88587000
+6    9.89576000    -0.18382000    -2.76570000
+1    9.65712000    -0.94133000    -0.74600000
+1    9.65576000    0.82545000    -0.85876000
+6    11.42458000    -0.16985000    -2.75781000
+1    9.52011000    0.65947000    -3.38417000
+1    9.53548000    -1.10617000    -3.26867000
+6    12.02025000    -0.23678000    -4.16538000
+1    11.80271000    -1.02012000    -2.15010000
+1    11.78485000    0.74784000    -2.24411000
+6    13.54903000    -0.21402000    -4.16343000
+1    11.63594000    0.61300000    -4.77034000
+1    11.66193000    -1.15537000    -4.67745000
+6    14.15163000    -0.23737000    -5.56861000
+1    13.93348000    -1.07921000    -3.58112000
+1    13.90601000    0.69003000    -3.62455000
+1    -15.21533000    -0.37630000    5.46311000
+1    -13.82422000    0.45062000    6.12196000
+1    -13.82464000    -1.29191000    5.99291000
+1    13.78159000    0.59548000    -6.12926000
+1    13.87726000    -1.14779000    -6.05927000
+1    15.21771000    -0.17614000    -5.50058000
+&endcoord
+
+&veloc
+9.19797000    -4.13904000    -1.34499000
+11.66997000    -3.23804000    -2.19499000
+11.67197000    -5.00704000    -2.24299000
+11.31797000    -4.10804000    -2.76799000
+9.80197000    -4.11004000    -2.75799000
+13.80497000    -3.20504000    -3.61299000
+13.80097000    -4.97404000    -3.66099000
+13.44897000    -4.07404000    -4.18499000
+11.93297000    -4.07004000    -4.17599000
+9.44597000    -3.21304000    -3.28799000
+15.93997000    -3.16904000    -5.05999000
+9.44997000    -4.98404000    -3.32499000
+15.93797000    -4.93904000    -5.10399000
+20.78997000    -2.32404000    -7.08599000
+15.57497000    -4.04004000    -5.61999000
+21.84497000    -2.62704000    -7.08499000
+20.43397000    -0.97704000    -7.08399000
+20.78597000    -5.69604000    -7.08999000
+&endveloc
+
+&coeff
+  0.00  0.00
+  0.00  0.00
+  0.00  0.00
+  0.00  0.00
+  0.00  0.00
+  1.00  0.00
+  0.00  0.00
+  0.00  0.00
+&endcoeff
+
