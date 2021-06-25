@@ -7,3 +7,7 @@ This directory contains the exercises/tutorials I have completed on each day of 
 * Day_5 contains data from the NEXMD simulation examples (single-point and bomd)
 * Day_7 contains my original ground state analysis for PPE as well as my coordinates for the chlorophyll a dimer that I would like to simulate. I obtained these using PyMol with the PDBID 1RWT.
 * Day_8 contains an updated version of the ground state analysis as well as a new single-point calculation analysis directory. This directory also contains a slurm file that was used to run my NEXMD simulations.
+* Day_9 contains my initial attempts at running a ground state MD simulation with NEXMD as well as my first single-point calculation.
+* Day_10 contains my updated single-point calculations in vacuum as well as the single-point calcaultions in solvent.
+* Day_11 contains all of the simulations I have run for PPE with NEXMD. In the directory titled nexmd_analysis, there is a jupyter notebook that contains the optical spectra of PPE in vacuum and in solvent as well as the adiabatic population dynamics observed in the nonadiabatic dynamics simulation.
+* project_summary.pdf is my first draft of the final summary of this workshop. 
