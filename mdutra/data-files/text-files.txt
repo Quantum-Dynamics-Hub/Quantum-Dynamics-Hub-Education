@@ -1,0 +1,22 @@
+A list of data files used in the report/presentation:
+
+obs-800.txt
+
+wft1-200.txt
+wft1-400.txt
+wft1-600.txt
+wft1-800.txt
+wft2-200.txt
+wft2-400.txt
+wft2-600.txt
+wft2-800.txt
+
+wft1-200s.txt
+wft1-400s.txt
+wft1-600s.txt
+wft1-800s.txt
+wft2-200s.txt
+wft2-400s.txt
+wft2-600s.txt
+wft2-800s.txt
+

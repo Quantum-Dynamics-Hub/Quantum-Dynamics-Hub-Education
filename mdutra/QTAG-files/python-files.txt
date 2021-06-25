@@ -1,0 +1,17 @@
+A list of python (.py) files needed to run the QTAG algorithm with Libra:
+
+QTAG_main.py
+Main file for running the code, executed with "python QTAG_main.py".
+
+QTAG_prop.py
+Module containing propagation routines (currently only symplectic propagator is coded).
+
+QTAG_pots.py
+Module containing potential functions for model systems (currently only a Holstein-like model is coded).
+
+QTAG_calc.py
+Module containing low-level computation functions necessary for running.
+
+QTAG_init.py
+Module containing initialization functions, including where parameters are set (in lieu of a parameter file currently).
+
