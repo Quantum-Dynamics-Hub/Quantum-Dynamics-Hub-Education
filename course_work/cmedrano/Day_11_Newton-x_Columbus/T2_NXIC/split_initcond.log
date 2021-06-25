@@ -1,0 +1,82 @@
+
+          ============================================================  
+                                     NEWTON-X                           
+                   Newtonian dynamics close to the crossing seam        
+          ============================================================  
+
+                                  www.newtonx.org                       
+
+    Newton-X version 2.2 (build 9, 2020-03-04)
+    www.newtonx.org
+----------------------------------------------------------------------
+    The Newton-X program is distributed free of charge for non-
+    commercial and non-profit uses. You may use the program freely 
+    and adapt the code to your needs. Please, if you have any 
+    enhancements, share them with us. You are, however, not allowed 
+    to re-distribute code or binaries in parts or total. Anyone 
+    intending to use Newton-X must contact us. This program is 
+    shipped to the user "as is". There is no guarantee that it will 
+    work as described. Usage is at your own risk, there is no 
+    liability taken for any damage or loss of data and/or money. 
+    If you experience problems, you may contact the developers and 
+    a community of users at the Newton-X discussion group, but bear 
+    in mind that there is no kind of official support for Newton-X.
+
+    Cite Newton-X as:
+    M. Barbatti, G. Granucci, M. Ruckenbauer, F. Plasser, 
+    R. Crespo-Otero, J. Pittner, M. Persico, H. Lischka, NEWTON-X: 
+    a package for Newtonian dynamics close to the crossing seam, 
+    version 2.2, www.newtonx.org (2017).
+
+    M. Barbatti, M. Ruckenbauer, F. Plasser, J. Pittner, G. Granucci, 
+    M. Persico, H. Lischka, WIREs: Comp. Mol. Sci., 4, 26 (2014).
+
+    Please, check the documentation for references to specific 
+    methods and algorithms.
+
+    For download the program, documentation, and tutorial, visit:
+    http://www.newtonx.org
+
+    For support, visit the Newton-X discussion group at:
+    https://groups.google.com/d/forum/newtonx
+----------------------------------------------------------------------
+
+
+Newton-X path: /util/academic/newton-x/NX-2.2-B09/bin
+
+split_initcond.pl:: Starting Initial Condition spliting 
+
+-Reading inputs
+
+ split_initcond.pl:
+    title       = --
+    subfile     = --
+    batchdef    = --
+    ndir        = 2
+    npoints     = 5
+    file_geom   = geom
+    file_nmodes = suscalls
+    file_vib    = qvector 
+
+
+-Creating /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-cyberwksp21/ub2055/barbati/NXTUT/T2_NXIC/INITIAL_CONDITIONS
+
+
+-Creating /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-cyberwksp21/ub2055/barbati/NXTUT/T2_NXIC/INITIAL_CONDITIONS/I1
+ Copying geom 
+ Copying suscalls 
+ Copying JOB_AD 
+ Copying --
+ Number of points = 3
+
+
+-Creating /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-cyberwksp21/ub2055/barbati/NXTUT/T2_NXIC/INITIAL_CONDITIONS/I2
+ Copying geom 
+ Copying suscalls 
+ Copying JOB_AD 
+ Copying --
+ Number of points = 2
+
+
+ End of initial conditions spliting. 
+          ====================== NEWTON-X ends here ==================  

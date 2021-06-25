@@ -1,0 +1,123 @@
+
+DIAGNOSTIC OF NEWTON-X TRAJECTORIES 
+
+Diagnostic of trajectories 1 to 20 
+
+Path to the trajectories:  /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-cyberwksp21/ub2055/barbati/NXTUT/T7_NXANALYSIS/TRAJECTORIES 
+Initial time (fs):         0.0 
+Max. Energy deviation(eV): 0.5
+Max. population deviation: 0.1
+Number of states:          0 
+Normal termination:        19
+Error termination:         1 
+
+
+TRAJECTORY 1:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 2:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 3:
+moldyn.pl:   ::ERROR::   step = 580 time = 58 fs  
+Suggestion: make analysis until time (fs): 57.90 
+Surface: 1
+
+TRAJECTORY 4:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 5:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 6:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 7:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 8:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 9:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 2
+
+TRAJECTORY 10:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 11:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 12:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 13:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 14:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 15:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 16:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 17:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 18:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 19:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+TRAJECTORY 20:
+Normal termination 
+Suggestion: make analysis until time (fs): 60.00 
+Surface: 1
+
+Maximum time reached (fs): 60.00 
+
+Distribution of trajectories: 
+Number of trajs finished between 0.0 and 15 fs: 0 
+Number of trajs finished between 15 and 30 fs: 0 
+Number of trajs finished between 30 and 45 fs: 0 
+Number of trajs finished between 45 and 60 fs: 20 
+
+End of diagnostic

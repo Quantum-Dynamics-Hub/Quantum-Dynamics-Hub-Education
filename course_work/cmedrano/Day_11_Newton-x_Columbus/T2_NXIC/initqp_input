@@ -1,0 +1,19 @@
+&dat
+ nact = 2
+ numat = 12
+ npoints = 5
+ file_geom = geom
+ iprog = 3
+ file_nmodes = suscalls
+ anh_f = 1
+ temp = 0.0
+ ics_flg = n
+ chk_e = 1
+ nis = 1
+ nfs = 2
+ kvert = 1
+ de = 100
+ prog = 1
+ iseed = -1
+ lvprt = 1
+/

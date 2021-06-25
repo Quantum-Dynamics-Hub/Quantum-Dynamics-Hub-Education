@@ -1,0 +1,134 @@
+
+          ============================================================  
+                                     NEWTON-X                           
+                   Newtonian dynamics close to the crossing seam        
+          ============================================================  
+
+                                  www.newtonx.org                       
+
+    Newton-X version 2.2 (build 9, 2020-03-04)
+    www.newtonx.org
+----------------------------------------------------------------------
+    The Newton-X program is distributed free of charge for non-
+    commercial and non-profit uses. You may use the program freely 
+    and adapt the code to your needs. Please, if you have any 
+    enhancements, share them with us. You are, however, not allowed 
+    to re-distribute code or binaries in parts or total. Anyone 
+    intending to use Newton-X must contact us. This program is 
+    shipped to the user "as is". There is no guarantee that it will 
+    work as described. Usage is at your own risk, there is no 
+    liability taken for any damage or loss of data and/or money. 
+    If you experience problems, you may contact the developers and 
+    a community of users at the Newton-X discussion group, but bear 
+    in mind that there is no kind of official support for Newton-X.
+
+    Cite Newton-X as:
+    M. Barbatti, G. Granucci, M. Ruckenbauer, F. Plasser, 
+    R. Crespo-Otero, J. Pittner, M. Persico, H. Lischka, NEWTON-X: 
+    a package for Newtonian dynamics close to the crossing seam, 
+    version 2.2, www.newtonx.org (2017).
+
+    M. Barbatti, M. Ruckenbauer, F. Plasser, J. Pittner, G. Granucci, 
+    M. Persico, H. Lischka, WIREs: Comp. Mol. Sci., 4, 26 (2014).
+
+    Please, check the documentation for references to specific 
+    methods and algorithms.
+
+    For download the program, documentation, and tutorial, visit:
+    http://www.newtonx.org
+
+    For support, visit the Newton-X discussion group at:
+    https://groups.google.com/d/forum/newtonx
+----------------------------------------------------------------------
+
+
+Newton-X path: /util/academic/newton-x/NX-2.2-B09/bin
+
+STARTING MOLECULAR DYNAMICS ANALYSIS 
+ 
+Input files: Checked 
+
+Reading initial parameters 
+
+Initial parameters: 
+
+       ITRJ          =     1
+       JTRJ          =    20
+       TMIN          =     0.00
+       TMAX          =    60.00
+       DT            =     0.10
+       PROPTYPE      =     2
+       NSTAT         =     2
+       BMAT          =     0
+       NIC           =     1
+       NAT           =     2
+       INT_STAT      =     0
+       RUN_IS        =     0
+       ICLIST        =     1
+       COMPLETE_DATA = 0
+
+analysis: Trajectory 1 
+
+Traj. 1: only data up to 60.00 fs will be used. 
+analysis: Trajectory 2 
+
+Traj. 2: only data up to 60.00 fs will be used. 
+analysis: Trajectory 3 
+
+Traj. 3: only data up to 57.90 fs will be used. 
+analysis: Trajectory 4 
+
+Traj. 4: only data up to 60.00 fs will be used. 
+analysis: Trajectory 5 
+
+Traj. 5: only data up to 60.00 fs will be used. 
+analysis: Trajectory 6 
+
+Traj. 6: only data up to 60.00 fs will be used. 
+analysis: Trajectory 7 
+
+Traj. 7: only data up to 60.00 fs will be used. 
+analysis: Trajectory 8 
+
+Traj. 8: only data up to 60.00 fs will be used. 
+analysis: Trajectory 9 
+
+Traj. 9: only data up to 60.00 fs will be used. 
+analysis: Trajectory 10 
+
+Traj. 10: only data up to 60.00 fs will be used. 
+analysis: Trajectory 11 
+
+Traj. 11: only data up to 60.00 fs will be used. 
+analysis: Trajectory 12 
+
+Traj. 12: only data up to 60.00 fs will be used. 
+analysis: Trajectory 13 
+
+Traj. 13: only data up to 60.00 fs will be used. 
+analysis: Trajectory 14 
+
+Traj. 14: only data up to 60.00 fs will be used. 
+analysis: Trajectory 15 
+
+Traj. 15: only data up to 60.00 fs will be used. 
+analysis: Trajectory 16 
+
+Traj. 16: only data up to 60.00 fs will be used. 
+analysis: Trajectory 17 
+
+Traj. 17: only data up to 60.00 fs will be used. 
+analysis: Trajectory 18 
+
+Traj. 18: only data up to 60.00 fs will be used. 
+analysis: Trajectory 19 
+
+Traj. 19: only data up to 60.00 fs will be used. 
+analysis: Trajectory 20 
+
+Traj. 20: only data up to 60.00 fs will be used. 
+analysis: Starting rwprop program. 
+analysis: Starting the statistics program 
+
+analysis: End of analysis 
+          ====================== NEWTON-X ends here ==================  
