@@ -1,0 +1,7 @@
+ ad = /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-cyberwksp21/ub2055/barbati/NXTUT/T7_NXANALYSIS/TRAJECTORIES
+ itraj = 1
+ ftraj = 20
+ tmin = 0.0
+ Etot_dev = 0.5
+ pop_dev = 0.1
+ 

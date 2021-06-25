@@ -1,0 +1,108 @@
+[03:23:24]---INFO
+Using nano-qmflows version: 0.11.0 
+
+[03:23:24]---INFO
+nano-qmflows path is: /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows/lib/python3.7/site-packages/nanoqm
+
+[03:23:24]---INFO
+Working directory is: /user/ub2050/project/Ir-C3H4N3/single_point
+
+[03:23:24]---INFO
+Data will be stored in HDF5 file: iridium-1.hdf5
+
+[03:23:24]---INFO
+An initial Calculation will be computed as guess for the wave function
+
+[03:23:24]---DEBUG
+Creating converter from 5 to 3
+
+[03:23:24]---INFO
+starting!
+
+[03:23:24]---INFO
+point_0 has already been calculated
+
+[03:25:16]---INFO
+Using nano-qmflows version: 0.11.0 
+
+[03:25:16]---INFO
+nano-qmflows path is: /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows/lib/python3.7/site-packages/nanoqm
+
+[03:25:16]---INFO
+Working directory is: /user/ub2050/project/Ir-C3H4N3/single_point
+
+[03:25:16]---INFO
+Data will be stored in HDF5 file: iridium-1.hdf5
+
+[03:25:16]---INFO
+An initial Calculation will be computed as guess for the wave function
+
+[03:25:16]---DEBUG
+Creating converter from 5 to 3
+
+[03:25:17]---INFO
+starting!
+
+[03:25:17]---INFO
+point_0 has already been calculated
+
+[03:27:26]---INFO
+Using nano-qmflows version: 0.11.0 
+
+[03:27:26]---INFO
+nano-qmflows path is: /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows/lib/python3.7/site-packages/nanoqm
+
+[03:27:26]---INFO
+Working directory is: /user/ub2050/project/Ir-C3H4N3/single_point
+
+[03:27:26]---INFO
+Data will be stored in HDF5 file: iridium-1.hdf5
+
+[03:27:26]---INFO
+An initial Calculation will be computed as guess for the wave function
+
+[03:27:27]---DEBUG
+Creating converter from 5 to 3
+
+[03:27:27]---INFO
+starting!
+
+[03:27:27]---INFO
+point_0 has been scheduled
+
+[03:28:35]---INFO
+Using nano-qmflows version: 0.11.0 
+
+[03:28:35]---INFO
+nano-qmflows path is: /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows/lib/python3.7/site-packages/nanoqm
+
+[03:28:35]---INFO
+Working directory is: /user/ub2050/project/Ir-C3H4N3/single_point
+
+[03:28:35]---INFO
+Data will be stored in HDF5 file: iridium-1.hdf5
+
+[03:28:35]---INFO
+An initial Calculation will be computed as guess for the wave function
+
+[03:28:36]---DEBUG
+Creating converter from 5 to 3
+
+[03:28:36]---INFO
+starting!
+
+[03:28:36]---INFO
+point_0 has been scheduled
+
+[03:30:23]---DEBUG
+Attempting to acquire lock 46944421716304 on cache.lock
+
+[03:30:23]---INFO
+Lock 46944421716304 acquired on cache.lock
+
+[03:30:23]---DEBUG
+Attempting to release lock 46944421716304 on cache.lock
+
+[03:30:23]---INFO
+Lock 46944421716304 released on cache.lock
+
