@@ -1,0 +1,20 @@
+A list of .eps files used in the presentation/report:
+
+ener-15-25-09.eps
+Energy plots for ntraj=15,25 basis functions.
+
+gbc-800-01.eps
+Trajectory plots for 25 basis functions, parameter t12_chk=0.1.
+
+gbc-800-09.eps
+Trajectory plots for 25 basis functions, parameter t12_chk=0.9.
+
+norm-15-25-09.eps
+Norm plots for ntraj=15,25 basis functions.
+
+wfs-15-09.eps
+Wavefunction snapshots for ntraj=15 basis functions.
+
+wfs-25-09.eps
+Wavefunction snapshots for ntraj=25 basis functions.
+
