@@ -1,0 +1,24 @@
+[03:19:44]---INFO
+Using nano-qmflows version: 0.11.0 
+
+[03:19:44]---INFO
+nano-qmflows path is: /projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/qmflows/lib/python3.7/site-packages/nanoqm
+
+[03:19:44]---INFO
+Working directory is: /user/ub2050/project/Ir-ppy3/single_point
+
+[03:19:44]---INFO
+Data will be stored in HDF5 file: Ir-ppy-3.hdf5
+
+[03:19:44]---INFO
+An initial Calculation will be computed as guess for the wave function
+
+[03:19:45]---DEBUG
+Creating converter from 5 to 3
+
+[03:19:45]---INFO
+starting!
+
+[03:19:45]---INFO
+point_0 has already been calculated
+

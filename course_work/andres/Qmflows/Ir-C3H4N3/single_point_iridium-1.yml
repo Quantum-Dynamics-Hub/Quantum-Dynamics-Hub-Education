@@ -1,0 +1,25 @@
+workflow:
+  single_points
+
+project_name: iridium-1
+active_space: [82, 18]
+compute_orbitals: True
+path_hdf5: "iridium-1.hdf5"
+path_traj_xyz: "iridium-1.xyz"
+scratch_path: "/panasas/scratch/grp-cyberwksp21/ub2050/single_point_iridium"
+
+cp2k_general_settings:
+  basis:  "DZVP-MOLOPT-SR-GTH"
+  potential: "GTH-PBE"
+  cell_parameters: 10
+  periodic: none
+  executable: cp2k.popt
+
+  cp2k_settings_main:
+    specific:
+      template: pbe_main
+
+  cp2k_settings_guess:
+    specific:
+      template:
+        pbe_guess
