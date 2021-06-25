@@ -19,9 +19,9 @@ HF: Hartree-Fock
 
 SCF: Self Consistent Field
 
-----------------------------------------------
-		CONTENTS:
-----------------------------------------------
+
+CONTENTS:
+---------
 
 benzene_2.inp: input file
 

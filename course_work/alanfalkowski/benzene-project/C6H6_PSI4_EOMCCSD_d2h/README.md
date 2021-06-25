@@ -20,8 +20,8 @@ EOM-CCSD: Equation-of-motion Coupled Cluster with Singles and Doubles excitation
 
 UHF: Unrestricted Hartree-Fock
 
-----------------------------------------------
-		CONTENTS:
+
+CONTENTS:
 ----------------------------------------------
 
 benzene.inp: input file

@@ -23,8 +23,7 @@ MRCI: Multi Reference Configutation Interaction
 
 MR-CISD: MRCI with Singles and Doubles excitations
 
-----------------------------------------------
-		CONTENTS:
+CONTENTS:
 ----------------------------------------------
 
 folders:

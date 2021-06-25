@@ -29,8 +29,8 @@ MRCISD: MRCI with Singles and Doubles excitations
 
 EOM-CCSD: Equation-of-motion Coupled Cluster with Singles and Doubles excitations
 
-----------------------------------------------
-		CONTENTS:
+
+CONTENTS:
 ----------------------------------------------
 
 1) C6H6_GAMESS_MP2_OPT_d2h: Geometry optimization performed in the GAMESS-US package, with the MP2 approach.
@@ -43,8 +43,9 @@ EOM-CCSD: Equation-of-motion Coupled Cluster with Singles and Doubles excitation
 
 5) C6H6_PSI4_EOMCCSD_d2h: Also I performed an EOM-CCSD calculation to compare with my multireference calculations. This has been performed using the psi4 package. 
 
-6) C6H6_CAS_6-6_d2h_table.odt: Informations about occupations, active space, etc.
+6) C6H6_CAS_6-6_d2h_table.pdf: Informations about occupations, active space, etc.
 
-7) launch.sh: An example SLURM submission file for clusters that use SLURM
+7) detailed_options_columbus.pdf: A step-by-step of how I have done the calculations in COLUMBUS, for both CASSCF and MRCI.
 
-8) short_report: a short written report with the summary of the results obtained in the workshop project
+8) launch.sh: An example SLURM submission file for clusters that use SLURM
+
