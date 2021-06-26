@@ -250,7 +250,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 25, 2021 (Day 12), Friday</td>
     <td class="col-md-7">
       <ul>
-        <li>Students projects presentations</li>
+        <li><a href="/_episodes/13-projects">Students projects presentations</a></li>
         <li>Awards and Closing</li>
       </ul>
     </td>
