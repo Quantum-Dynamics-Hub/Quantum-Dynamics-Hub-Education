@@ -69,7 +69,7 @@ title: "Schedule and Participants"
 | 36 | **Atish Ghosh** | GRA-3 | Visva-Bharati University | India | Pranab Sarkar | attended |
 | 37 | **Alva Dillon** | GRA-4 | Brandeis University | US, MA | Rebecca Gieseking | attended |
 | 38 | **Austin Hill** | GRA-2 | University of South Carolina | US, SC | Sophya Garashchuk | attended |
-| 39 | **Matthew Dutra** | PD | University of South Carolina | US, SC | Sophya Garashchuk | **graduated** |
+| 39 | **Matthew Dutra** | PD | University of South Carolina | US, SC | Sophya Garashchuk | **graduated** [project](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021/tree/gh-pages/course_work/mdutra) |
 | 40 | Subhadip Mondal | GRA-1 | Indian Institute of Technology Kanpur |  India | Srihari Keshavamurthy | attended |
 | 41 | **Jingbai Li** | PD | Northeastern Universtiy | US, MA | Steven Lopez | **3rd prize** |
 | 42 | **Mohammed A Jabed** | PD | University of North Dakota | US, ND | Tao Yu | attended |
