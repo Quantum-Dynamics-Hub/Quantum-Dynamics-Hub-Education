@@ -1,0 +1,6 @@
+SLURM_JOBID=6632470
+SLURM_JOB_NODELIST=cpn-p27-17
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/6632470
+working directory=/projects/academic/cyberwksp21/Software/inputs/TRAJECTORIES/TRAJ1
+NPROCS=8

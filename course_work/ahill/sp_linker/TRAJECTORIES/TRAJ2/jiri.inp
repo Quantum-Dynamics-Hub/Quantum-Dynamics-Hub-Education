@@ -1,0 +1,13 @@
+&jirinp
+ kross = 1
+ cascade = 0
+ current = 1
+ never_state = 1
+ include_pair = 0
+ e_ci = 0.2
+ cprog = 2
+ cisc_options = ""
+ ncore = 0
+ ndisc = 0
+ blasthread = 1
+/
